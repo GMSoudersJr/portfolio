@@ -2,16 +2,23 @@
   import profilePic from '/src/profilePic2023.jpg';
   import linkedInIcon from '/src/In-White-96.png';
   import githubIcon from '/src/github-mark-white.png';
+  import ProfilePicture from './components/ProfilePicture.svelte';
+  import HappyDay from './components/ProfilePicture.svelte';
+  import {
+    dayOfTheWeek,
+    localeDateString,
+  } from '$lib/utils.js';
+
+  console.log(dayOfTheWeek());
+  console.log(localeDateString());
 </script>
 
 <div class="container">
   <section class="splash" id="splash">
-    <div class="profile-pic-container">
-      <img id="profile-pic" src={profilePic} alt="Profile Pic"/>
-    </div>
   </section>
   <section class="about" id="about">
     <h2>About Me</h2>
+    <ProfilePicture />
     <p>
       I'm an American living and working in South Korea.  After 15+ years of
       teaching English and mentoring youth, 7+ years of learning to code, and
@@ -49,12 +56,11 @@
 <style>
   * {
     box-sizing: border-box;
-    overflow: hidden;
     color: #E5E5CB
   }
 
   .container {
-    background-image: linear-gradient(#D5CEA3, #1A120B);
+    background-image: linear-gradient(#1A120B, #D5CEA3);
     height: 97.5vh;
     display: flex;
     flex-direction: column;
@@ -66,29 +72,6 @@
   .about {
     width: 40%;
     font-size: 1.2em;
-  }
-
-  .splash {
-    width: 300px;
-    height: window;
-  }
-
-  .profile-pic-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    border-radius: 50%;
-    aspect-ratio: 1/1;
-    margin-left: calc(50% - 100px);
-  }
-
-  #profile-pic {
-    width: 300px;
-    height: auto;
-    position: relative;
-    bottom: 20px;
   }
 
   .contact {
