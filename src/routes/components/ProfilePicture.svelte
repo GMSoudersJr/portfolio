@@ -1,5 +1,5 @@
 <script>
-  import profilePic from '/src/profilePic2023.jpg';
+  import profilePic from '/src/dalProPicCropped.jpg';
 </script>
 
 <div class="profile-pic-container">
@@ -15,7 +15,7 @@
   }
 
   #profile-pic {
-    width: 20vw;
+    width: 18vw;
     height: auto;
     aspect-ratio: 1/1;
     position: relative;
