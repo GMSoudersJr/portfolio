@@ -1,34 +1,41 @@
 <script>
   import LocaleWelcome from './LocaleWelcome.svelte';
+  import Greeting from './Greeting.svelte';
+  import AboutMeButton from './AboutMeButton.svelte';
+
+  import { onMount } from 'svelte';
   import { goto } from '$app/navigation';
 
-  async function handleClick() {
-    /*
-    const aboutMe = document.getElementById("aboutMe");
-    aboutMe.scrollIntoView({
-      behavior: 'smooth',
+  onMount(async() => {
+    const greeting = new Greeting({
+      target: document.getElementById("splash"),
+      intro: true,
     });
-     */
-    await goto('#aboutMe', {
-      noScroll: false,
-      replaceState: false,
-      keepFocus: false,
-    });
-  }
+
+    let welcomeDate;
+
+    setTimeout(() => {
+      greeting.$destroy();
+      welcomeDate = new LocaleWelcome({
+        target: document.getElementById("splash"),
+        intro: true,
+      });
+    }, 5000);
+
+
+    setTimeout(() => {
+      welcomeDate.$destroy();
+      const aboutMeButton = new AboutMeButton({
+        target: document.getElementById("splash"),
+        intro: true,
+      });
+    }, 7000);
+
+
+  })
 </script>
 
-<section class="section-container">
-  <h1>Hi!  I'm Gerald M. Souders Jr.</h1>
-  <h2>I'm a Full Stack Svelte Developer</h2>
-  <h3>Focused on the Frontend</h3>
-  <LocaleWelcome />
-  <button
-    type="button"
-    class="button"
-    on:click={handleClick}
-  >
-    About Me
-  </button>
+<section id="splash" class="section-container">
 </section>
 
 <style>
@@ -39,11 +46,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(#1A120B, #D5CEA3);
-  }
-  .button {
-    box-sizing: border-box;
-    padding: 12px 15px;
-    font-size: 18px;
   }
 </style>

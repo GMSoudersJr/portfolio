@@ -26,9 +26,10 @@
   * {
     color: #E5E5CB
   }
+  .container {
+  }
 
   .container {
-    background-image: linear-gradient(#1A120B, #D5CEA3);
     display: flex;
     flex-direction: column;
     justify-content: center;
