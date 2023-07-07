@@ -1,6 +1,6 @@
 <script>
-  import { fly } from 'svelte/transition';
-  import { quintInOut } from 'svelte/easing';
+  import { scale } from 'svelte/transition';
+  import { bounceInOut } from 'svelte/easing';
   import { goto } from '$app/navigation';
 
   async function handleClick() {
@@ -23,13 +23,12 @@
   type="button"
   class="button"
   id="about-me-button"
-  transition:fly|global={{
+  transition:scale|global={{
       delay: 0,
       duration: 3000,
-      x: 500,
-      y: 500,
-      opacity: 0.5,
-      easing: quintInOut
+      opacity: 0,
+      start: 20,
+      easing: bounceInOut
   }}
   on:click={handleClick}
 >

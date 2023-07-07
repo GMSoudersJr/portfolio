@@ -1,36 +1,37 @@
 <script>
-  import LocaleWelcome from './LocaleWelcome.svelte';
-  import Greeting from './Greeting.svelte';
-  import AboutMeButton from './AboutMeButton.svelte';
-
   import { onMount } from 'svelte';
   import { goto } from '$app/navigation';
+  import LocaleWelcome from './LocaleWelcome.svelte';
+  import Intro from './Intro.svelte';
+  import AboutMeButton from './AboutMeButton.svelte';
+  import SayHi from './SayHi.svelte';
 
   onMount(async() => {
-    const greeting = new Greeting({
+    const sayHi = new SayHi({
       target: document.getElementById("splash"),
       intro: true,
     });
 
+    let intro;
     let welcomeDate;
 
+    // destroy HI! and insert the Intro
     setTimeout(() => {
-      greeting.$destroy();
-      welcomeDate = new LocaleWelcome({
+      sayHi.$destroy();
+      intro = new Intro({
         target: document.getElementById("splash"),
         intro: true,
       });
-    }, 5000);
+    }, 3500);
 
 
     setTimeout(() => {
-      welcomeDate.$destroy();
+      intro.$destroy();
       const aboutMeButton = new AboutMeButton({
         target: document.getElementById("splash"),
         intro: true,
       });
     }, 7000);
-
 
   })
 </script>
