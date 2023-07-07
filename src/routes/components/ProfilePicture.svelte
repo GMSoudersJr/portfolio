@@ -19,9 +19,10 @@
     height: auto;
     aspect-ratio: 1/1;
     position: relative;
-    border: 2px solid white;
+    border: 2px solid brown;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0 4px 8px 0 blue, 0 6px 20px 0 purple;
   }
 
 </style>

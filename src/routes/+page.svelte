@@ -2,6 +2,7 @@
   import ProfilePicture from './components/ProfilePicture.svelte';
   import Contact from './components/Contact.svelte';
   import Splash from './components/Splash.svelte';
+  import AboutMeText from './components/AboutMeText.svelte';
 
 </script>
 
@@ -10,16 +11,12 @@
   <section class="about" id="aboutMe">
     <h2>About Me</h2>
     <ProfilePicture />
-    <p>
-      I'm an American living and working in South Korea.  After 15+ years of
-      teaching English and mentoring youth, 7+ years of learning to code, and
-      3+ years of experience mostly as a frontend developer, I've decided to
-      switch completely to the digital realm.
-    </p>
+    <AboutMeText />
   </section>
-  <Contact />
   <section class="portfolio" id="portfolio"></section>
   <h1>Hello, world!</h1>
+  <Contact />
+  <br>
 </div>
 
 <style>
@@ -38,7 +35,8 @@
   }
 
   .about {
-    width: 40%;
+    width: 50%;
+    height: 100vh;
     font-size: 1.2em;
   }
 
