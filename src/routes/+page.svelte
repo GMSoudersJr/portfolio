@@ -3,6 +3,7 @@
   import Contact from './components/Contact.svelte';
   import Splash from './components/Splash.svelte';
   import AboutMeText from './components/AboutMeText.svelte';
+  import Projects from './components/Projects.svelte';
 
 </script>
 
@@ -13,7 +14,10 @@
     <ProfilePicture />
     <AboutMeText />
   </section>
-  <section class="portfolio" id="portfolio"></section>
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <Projects />
+  </section>
   <h1>Hello, world!</h1>
   <Contact />
   <br>
@@ -22,8 +26,6 @@
 <style>
   * {
     color: #E5E5CB
-  }
-  .container {
   }
 
   .container {
