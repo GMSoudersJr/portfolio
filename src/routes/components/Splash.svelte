@@ -1,0 +1,51 @@
+<script>
+  import { onMount } from 'svelte';
+  import { goto } from '$app/navigation';
+  import LocaleWelcome from './LocaleWelcome.svelte';
+  import Intro from './Intro.svelte';
+  import AboutMeButton from './AboutMeButton.svelte';
+  import SayHi from './SayHi.svelte';
+
+  onMount(async() => {
+    const sayHi = new SayHi({
+      target: document.getElementById("splash"),
+      intro: true,
+    });
+
+    let intro;
+    let welcomeDate;
+
+    // destroy HI! and insert the Intro
+    setTimeout(() => {
+      sayHi.$destroy();
+      intro = new Intro({
+        target: document.getElementById("splash"),
+        intro: true,
+      });
+    }, 3500);
+
+
+    setTimeout(() => {
+      intro.$destroy();
+      const aboutMeButton = new AboutMeButton({
+        target: document.getElementById("splash"),
+        intro: true,
+      });
+    }, 7000);
+
+  })
+</script>
+
+<section id="splash" class="section-container">
+</section>
+
+<style>
+  .section-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
