@@ -2,20 +2,19 @@
   export let project;
   export let index;
   let projectCardClassName = "project-card-container"
+
   if ((Number.parseInt(index) + 1) % 2 === 0) {
     projectCardClassName += " reverse"
   }
 </script>
 <div class={projectCardClassName}>
-  <div class="image-area">
-    <img
-      class="project-image"
-      src={project.img}
-      alt={project.alt}
-    />
-  </div>
+  <img
+    class="project-image"
+    src={project.img}
+    alt={project.alt}
+  />
   <div class="details-area">
-    <h1 id="project-name">{project.name}{Number.parseInt(index) + 1}</h1>
+    <h1 id="project-name">{project.name}</h1>
     <p>{project.description}</p>
     <h3>Stack:</h3>
   </div>
@@ -27,10 +26,11 @@
     height: 40vh;
     display: flex;
     flex-direction: row;
+    align-items: center;
     background: linear-gradient(80deg, var(--light) 30%, var(--dark) 30.1%);
     border-radius: 5px;
   }
-  
+
   .reverse {
     flex-direction: row-reverse;
     background: linear-gradient(-80deg, var(--light) 30%, var(--dark) 30.1%);
@@ -45,6 +45,7 @@
   }
 
   .details-area {
+    width: 100%;
     flex: 5;
     display: flex;
     flex-direction: column;
@@ -57,6 +58,7 @@
     border: 1px solid var(--dark);
     border-radius: 50%;
     object-fit: cover;
+    margin: 2em;
   }
 
 </style>
