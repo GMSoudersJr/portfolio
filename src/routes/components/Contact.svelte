@@ -48,7 +48,7 @@
   ]
 </script>
 
-<section class="contact" id="contact">
+<section class="contact" id="findMe">
   {#each socialDetails as social (social.id)}
   <div id={social.id} class={social.class}>
     <a
