@@ -48,7 +48,7 @@
   ]
 </script>
 
-<section class="contact" id="findMe">
+<section class="findMe" id="findMe">
   {#each socialDetails as social (social.id)}
   <div id={social.id} class={social.class}>
     <a
@@ -73,7 +73,8 @@
 
 
 <style>
-  .contact {
+  .findMe {
+    height: 100vh;
     width: 40%;
     display: flex;
     flex-direction: row;
@@ -105,9 +106,10 @@
   }
   
   @media screen and (max-width: 1200px) {
-    .contact {
+    .findMe {
       flex-direction: column;
-      row-gap: 1em;
+      justify-content: center;
+      row-gap: 2em;
     }
   }
 </style>

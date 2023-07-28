@@ -19,6 +19,7 @@
     height: auto;
     aspect-ratio: 1/1;
     position: relative;
+    z-index: -1;
     border: 2px solid brown;
     border-radius: 50%;
     object-fit: cover;

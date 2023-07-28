@@ -1,6 +1,6 @@
 <script>
   import ProfilePicture from './components/ProfilePicture.svelte';
-  import Contact from './components/Contact.svelte';
+  import FindMe from './components/FindMe.svelte';
   import Splash from './components/Splash.svelte';
   import AboutMeText from './components/AboutMeText.svelte';
   import Projects from './components/Projects.svelte';
@@ -18,8 +18,7 @@
     <h2>Projects</h2>
     <Projects />
   </section>
-  <h1>Hello, world!</h1>
-  <Contact />
+  <FindMe />
   <br>
 </div>
 
@@ -42,4 +41,8 @@
     font-size: 1.2em;
   }
 
+  section {
+    /* Needs to be the same height as the nav ul element */
+    scroll-margin-top: 56px;
+  }
 </style>

@@ -1,23 +1,25 @@
 <script>
+  import { onMount } from 'svelte';
+
   const navItems = [
     {
       name: "Home",
-      id: "navHome",
+      id: "nav-home",
       href: "/",
     },
     {
       name: "About Me",
-      id: "navAboutMe",
+      id: "nav-aboutMe",
       href: "#aboutMe",
     },
     {
       name: "Projects",
-      id: "navProjects",
+      id: "nav-projects",
       href: "#projects",
     },
     {
       name: "Find Me",
-      id: "navFindMe",
+      id: "nav-findMe",
       href: "#findMe",
     },
   ];
@@ -25,27 +27,51 @@
   $: active = "";
   function handleClick(event) {
     let clicked = event.target.id
-    let navItem = document.getElementById(clicked);
-    let allNavItems = navItem.parentElement.parentElement.childNodes;
+    let navItem = document.getElementById(clicked).parentElement;
+    let allNavItems = navItem.parentElement.childNodes;
     allNavItems.forEach(item => {
-      if ( item.firstChild.classList.contains("active") && item.firstChild.id != navItem.id ) {
-        item.firstChild.classList.remove("active");
+      if ( item.classList.contains("active") && item.id != navItem.id ) {
+        item.classList.remove("active");
       }
     })
     navItem.classList.add("active");
-    console.log(allNavItems);
   }
+
+  onMount(async() => {
+    const sections = document.querySelectorAll("section");
+    const navItems = document.querySelectorAll("nav ul li");
+    console.log(sections);
+
+    window.onscroll = () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if ( pageYOffset >= sectionTop - navItems[0].offsetHeight ) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navItems.forEach((item) => {
+        item.classList.remove("active");
+        if ( item.id == `li-nav-${current}` ) {
+          item.classList.add("active");
+        }
+      })
+    }
+  })
 </script>
 
 <nav>
   <ul>
      {#each navItems as navItem (navItem.id)}
-       <li>
+       <li
+         class={active}
+         id={`li-${navItem.id}`}
+       >
          <a
            id={navItem.id}
            on:click={handleClick}
            href={navItem.href}
-           class={active}
          >
            {navItem.name}
          </a>
@@ -83,7 +109,7 @@
     color: var(--dark);
   }
 
-  .active {
+  .active > a {
     background-color: var(--dark);
     color: var(--lightest);
   }
