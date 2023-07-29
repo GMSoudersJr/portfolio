@@ -3,10 +3,9 @@
 </script>
 
 <p>
-  I'm an American living and working in South Korea.  After 15+ years of
-  teaching English and mentoring youth, 7+ years of learning to code, and
-  3+ years of experience mostly as a frontend developer, I've decided to
-  switch completely to the digital realm.
+  For over 15 years, I have been an educator and mentor in South Korea. My
+  love for learning and internal motivation got me into tech.  I realized that
+  I understood very little of the tech I used every day.
 </p>
 <p>
   Coding has been a hobby for the last 5 years.

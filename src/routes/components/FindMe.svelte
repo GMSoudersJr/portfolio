@@ -104,7 +104,7 @@
     text-decoration: none;
     color: white
   }
-  
+
   @media screen and (max-width: 1200px) {
     .findMe {
       flex-direction: column;

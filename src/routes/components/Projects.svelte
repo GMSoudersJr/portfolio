@@ -19,18 +19,25 @@
   ]
 </script>
 
-<div class="container">
-  {#each projects as project, index }
-    <ProjectCard {project} {index}/>
-  {/each}
-
-</div>
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+  <div class="container">
+    {#each projects as project, index }
+      <ProjectCard {project} {index}/>
+    {/each}
+  </div>
+</section>
 
 <style>
   .container {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+  }
+
+  section {
+    /* Needs to be the same height as the nav ul element */
+    scroll-margin-top: 56px;
   }
 
 </style>

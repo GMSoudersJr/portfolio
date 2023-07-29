@@ -23,7 +23,7 @@
 <style>
   .project-card-container {
     width: 70vw;
-    height: 40vh;
+    aspect-ratio: 16 / 4;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -36,29 +36,22 @@
     background: linear-gradient(-80deg, var(--light) 30%, var(--dark) 30.1%);
   }
 
-  .image-area {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
   .details-area {
     width: 100%;
-    flex: 5;
+    flex: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .project-image {
-    height: 80%;
+    flex: 1;
+    width: 80%;
     aspect-ratio: 1/1;
     border: 1px solid var(--dark);
     border-radius: 50%;
     object-fit: cover;
-    margin: 2em;
+    margin: 2%;
   }
 
 </style>

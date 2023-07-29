@@ -8,7 +8,7 @@
 
   onMount(async() => {
     const sayHi = new SayHi({
-      target: document.getElementById("splash"),
+      target: document.getElementById("/"),
       intro: true,
     });
 
@@ -19,7 +19,7 @@
     setTimeout(() => {
       sayHi.$destroy();
       intro = new Intro({
-        target: document.getElementById("splash"),
+        target: document.getElementById("/"),
         intro: true,
       });
     }, 3500);
@@ -28,7 +28,7 @@
     setTimeout(() => {
       intro.$destroy();
       const aboutMeButton = new AboutMeButton({
-        target: document.getElementById("splash"),
+        target: document.getElementById("/"),
         intro: true,
       });
     }, 7000);
@@ -36,7 +36,7 @@
   })
 </script>
 
-<section id="splash" class="section-container">
+<section id="/" class="section-container">
 </section>
 
 <style>

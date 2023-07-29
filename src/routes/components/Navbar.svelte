@@ -25,6 +25,7 @@
   ];
 
   $: active = "";
+
   function handleClick(event) {
     let clicked = event.target.id
     let navItem = document.getElementById(clicked).parentElement;
@@ -40,13 +41,14 @@
   onMount(async() => {
     const sections = document.querySelectorAll("section");
     const navItems = document.querySelectorAll("nav ul li");
-    console.log(sections);
 
     window.onscroll = () => {
       let current = "";
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if ( pageYOffset >= sectionTop - navItems[0].offsetHeight ) {
+        const navBarHeight = navItems[0].offsetHeight;
+        const clientHeight = section.clientHeight
+        if ( pageYOffset >= ((sectionTop - navBarHeight) - ( clientHeight / 2.5 ))) {
           current = section.getAttribute("id");
         }
       });

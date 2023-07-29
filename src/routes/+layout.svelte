@@ -17,5 +17,4 @@
   :root {
     background-image: linear-gradient(var(--darkest), var(--light));
   }
-
 </style>

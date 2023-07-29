@@ -37,8 +37,10 @@
 
 <style>
   .button {
+    width: 25%;
+    aspect-ratio: 3 / 1;
     box-sizing: border-box;
     padding: 12px 15px;
-    font-size: 18px;
+    font-size: 28px;
   }
 </style>
