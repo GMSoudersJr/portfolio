@@ -42,5 +42,9 @@
     box-sizing: border-box;
     padding: 12px 15px;
     font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 </style>

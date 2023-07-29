@@ -19,5 +19,13 @@
     /* Needs to be the same height as the nav ul element */
     scroll-margin-top: 56px;
   }
+  @media screen and (max-width: 1200px) {
+    h2 {
+      text-align: center
+    }
+    .about {
+      width: 70%;
+    }
 
+  }
 </style>

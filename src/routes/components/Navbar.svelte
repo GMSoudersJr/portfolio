@@ -6,21 +6,25 @@
       name: "Home",
       id: "nav-home",
       href: "/",
-    },
-    {
-      name: "About Me",
-      id: "nav-aboutMe",
-      href: "#aboutMe",
-    },
-    {
-      name: "Projects",
-      id: "nav-projects",
-      href: "#projects",
+      position: "nav-left"
     },
     {
       name: "Find Me",
       id: "nav-findMe",
       href: "#findMe",
+      position: "nav-right"
+    },
+    {
+      name: "Projects",
+      id: "nav-projects",
+      href: "#projects",
+      position: "nav-right"
+    },
+    {
+      name: "About Me",
+      id: "nav-aboutMe",
+      href: "#aboutMe",
+      position: "nav-right"
     },
   ];
 
@@ -67,7 +71,7 @@
   <ul>
      {#each navItems as navItem (navItem.id)}
        <li
-         class={active}
+         class={`${active} ${navItem.position}`}
          id={`li-${navItem.id}`}
        >
          <a
@@ -94,6 +98,7 @@
     background-color: var(--lightest);
     overflow: hidden;
   }
+
   li {
     float: left;
     font-size: 1.5em;
@@ -115,5 +120,8 @@
     background-color: var(--dark);
     color: var(--lightest);
   }
-
+  
+  .nav-right {
+    float: right;
+  }
 </style>

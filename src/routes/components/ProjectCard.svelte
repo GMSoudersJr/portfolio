@@ -46,7 +46,7 @@
 
   .project-image {
     flex: 1;
-    width: 80%;
+    width: 10%;
     aspect-ratio: 1/1;
     border: 1px solid var(--dark);
     border-radius: 50%;
