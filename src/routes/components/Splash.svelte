@@ -42,7 +42,9 @@
 <style>
   .section-container {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
+    margin: 0;
+    background-color: var(--basePurple);
     display: flex;
     flex-direction: column;
     justify-content: center;

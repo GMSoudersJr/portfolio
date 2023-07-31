@@ -19,8 +19,8 @@
   }
   .about-me-content {
     display: flex;
-    flex-direction: row-reverse;
-    gap: 2em;
+    flex-direction:reverse;
+    gap: 1em;
   }
   h2 {
     color: var(--contentText);
@@ -36,6 +36,9 @@
     }
     .about {
       width: 70%;
+    }
+    .about-me-content {
+      flex-direction: column
     }
 
   }

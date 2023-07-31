@@ -8,53 +8,8 @@
   import githubIconLong from '/src/GitHub_Logo.png';
   import glitchIconLong from '/src/GlitchLogo_Color_Wordmark.png';
   import codepenIconLong from '/src/codepen-wordmark-black.png';
-  const socialDetails = [
-    {
-      id: "linkedIn",
-      href: "https://www.linkedin.com/in/gerald-souders/",
-      class: "icon icon-square",
-      icon: linkedInIcon,
-      iconLong: linkedInIconLong,
-      alt: "LinkedIn Icon",
-      text: ""
-    },
-    {
-      id: "github",
-      href: "https://github.com/GMSoudersJr",
-      class: "icon icon-square",
-      icon: githubIcon,
-      iconLong: githubIconLong,
-      alt: "GitHub Icon",
-      text: ""
-    },
-    {
-      id: "codepen",
-      href: "https://codepen.io/GMSoudersJr",
-      class: "icon icon-long",
-      icon: codepenIcon,
-      iconLong: codepenIconLong,
-      alt: "CODEPEN Icon",
-      text: ""
-    },
-    {
-      id: "email",
-      href: "mailto: gmsoudersjr@gmail.com",
-      class: "email",
-      icon: "",
-      alt: "",
-      text: "@",
-      textLong: "E-MAIL"
-    },
-    {
-      id: "glitch",
-      href: "https://glitch.com/@GMSoudersJr",
-      class: "icon icon-square",
-      icon: glitchIcon,
-      iconLong: glitchIconLong,
-      alt: "Glitch Icon",
-      text: ""
-    },
-  ];
+  import socialDetails from '$lib/socials.js';
+
 
   let innerWidth = 0;
   $: displayIconLong = innerWidth <= 1200;
@@ -131,6 +86,10 @@
       padding: 20px 10px;
       border-radius: 10px;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .email {
       color: black;
@@ -140,6 +99,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
   }
 </style>
