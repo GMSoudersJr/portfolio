@@ -9,5 +9,6 @@
 <style>
   h1 {
     font-size: 60px;
+    color: var(--darkestBlue);
   }
 </style>

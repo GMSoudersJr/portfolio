@@ -35,9 +35,19 @@
     row-gap: 2rem;
   }
 
+  h2 {
+    color: var(--contentText);
+    font-size: var(--sectionTitleFontSize);
+  }
+
   section {
     /* Needs to be the same height as the nav ul element */
     scroll-margin-top: 56px;
   }
 
+  @media screen and (max-width: 1200px) {
+    h2 {
+      text-align: center
+    }
+  }
 </style>

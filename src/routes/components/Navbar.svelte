@@ -95,7 +95,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: var(--lightest);
+    background-color: var(--lightestBlue);
     overflow: hidden;
   }
 
@@ -109,15 +109,16 @@
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
+    color: var(--backgroundWhite);
   }
 
   li a:hover {
-    background-color: var(--light);
-    color: var(--dark);
+    background-color: var(--lightestTurquoise);
+    color: var(--darkestBlue);
   }
 
   .active > a {
-    background-color: var(--dark);
+    background-color: var(--darkestBlue);
     color: var(--lightest);
   }
   

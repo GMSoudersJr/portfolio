@@ -7,6 +7,7 @@
     projectCardClassName += " reverse"
   }
 </script>
+
 <div class={projectCardClassName}>
   <img
     class="project-image"
@@ -27,13 +28,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: linear-gradient(80deg, var(--light) 30%, var(--dark) 30.1%);
+    background: linear-gradient(80deg, var(--lightestPurple) 30%,
+    var(--darkestPurple) 30.1%);
     border-radius: 5px;
   }
 
   .reverse {
     flex-direction: row-reverse;
-    background: linear-gradient(-80deg, var(--light) 30%, var(--dark) 30.1%);
+    background: linear-gradient(-80deg, var(--lightestPurple) 30%,
+    var(--darkestPurple) 30.1%);
   }
 
   .details-area {

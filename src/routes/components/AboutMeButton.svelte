@@ -46,5 +46,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--backgroundWhite);
+    border: 0.1px solid var(--lightestPurple);
+    border-radius: 10px;
+    color: var(--darkestBlue);
   }
 </style>

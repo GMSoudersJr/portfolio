@@ -19,15 +19,13 @@
   }
 
   #profile-pic {
-    width: 18vw;
+    max-width: 18vw;
     height: auto;
     aspect-ratio: 1/1;
-    position: relative;
-    z-index: -1;
-    border: 2px solid brown;
+    border: 2px solid var(--darkestGreen);
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 8px 0 blue, 0 6px 20px 0 purple;
+    box-shadow: 0 4px 8px 0 var(--darkestBlue), 0 6px 20px 0 var(--lightestBlue);
   }
 
 </style>

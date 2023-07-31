@@ -5,15 +5,26 @@
 
 <section class="about" id="aboutMe">
   <h2>About Me</h2>
-  <ProfilePicture />
-  <AboutMeText />
+  <div class="about-me-content">
+    <ProfilePicture />
+    <AboutMeText />
+  </div>
 </section>
 
 <style>
   .about {
-    width: 50%;
+    width: 70%;
     min-height: 100vh;
     font-size: 1.2em;
+  }
+  .about-me-content {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2em;
+  }
+  h2 {
+    color: var(--contentText);
+    font-size: var(--sectionTitleFontSize);
   }
   section {
     /* Needs to be the same height as the nav ul element */

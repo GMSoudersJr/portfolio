@@ -127,14 +127,15 @@
     }
 
     a {
-      background-color: #F1F1F1;
+      background-color: var(--backgroundWhite);
       padding: 20px 10px;
       border-radius: 10px;
       width: 100%;
     }
     .email {
       color: black;
-      font-family: helvetica;
+      font-family: helvetica, system-ui;
+      font-weight: 575;
       font-size: 2.5em;
       display: flex;
       flex-direction: column;
