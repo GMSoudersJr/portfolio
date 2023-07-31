@@ -47,5 +47,6 @@
 
   :root {
     background-image: linear-gradient(var(--backgroundWhite) 65%, var(--backgroundBlue));
+    overflow-x: hidden;
   }
 </style>

@@ -1,14 +1,5 @@
 <script>
-  import linkedInIcon from '/src/In-White-96.png';
-  import githubIcon from '/src/github-mark-white.png';
-  import glitchIcon from '/src/GlitchIcon_Solid_Black.png';
-  import codepenIcon from '/src/codepen-wordmark-white.png';
-
-  import linkedInIconLong from '/src/LinkedIn-Blue-96@2x.png';
-  import githubIconLong from '/src/GitHub_Logo.png';
-  import glitchIconLong from '/src/GlitchLogo_Color_Wordmark.png';
-  import codepenIconLong from '/src/codepen-wordmark-black.png';
-  import socialDetails from '$lib/socials.js';
+  import { socialDetails } from '$lib/socials.js';
 
 
   let innerWidth = 0;
@@ -60,18 +51,15 @@
     font-size: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
-  }
-
-  .icon-square {
-    aspect-ratio: 1/1;
   }
 
   a {
     text-decoration: none;
     color: white
   }
+
 
   @media screen and (max-width: 1200px) {
     .findMe {

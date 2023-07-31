@@ -20,8 +20,8 @@
     {
       id: "codepen",
       href: "https://codepen.io/GMSoudersJr",
-      class: "icon icon-long",
-      icon: "https://lh3.googleusercontent.com/pw/AIL4fc8EfLMBRB26rsyY7-fze5iuYsGmEAp4u5x0aKysGlU0kAu7fpwPhLKA4ulNQw0-VnGarZVg0DTP4duxRin4nZtYoq_xO57s1hdVtguIWI0_0hbjN-rpMTFL7eszllOUahKwi61fACx3dzlkQro54KuX9A=w1044-h197-s-no?authuser=0",
+      class: "icon icon-square",
+      icon: "https://lh3.googleusercontent.com/pw/AIL4fc_vSslu2auNfV-SLuZVqyuKYMowCbDymDffJWWrXh0vqxM-fRuSjKP5AXWLr8jHitD11FFHE9clnzGkTLMSyoJYb8wIieUNluK57olBSfeCDgsxKos-XBJ6nZfUcWfqKKs1RRgnidLXS31yqD_G0IBcfw=w377-h377-s-no?authuser=0",
       iconLong: "https://lh3.googleusercontent.com/pw/AIL4fc8I2V9tUe5k5IX8pSyk9qG_aFk4C-dayt2sgFt7Kjd2Bb1BXgib_B_m7ATvr0QBeNM8O6QFjkVi8XEt7V4vWKusC0AB2ZnQjrmaMekYJjbTjE_Cv5WXq56emAtObqp6lgi-gzTRZEqS1QS2dHAKx-u3ow=w1044-h197-s-no?authuser=0",
       alt: "CODEPEN Icon",
       text: ""
@@ -42,6 +42,15 @@
       icon: "https://lh3.googleusercontent.com/pw/AIL4fc_iJ1EwLV8DQAGMT23qnkL-MMiNzQMM6guh56BthbLb8ZtNNNzquv8_FInJavQ-BKRlV6LGN9Hk7WQv2vfz0YUKYSNprCZELJogLCckoKbRj6EFqENwd7uN1V0fGjHmgWbjhix_sf1xNjq4xkL53Yeg3A=w620-h620-s-no?authuser=0",
       iconLong: "https://lh3.googleusercontent.com/pw/AIL4fc_IEx31HMHr59uy8ynSxbRjszgZ15BAXJkKFPurhPT6iS1fujzVFkLMMUxNMPunuvsw6rzS9Sl4rgQewkmCDTGTUwIiAjytUQS9w8KeOysQG3vegkBHweNGQhg3dHW_O6uMVHhCzx6x3b4sNQPR92SfzQ=w1000-h192-s-no?authuser=0",
       alt: "Glitch Icon",
+      text: ""
+    },
+    {
+      id: "freeCodeCamp",
+      href: "https://freecodecamp.org/GMSoudersJr",
+      class: "icon icon-square",
+      icon: "https://lh3.googleusercontent.com/pw/AIL4fc8nHcWq61HqL7ZPmF_Ihn8yhSHTyjyJlO5mr-sQg-kceNT5Bmsoa5ALmSGNzLX4zDpM1UZHxj-SgfRPDyFWcoo6QE2A4mtrKF5Hk7bxMqpGf3yQ--zS4iIKK9YxFDoU8SpGnuU9GYcxMPo3JCfHcjcElQ=w712-h484-s-no?authuser=0",
+      iconLong: "https://lh3.googleusercontent.com/pw/AIL4fc8eQsgwAv4vNdsedVmV6p9ESWC0_dJ0DY97ditGzH9iCDiLyu7affZjQLjhOWzMYPgwXkYNDp29HUBfhEF5y5JyfyJHcHpKFgbVz4i7dfSc3pmugaEtVLONOpwmbfe-trHo88QRpWMGECUCNvSBE9nLDw=w1764-h214-s-no?authuser=0",
+      alt: "freeCodeCamp.org Icon",
       text: ""
     },
   ];

@@ -45,6 +45,8 @@
     width: 100vw;
     margin: 0;
     background-color: var(--basePurple);
+  /*background-image: url("https://lh3.googleusercontent.com/pw/AIL4fc_j7h3tJftmlr49eJAhoFREfhOcJmHXTUcsO_yuuLuPxyjux088OAIxgUzDdT3jvGJQth3rrlB3yKtiBVjg-g_lLlTBaZj8c6BUicea-ZsQyOPK4CD_KS1GR9bVWa8-D1aVveK3cPzlP0dSoqz5v7M8Xg=w1180-h944-s-no?authuser=0");
+    background-size: cover;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
