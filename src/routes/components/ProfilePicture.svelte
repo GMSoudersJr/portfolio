@@ -3,7 +3,11 @@
 </script>
 
 <div class="profile-pic-container">
-  <img id="profile-pic" src={profilePic} alt="Profile Pic"/>
+  <img
+    id="profile-pic"
+    src={profilePic}
+    alt="Profile Pic"
+  />
 </div>
 
 <style>
