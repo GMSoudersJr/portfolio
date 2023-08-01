@@ -1,30 +1,31 @@
 <script>
   import { onMount } from 'svelte';
+  import Hamburger from './Hamburger.svelte';
 
   const navItems = [
     {
       name: "Home",
       id: "nav-home",
       href: "/",
-      position: "nav-left"
-    },
-    {
-      name: "Find Me",
-      id: "nav-findMe",
-      href: "#findMe",
-      position: "nav-right"
-    },
-    {
-      name: "Projects",
-      id: "nav-projects",
-      href: "#projects",
-      position: "nav-right"
+      class: "nav-item nav-left"
     },
     {
       name: "About Me",
       id: "nav-aboutMe",
       href: "#aboutMe",
-      position: "nav-right"
+      class: "nav-item nav-right"
+    },
+    {
+      name: "Projects",
+      id: "nav-projects",
+      href: "#projects",
+      class: "nav-item nav-right"
+    },
+    {
+      name: "Find Me",
+      id: "nav-findMe",
+      href: "#findMe",
+      class: "nav-item nav-right"
     },
   ];
 
@@ -33,8 +34,9 @@
   function handleClick(event) {
     let clicked = event.target.id
     let navItem = document.getElementById(clicked).parentElement;
+    let allNavItemsNew = document.querySelectorAll(".navItem")
     let allNavItems = navItem.parentElement.childNodes;
-    allNavItems.forEach(item => {
+    allNavItemsNew.forEach(( item ) => {
       if ( item.classList.contains("active") && item.id != navItem.id ) {
         item.classList.remove("active");
       }
@@ -70,19 +72,22 @@
 <nav>
   <ul>
      {#each navItems as navItem (navItem.id)}
-       <li
-         class={`${active} ${navItem.position}`}
-         id={`li-${navItem.id}`}
+     <li
+       class={`${active} ${navItem.class}`}
+       id={`li-${navItem.id}`}
+     >
+       <a
+         id={navItem.id}
+         on:click={handleClick}
+         href={navItem.href}
        >
-         <a
-           id={navItem.id}
-           on:click={handleClick}
-           href={navItem.href}
-         >
-           {navItem.name}
-         </a>
-       </li>
+         {navItem.name}
+       </a>
+     </li>
      {/each}
+     <li class="hamburger">
+       <Hamburger />
+     </li>
   </ul>
 </nav>
 
@@ -97,6 +102,14 @@
     padding: 0;
     background-color: var(--lightestBlue);
     overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, fit-content(150px));
+    justify-items: end;
+    align-items: center;
+  }
+
+  .nav-left {
+    justify-self: start;
   }
 
   li {
@@ -121,8 +134,9 @@
     background-color: var(--darkestBlue);
     color: var(--lightest);
   }
-  
-  .nav-right {
+
+  ul .hamburger {
     float: right;
+    display: none;
   }
 </style>
