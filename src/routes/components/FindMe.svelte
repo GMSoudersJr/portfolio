@@ -84,6 +84,7 @@
       justify-content: center;
       align-items: center;
     }
+
     a:hover {
       background-image: linear-gradient(var(--backgroundWhite),var(--backgroundWhite));
     }
