@@ -48,7 +48,7 @@
       id: "freeCodeCamp",
       href: "https://freecodecamp.org/GMSoudersJr",
       class: "icon icon-square",
-      icon: "https://lh3.googleusercontent.com/pw/AIL4fc8nHcWq61HqL7ZPmF_Ihn8yhSHTyjyJlO5mr-sQg-kceNT5Bmsoa5ALmSGNzLX4zDpM1UZHxj-SgfRPDyFWcoo6QE2A4mtrKF5Hk7bxMqpGf3yQ--zS4iIKK9YxFDoU8SpGnuU9GYcxMPo3JCfHcjcElQ=w712-h484-s-no?authuser=0",
+      icon: "https://lh3.googleusercontent.com/pw/AIL4fc8gKyzTnp1TsHktgtT4l3XCO6u9KwmmF94m9eUrVXTVTjjQghfBeeDf1aNQyU6RlWjp_JkjG-C3i9HxeUNPhZEWJxHDqYEtHN4KzTebhpv1nzQ1LexK8Pps3U0ayiJUO61a8bq6Aas3iUbPQvgrb1FKrg=w712-h712-s-no?authuser=0",
       iconLong: "https://lh3.googleusercontent.com/pw/AIL4fc8eQsgwAv4vNdsedVmV6p9ESWC0_dJ0DY97ditGzH9iCDiLyu7affZjQLjhOWzMYPgwXkYNDp29HUBfhEF5y5JyfyJHcHpKFgbVz4i7dfSc3pmugaEtVLONOpwmbfe-trHo88QRpWMGECUCNvSBE9nLDw=w1764-h214-s-no?authuser=0",
       alt: "freeCodeCamp.org Icon",
       text: ""
