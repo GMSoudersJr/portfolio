@@ -2,17 +2,19 @@
   import { fade } from 'svelte/transition';
   import { tweened } from 'svelte/motion';
   import { cubicOut } from 'svelte/easing';
-  function handleClick() {
-    const navItems = document.querySelectorAll(".nav-right");
-    navItems.forEach((item) => {
-      item.classList.toggle("responsive");
-    })
-    console.log(navItems);
+  import { clickOutside } from '$lib/utils.js';
+  function toggleHamburger() {
+    const navbar = document.getElementById("navbarUl");
+    const hiddenNavItems = document.querySelectorAll(".nav-right");
+    navbar.classList.toggle("responsive");
+    hiddenNavItems.forEach((item) => {
+      item.classList.toggle("show");
+    });
 
-    open = !open;
-    $angle = open ? 0 : 45;
-    $pixels = open ? 0 : 11;
-    $disappear = open ? 1 : 0;
+    stackedHamburger = !stackedHamburger;
+    $angle = stackedHamburger ? 0 : 45;
+    $pixels = stackedHamburger ? 0 : 11;
+    $disappear = stackedHamburger ? 1 : 0;
   }
   const angle = tweened(0, {
     duration: 400,
@@ -27,15 +29,23 @@
     easing: cubicOut
   })
 
-  let open = true;
+  function handleClickOutside() {
+    if ( !stackedHamburger ) {
+      toggleHamburger();
+    }
+  }
+
+  let stackedHamburger = true;
 </script>
 
 <div
   class="hamburger-container"
   id="hamburger-container"
-  on:click={handleClick}
+  on:click={toggleHamburger}
   style="transform: rotate(-{$angle * 2}deg)"
   title="Hamburger"
+  use:clickOutside
+  on:click_outside={handleClickOutside}
 >
   <div
     class="hamburger-line"

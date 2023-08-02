@@ -29,7 +29,6 @@
     },
   ];
 
-  $: active = "";
 
   function handleClick(event) {
     let clicked = event.target.id
@@ -66,15 +65,14 @@
         }
       })
     }
-    console.log(window);
   })
 </script>
 
 <nav>
-  <ul>
+  <ul class="navbarUl" id="navbarUl">
      {#each navItems as navItem (navItem.id)}
      <li
-       class={`${active} ${navItem.class}`}
+       class={`${navItem.class}`}
        id={`li-${navItem.id}`}
      >
        <a
@@ -147,7 +145,7 @@
   }
   @media screen and (max-width: 64em) {
     ul {
-      background-color: yellow;
+      background-color: var(--baseGreen);
     }
   }
   @media screen and (max-width: 48em) {
@@ -157,19 +155,36 @@
   }
   @media screen and (max-width: 40em) {
     ul {
-      background-color: red;
+      width: 100vw;
+      background-color: #aaa;
     }
-    .nav-left {
-      float: middle;
-    }
+
     .nav-right {
       display: none;
     }
-    li.hamburger {
-      float: right;
-      margin-right: 14px;
+
+    ul .hamburger {
+      position: absolute;
+      top: 7px;
+      right: 14px;
       display: block;
     }
+
+    .navbarUl.responsive {
+      grid-template-columns: 1fr;
+    }
+
+    .nav-right.show, .nav-left{
+      display: block;
+      justify-self: center;
+      width: 100%;
+    }
+
+    .active > a {
+      background-color: var(--darkestPurple);
+      color: var(--lightest);
+    }
+
 
   }
 </style>
