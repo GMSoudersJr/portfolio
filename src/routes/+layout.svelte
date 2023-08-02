@@ -43,6 +43,13 @@
     --lighterGreen: #5DFFB1;
     --darkerGreen: #01FF85;
     --darkestGreen: #00FC83;
+
+    /* media-query breakpoints - using em to account for zooming on the page*/
+    --monitor: 80em; /*1280px*/
+    --laptop: 64em; /*1024px*/
+    --tablet: 48em; /*768px*/
+    --mobile: 40em; /*640px*/
+
   }
 
   :root {

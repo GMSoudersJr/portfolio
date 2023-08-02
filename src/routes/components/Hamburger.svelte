@@ -3,8 +3,13 @@
   import { tweened } from 'svelte/motion';
   import { cubicOut } from 'svelte/easing';
   function handleClick() {
-    open = !open;
+    const navItems = document.querySelectorAll(".nav-right");
+    navItems.forEach((item) => {
+      item.classList.toggle("responsive");
+    })
+    console.log(navItems);
 
+    open = !open;
     $angle = open ? 0 : 45;
     $pixels = open ? 0 : 11;
     $disappear = open ? 1 : 0;

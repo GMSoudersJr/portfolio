@@ -66,6 +66,7 @@
         }
       })
     }
+    console.log(window);
   })
 </script>
 
@@ -103,7 +104,7 @@
     background-color: var(--lightestBlue);
     overflow: hidden;
     display: grid;
-    grid-template-columns: 1fr repeat(3, fit-content(150px));
+    grid-template-columns: 1fr repeat(3, fit-content(160px));
     justify-items: end;
     align-items: center;
   }
@@ -136,7 +137,39 @@
   }
 
   ul .hamburger {
-    float: right;
     display: none;
+  }
+
+  @media screen and (max-width: 80em) {
+    ul {
+      background-color: green;
+    }
+  }
+  @media screen and (max-width: 64em) {
+    ul {
+      background-color: yellow;
+    }
+  }
+  @media screen and (max-width: 48em) {
+    ul {
+      background-color: orange;
+    }
+  }
+  @media screen and (max-width: 40em) {
+    ul {
+      background-color: red;
+    }
+    .nav-left {
+      float: middle;
+    }
+    .nav-right {
+      display: none;
+    }
+    li.hamburger {
+      float: right;
+      margin-right: 14px;
+      display: block;
+    }
+
   }
 </style>
