@@ -3,6 +3,11 @@
   import Navbar from './components/Navbar.svelte';
 </script>
 
+<svelte:head>
+  <title>
+    Gerald M. Souders Jr.
+  </title>
+</svelte:head>
 <Navbar />
 <slot />
 
@@ -20,8 +25,8 @@
     --darkerBlue: #1D59FF;
     --darkestBlue: #0748FB;
 
-    --contentText: var(--darkestPurple);
-    --sectionTitleFontSize: 28px;
+    --contentText: var(--darkestGallery);
+    --sectionTitleFontSize: 48px;
 
     /* turquoise-ish colors */
     --baseTurquoise: #36DFFF;
@@ -43,6 +48,13 @@
     --lighterGreen: #5DFFB1;
     --darkerGreen: #01FF85;
     --darkestGreen: #00FC83;
+
+    /* gallery colors */
+    --baseGallery: #14161A;
+    --lightestGallery: #8D8F93;
+    --lighterGallery: #4A4D53;
+    --darkerGallery: #0D121E;
+    --darkestGallery: #00040C;
 
     /* media-query breakpoints - using em to account for zooming on the page*/
     --monitor: 80em; /*1280px*/

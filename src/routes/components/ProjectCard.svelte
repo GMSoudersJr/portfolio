@@ -11,13 +11,13 @@
 <div class={projectCardClassName}>
   <img
     class="project-image"
-    src={project.img}
+    src={project.imgUrl}
     alt={project.alt}
   />
   <div class="details-area">
     <h1 id="project-name">{project.name}</h1>
     <p>{project.description}</p>
-    <h3>Stack:</h3>
+    <h3>{project.stack}</h3>
   </div>
 </div>
 
@@ -25,18 +25,19 @@
   .project-card-container {
     width: 70vw;
     aspect-ratio: 16 / 4;
+    box-shadow: 7px 10px 15px var(--lightestGallery), -7px 10px 15px var(--lightestGallery);
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: linear-gradient(80deg, var(--lightestPurple) 30%,
-    var(--darkestPurple) 30.1%);
+    background: linear-gradient(80deg, var(--backgroundWhite) 30%,
+    var(--baseGallery) 30.1%);
     border-radius: 5px;
   }
 
   .reverse {
     flex-direction: row-reverse;
-    background: linear-gradient(-80deg, var(--lightestPurple) 30%,
-    var(--darkestPurple) 30.1%);
+    background: linear-gradient(-80deg, var(--backgroundWhite) 30%,
+    var(--darkestGallery) 30.1%);
   }
 
   .details-area {
@@ -45,6 +46,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 1em;
   }
 
   .project-image {
@@ -60,7 +62,6 @@
   @media screen and (max-width: 64em) {
     .project-card-container {
       width: 100%;
-      border: 1px solid black;
       flex-direction: column;
       justify-content: space-between;
       background: black;
@@ -75,8 +76,9 @@
       background: orange;
     }
     .details-area {
+      width: 100%;
       align-items: start;
-      padding-left: 1em;
+      text-indent: 1em;
     }
   }
 

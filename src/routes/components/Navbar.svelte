@@ -150,13 +150,8 @@
   }
   @media screen and (max-width: 48em) {
     ul {
-      background-color: orange;
-    }
-  }
-  @media screen and (max-width: 40em) {
-    ul {
       width: 100vw;
-      background-color: #aaa;
+      background-color: orange;
     }
 
     .nav-right {
@@ -184,7 +179,11 @@
       background-color: var(--darkestPurple);
       color: var(--lightest);
     }
-
-
+  }
+  @media screen and (max-width: 40em) {
+    ul {
+      width: 100vw;
+      background-color: #aaa;
+    }
   }
 </style>

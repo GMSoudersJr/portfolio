@@ -1,20 +1,19 @@
 <script>
   import ProjectCard from './ProjectCard.svelte';
-  import AmericanMap from '/src/American Map.jpg';
   const projects = [
     {
-      name: "Educational Attainment in USA",
-      img: AmericanMap,
-      alt: "Map of educational attainment in USA",
-      description: "Talk some shit about the project",
-      stack: "probably be another object",
+      name: "Tribute Page for Dr. Mae Carol Jemison",
+      imgUrl:"https://lh3.googleusercontent.com/pw/AIL4fc81BhVad9-RedoeUSUpnel3r0KnZ-SReHUFCXK8jSQmFN7VkNBXEryQz2vUpO4eZ69cOSZ7EMqqhCmXfotsw4l17pcEFdL-0DJavyWccMRVtDqaMZYkbUYk05wfejC6QZe9sxoLaUQgZa-zbI4UEDv-EA=w1798-h944-s-no?authuser=0",
+      alt: "A tribute to Dr. Mae Jemison",
+      description: "A responsive page that was built for freeCodeCamp certification.",
+      stack: "HTML | CSS",
     },
     {
-      name: "Educational Attainment in USA 2",
-      img: AmericanMap,
-      alt: "Map of educational attainment in USA",
-      description: "Talk some shit about the project",
-      stack: "probably be another object",
+      name: "Global Surface Temperatures",
+      imgUrl: "https://lh3.googleusercontent.com/pw/AIL4fc8Ge_Mr_pl6GAXzeIb9SF03KNF9FM_T6uXo7bda6FLBxVQghyOrNNVbbqAjvwNbnY500gFUKlD3NFkeFRbHgQP2GHnbkohLUMijdHoQdTw5q1yMEBFF3yJ-B4fKAU8daj5nHC-hatVClT4pYOKV4LAteA=w1900-h777-s-no?authuser=0",
+      alt: "Global Surface Temperatures",
+      description: "Data visualization of global surface temperatures for freeCodeCamp data visualization certification",
+      stack: "D3.js | CSS",
     },
   ]
 </script>
@@ -33,7 +32,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 2rem;
+    row-gap: 3rem;
   }
 
   h2 {

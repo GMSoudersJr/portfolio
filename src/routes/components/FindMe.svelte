@@ -34,7 +34,6 @@
 
 <style>
   .findMe {
-    border: 1px solid black;
     height: 100vh;
     width: 40%;
     display: flex;
@@ -80,7 +79,7 @@
   }
   @media screen and (max-width: 64em) {
     .findMe {
-      width: 60%;
+      width: 90%;
       flex-direction: column;
       justify-content: center;
       row-gap: 1em;
@@ -89,8 +88,8 @@
     a {
       background-image: linear-gradient(var(--backgroundWhite),var(--backgroundWhite));
       padding: 20px 10px;
-      border-radius: 10px;
       width: 100%;
+      border-radius: 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;

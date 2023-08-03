@@ -48,7 +48,7 @@
     width: 90%;
   }
   h1, h2, h3 {
-    color: var(--darkestBlue);
+    color: var(--contentText);
   }
   h1 {
     font-size: 3em;

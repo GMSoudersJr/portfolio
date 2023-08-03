@@ -19,13 +19,35 @@
   }
 
   #profile-pic {
-    max-width: 18vw;
+    max-width: 14em;
     height: auto;
     aspect-ratio: 1/1;
     border: 2px solid var(--darkestGreen);
     border-radius: 30%;
     object-fit: cover;
     box-shadow: 0 4px 8px 0 var(--darkestBlue), 0 6px 20px 0 var(--lightestBlue);
+    box-sizing: border-box;
+  }
+
+  @media screen and (max-width: 80em) {
+    #profile-pic {
+      max-width: 12em;
+    }
+  }
+  @media screen and (max-width: 64em) {
+    #profile-pic {
+      max-width: 9em;
+    }
+  }
+  @media screen and (max-width: 48em) {
+    #profile-pic {
+      max-width: 7em;
+    }
+  }
+  @media screen and (max-width: 40em) {
+    #profile-pic {
+      max-width: 6em;
+    }
   }
 
 </style>

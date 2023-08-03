@@ -20,6 +20,7 @@
   .about-me-content {
     display: flex;
     flex-direction:reverse;
+    align-items: flex-start;
     gap: 1em;
   }
   h2 {
@@ -38,7 +39,9 @@
       width: 70%;
     }
     .about-me-content {
-      flex-direction: column
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5em;
     }
 
   }

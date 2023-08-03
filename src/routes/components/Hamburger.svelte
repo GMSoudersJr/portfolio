@@ -38,12 +38,13 @@
   let stackedHamburger = true;
 </script>
 
-<div
+<button
+  type=button
   class="hamburger-container"
   id="hamburger-container"
   on:click={toggleHamburger}
   style="transform: rotate(-{$angle * 2}deg)"
-  title="Hamburger"
+  title="Click to toggle the menu"
   use:clickOutside
   on:click_outside={handleClickOutside}
 >
@@ -62,9 +63,13 @@
     id="bottom"
     style="transform: translate(0, -{$pixels}px) rotate({$angle}deg);"
   ></div>
-</div>
+</button>
 
 <style>
+  button {
+    border: none;
+    background: none;
+  }
   .hamburger-container {
     display: inline-block;
     cursor: pointer;
@@ -75,7 +80,8 @@
   .hamburger-line {
     width: 35px;
     height: 5px;
-    background-color: var(--backgroundBlue);
+    border-radius:5px;
+    background-color: var(--darkestGallery);
     margin: 6px 0;
   }
 
