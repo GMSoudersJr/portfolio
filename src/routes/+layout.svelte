@@ -5,7 +5,7 @@
 
 <svelte:head>
   <title>
-    Gerald M. Souders Jr.
+    Gerald Souders
   </title>
 </svelte:head>
 <Navbar />
