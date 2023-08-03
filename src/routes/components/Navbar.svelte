@@ -22,7 +22,7 @@
       class: "nav-item nav-right"
     },
     {
-      name: "Find Me",
+      name: "Socials",
       id: "nav-findMe",
       href: "#findMe",
       class: "nav-item nav-right"

@@ -45,7 +45,6 @@
 <style>
   .intro-container {
     text-align: center;
-    border: 1px solid blue;
     width: 90%;
   }
   h1, h2, h3 {
