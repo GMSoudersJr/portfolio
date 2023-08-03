@@ -32,6 +32,7 @@
   .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 2rem;
   }
 
@@ -43,11 +44,17 @@
   section {
     /* Needs to be the same height as the nav ul element */
     scroll-margin-top: 56px;
+    min-height: 100vh;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 80em) {
     h2 {
       text-align: center
+    }
+  }
+  @media screen and (max-width: 64em) {
+    section {
+      width:90%;
     }
   }
 </style>

@@ -8,7 +8,7 @@
 
 <style>
   h1 {
-    font-size: 60px;
+    font-size: 10em;
     color: var(--darkestBlue);
   }
 </style>

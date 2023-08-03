@@ -3,7 +3,7 @@
 
 
   let innerWidth = 0;
-  $: displayIconLong = innerWidth <= 1200;
+  $: displayIconLong = innerWidth <= 64 * 16;
 </script>
 
 <svelte:window bind:innerWidth />
@@ -15,6 +15,7 @@
     referrerpolicy="no-referrer"
     id={social.id}
     class={social.class}
+    title={social.title}
   >
     {#if social.id === "email"}
       {displayIconLong ? social.textLong : social.text}
@@ -33,6 +34,7 @@
 
 <style>
   .findMe {
+    border: 1px solid black;
     height: 100vh;
     width: 40%;
     display: flex;
@@ -66,7 +68,17 @@
   }
 
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 80em) {
+    .findMe {
+      width: 70%;
+    }
+    .icon,
+    .email {
+      height: 40px;
+      font-size: 40px;
+    }
+  }
+  @media screen and (max-width: 64em) {
     .findMe {
       width: 60%;
       flex-direction: column;
@@ -99,5 +111,13 @@
       justify-content: center;
       align-items: center;
     }
+
+    .icon, .email {
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 48em) {
+  }
+  @media screen and (max-width: 40em) {
   }
 </style>

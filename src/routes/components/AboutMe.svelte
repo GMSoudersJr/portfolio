@@ -30,7 +30,7 @@
     /* Needs to be the same height as the nav ul element */
     scroll-margin-top: 56px;
   }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 64em) {
     h2 {
       text-align: center
     }

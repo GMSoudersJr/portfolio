@@ -38,15 +38,26 @@
       easing: bounceInOut
     }}
   >
-    Focused on the frontend
+    Making Things Work
   </h3>
 </div>
 
 <style>
   .intro-container {
     text-align: center;
+    border: 1px solid blue;
+    width: 90%;
   }
   h1, h2, h3 {
     color: var(--darkestBlue);
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 2em;
   }
 </style>

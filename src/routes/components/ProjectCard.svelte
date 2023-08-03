@@ -57,4 +57,27 @@
     margin: 2%;
   }
 
+  @media screen and (max-width: 64em) {
+    .project-card-container {
+      width: 100%;
+      border: 1px solid black;
+      flex-direction: column;
+      justify-content: space-between;
+      background: black;
+    }
+    .project-image {
+      aspect-ratio: 0;;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      object-fit: contain;
+      margin: 0;
+      background: orange;
+    }
+    .details-area {
+      align-items: start;
+      padding-left: 1em;
+    }
+  }
+
 </style>
