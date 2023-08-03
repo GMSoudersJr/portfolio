@@ -37,7 +37,7 @@
   .reverse {
     flex-direction: row-reverse;
     background: linear-gradient(-80deg, var(--backgroundWhite) 30%,
-    var(--darkestGallery) 30.1%);
+    var(--baseGallery) 30.1%);
   }
 
   .details-area {
@@ -64,16 +64,16 @@
       width: 100%;
       flex-direction: column;
       justify-content: space-between;
-      background: black;
+      background: var(--baseGallery);
     }
     .project-image {
       aspect-ratio: 0;;
-      width: 100%;
+      width: 99%;
       border: none;
       border-radius: 0;
       object-fit: contain;
-      margin: 0;
-      background: orange;
+      margin: 0.3em;
+      box-sizing: border-box;
     }
     .details-area {
       width: 100%;
