@@ -1,6 +1,7 @@
 <script>
   import { socialDetails } from '$lib/socials.js';
 
+
   let innerWidth = 0;
   $: displayIconLong = innerWidth <= 64 * 16;
 </script>
@@ -35,10 +36,9 @@
   .findMe {
     height: 100vh;
     width: 40%;
-    display: grid;
-    grid-template-row: repeat(6, 1fr);
-    grid-auto-flow: column;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -84,8 +84,9 @@
   @media screen and (max-width: 64em) {
     .findMe {
       width: 90%;
-      grid-auto-flow: row;
+      flex-direction: column;
       justify-content: center;
+      row-gap: 1em;
     }
 
     a {
@@ -122,4 +123,3 @@
   @media screen and (max-width: 40em) {
   }
 </style>
-
