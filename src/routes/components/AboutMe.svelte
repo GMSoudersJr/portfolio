@@ -26,6 +26,7 @@
   h2 {
     color: var(--contentText);
     font-size: var(--sectionTitleFontSize);
+    font-family: var(--sectionTitleFontFamily);
   }
   section {
     /* Needs to be the same height as the nav ul element */

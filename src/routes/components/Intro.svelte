@@ -49,6 +49,7 @@
   }
   h1, h2, h3 {
     color: var(--contentText);
+    font-family: var(--sectionTitleFontFamily);
   }
   h1 {
     font-size: 3em;

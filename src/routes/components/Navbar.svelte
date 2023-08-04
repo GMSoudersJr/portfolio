@@ -105,6 +105,7 @@
     grid-template-columns: 1fr repeat(3, fit-content(160px));
     justify-items: end;
     align-items: center;
+    font-family: var(--navbarFontFamily);
   }
 
   .nav-left {

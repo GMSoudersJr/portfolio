@@ -38,6 +38,7 @@
   h2 {
     color: var(--contentText);
     font-size: var(--sectionTitleFontSize);
+    font-family: var(--sectionTitleFontFamily);
   }
 
   section {

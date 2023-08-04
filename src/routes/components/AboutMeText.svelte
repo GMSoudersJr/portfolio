@@ -45,6 +45,7 @@
     color: var(--contentText);
     font-size: 1.2em;
     line-height: 1.5em;
+    font-family: var(--contentTextFontFamily);
   }
 
   #about-me-text {

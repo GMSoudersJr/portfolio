@@ -25,8 +25,12 @@
     --darkerBlue: #1D59FF;
     --darkestBlue: #0748FB;
 
+    /* Typography */
     --contentText: var(--darkestGallery);
     --sectionTitleFontSize: 48px;
+    --sectionTitleFontFamily: "IBM Plex Sans Condensed", sans-serif;
+    --navbarFontFamily: "IBM Plex Sans Condensed", sans-serif;
+    --contentTextFontFamily: "IBM Plex Sans", sans-serif;
 
     /* turquoise-ish colors */
     --baseTurquoise: #36DFFF;
