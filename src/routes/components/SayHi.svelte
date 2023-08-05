@@ -3,7 +3,7 @@
 </script>
 
 <h1 transition:fade|global={{ delay: 250, duration: 2500 }} >
-  ::hello::
+  Hi 👋
 </h1>
 
 <style>
