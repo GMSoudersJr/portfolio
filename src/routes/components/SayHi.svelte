@@ -3,13 +3,15 @@
 </script>
 
 <h1 transition:fade|global={{ delay: 250, duration: 2500 }} >
-  hello
+  ::hello::
 </h1>
 
 <style>
   h1 {
     font-size: 10em;
     color: var(--backgroundWhite);
-    font-family: var(contentTextFontFamily);
+    font-family: var(--emojiFontFamily);
+  }
+  @font-face {
   }
 </style>

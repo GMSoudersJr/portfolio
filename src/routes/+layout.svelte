@@ -39,6 +39,7 @@
     --sectionTitleFontFamily: "IBM Plex Sans Condensed", sans-serif;
     --navbarFontFamily: "IBM Plex Sans Condensed", sans-serif;
     --contentTextFontFamily: "IBM Plex Sans", sans-serif;
+    --emojiFontFamily: "Noto Color Emoji", "IBM Plex Sans Condensed", sans-serif;
 
     /* turquoise-ish colors */
     --baseTurquoise: #36DFFF;
