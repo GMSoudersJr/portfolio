@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import Hamburger from './Hamburger.svelte';
+  import { fade } from 'svelte/transition';
 
   const navItems = [
     {
@@ -68,7 +69,7 @@
   })
 </script>
 
-<nav>
+<nav transition:fade|global={{ delay: 5000, duration: 250 }}>
   <ul class="navbarUl" id="navbarUl">
      {#each navItems as navItem (navItem.id)}
      <li

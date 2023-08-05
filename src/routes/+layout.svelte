@@ -1,6 +1,13 @@
 <script>
   import HappyDay from './components/HappyDay.svelte';
   import Navbar from './components/Navbar.svelte';
+  import { onMount } from 'svelte';
+  onMount(async() => {
+    const delayedNavbar = new Navbar({
+      target: document.getElementById("navbar"),
+      intro: true,
+    });
+  })
 </script>
 
 <svelte:head>
@@ -8,7 +15,8 @@
     Gerald Souders
   </title>
 </svelte:head>
-<Navbar />
+<div id="navbar">
+</div>
 <slot />
 
 <style>
