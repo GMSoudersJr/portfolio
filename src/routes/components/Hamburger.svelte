@@ -81,7 +81,7 @@
     width: 35px;
     height: 5px;
     border-radius:5px;
-    background-color: var(--darkestGallery);
+    background-color: var(--hamburgerColor);
     margin: 6px 0;
   }
 

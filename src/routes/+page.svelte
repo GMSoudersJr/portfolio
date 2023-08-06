@@ -1,5 +1,5 @@
 <script>
-  import FindMe from './components/FindMe.svelte';
+  import Contact from './components/Contact.svelte';
   import Splash from './components/Splash.svelte';
   import AboutMe from './components/AboutMe.svelte';
   import Projects from './components/Projects.svelte';
@@ -10,7 +10,7 @@
   <Splash />
   <AboutMe />
   <Projects />
-  <FindMe />
+  <Contact />
 </div>
 
 <style>

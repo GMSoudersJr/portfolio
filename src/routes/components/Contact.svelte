@@ -6,7 +6,7 @@
 </script>
 
 <svelte:window bind:innerWidth />
-<section class="findMe" id="findMe">
+<section class="contact" id="contact">
   {#each socialDetails as social (social.id)}
   <a
     href={social.href}
@@ -32,7 +32,7 @@
 
 
 <style>
-  .findMe {
+  .contact {
     height: 100vh;
     width: 40%;
     display: grid;
@@ -72,7 +72,7 @@
 
 
   @media screen and (max-width: 80em) {
-    .findMe {
+    .contact {
       width: 70%;
     }
     .icon,
@@ -82,21 +82,22 @@
     }
   }
   @media screen and (max-width: 64em) {
-    .findMe {
+    .contact {
       width: 90%;
       grid-auto-flow: row;
       justify-content: center;
+      align-items: center;
     }
 
     a {
-      background-image: linear-gradient(var(--backgroundWhite),var(--backgroundWhite));
-      padding: 20px 10px;
       width: 100%;
+      background-image: linear-gradient(var(--backgroundWhite),var(--backgroundWhite));
+      padding: 40px 10px;
       border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      box-sizing: border-box;
+    }
+
+    .icon {
     }
 
     a:hover {
@@ -104,22 +105,27 @@
     }
 
     .email {
-      color: black;
+      color: var(--charcoalBlack);
+      font-family: var(--emojiFontFamily);
       font-weight: 575;
       font-size: 2.5em;
+    }
+
+    .icon, .email {
+      max-width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
 
-    .icon, .email {
-      max-width: 100%;
-    }
   }
   @media screen and (max-width: 48em) {
   }
   @media screen and (max-width: 40em) {
+    .contact {
+      width: 100%;
+    }
   }
 </style>
 

@@ -26,6 +26,19 @@
     --light: #D5CEA3;
     --lightest: #E5E5CB;
 
+    --navActive: #F9E795;
+    --navHover: #FEE715;
+    --mobileNavColor: #101820;
+    --tabletNavColor: #101820;
+    --laptopNavColor: #101820;
+    --monitorNavColor: #101820;
+    --charcoalBlack: #101820;
+
+    --hamburgerColor: #FEE715;
+    --lightBlueText: #ADD8E6;
+    --darkBlueText: #00008B;
+    --backgroundSplash: #101820;
+    --backgroundOffWhite: #FCF6F5;
     --backgroundWhite: #F1F1F1;
     --backgroundBlue: #4879FF;
     --lightestBlue: #9AB5FE;
@@ -78,7 +91,10 @@
   }
 
   :root {
-    background-image: linear-gradient(var(--backgroundWhite) 65%, var(--backgroundBlue));
+    /*
+    background-image: linear-gradient(var(--backgroundOffWhite) 65%, var(--backgroundBlue));
+     */
+    background-color: var(--backgroundOffWhite);
     overflow-x: hidden;
   }
 </style>

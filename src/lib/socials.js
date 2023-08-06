@@ -37,7 +37,7 @@
       alt: "",
       text: "@",
       title: "Send an e-mail",
-      textLong: "E-MAIL"
+      textLong: "📧-MAIL"
     },
     {
       id: "glitch",

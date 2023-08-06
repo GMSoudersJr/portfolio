@@ -25,7 +25,6 @@
   .project-card-container {
     width: 70vw;
     aspect-ratio: 16 / 4;
-    box-shadow: 7px 10px 15px var(--lightestGallery), -7px 10px 15px var(--lightestGallery);
     display: flex;
     flex-direction: row;
     align-items: center;

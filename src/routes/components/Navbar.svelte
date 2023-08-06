@@ -8,7 +8,8 @@
       name: "Home",
       id: "nav-home",
       href: "/",
-      class: "nav-item nav-left"
+      class: "nav-item nav-left",
+      emoji: "👋"
     },
     {
       name: "About Me",
@@ -23,9 +24,9 @@
       class: "nav-item nav-right"
     },
     {
-      name: "Socials",
-      id: "nav-findMe",
-      href: "#findMe",
+      name: "Contact",
+      id: "nav-contact",
+      href: "#contact",
       class: "nav-item nav-right"
     },
   ];
@@ -81,7 +82,11 @@
          on:click={handleClick}
          href={navItem.href}
        >
-         {navItem.name}
+         {#if navItem.name === 'Home'}
+           {navItem.emoji}
+         {:else}
+           {navItem.name}
+         {/if}
        </a>
      </li>
      {/each}
@@ -100,7 +105,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: var(--lightestBlue);
+    background-color: var(--backgroundSplash);
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr repeat(3, fit-content(160px));
@@ -126,14 +131,16 @@
     color: var(--backgroundWhite);
   }
 
+  #nav-home {
+    font-family: var(--emojiFontFamily);
+  }
+
   li a:hover {
-    background-color: var(--lightestTurquoise);
-    color: var(--darkestBlue);
+    color: var(--navHover);
   }
 
   .active > a {
-    background-color: var(--darkestBlue);
-    color: var(--lightest);
+    color: var(--navActive);
   }
 
   ul .hamburger {
@@ -142,18 +149,18 @@
 
   @media screen and (max-width: 80em) {
     ul {
-      background-color: green;
+      background-color: var(--monitorNavColor);
     }
   }
   @media screen and (max-width: 64em) {
     ul {
-      background-color: var(--baseGreen);
+      background-color: var(--laptopNavColor);
     }
   }
   @media screen and (max-width: 48em) {
     ul {
       width: 100vw;
-      background-color: orange;
+      background-color: var(--tabletNavColor);
     }
 
     .nav-right {
@@ -177,15 +184,11 @@
       width: 100%;
     }
 
-    .active > a {
-      background-color: var(--darkestPurple);
-      color: var(--lightest);
-    }
   }
   @media screen and (max-width: 40em) {
     ul {
       width: 100vw;
-      background-color: #aaa;
+      background-color: var(--mobileNavColor);
     }
   }
 </style>

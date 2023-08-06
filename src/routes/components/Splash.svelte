@@ -35,7 +35,7 @@
     height: 100vh;
     width: 100vw;
     margin: 0;
-    background-color: var(--baseGallery);
+    background-color: var(--backgroundSplash);
     display: flex;
     flex-direction: column;
     justify-content: center;
