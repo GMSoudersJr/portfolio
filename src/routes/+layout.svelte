@@ -15,8 +15,9 @@
     Gerald Souders
   </title>
 </svelte:head>
-<div id="navbar">
-</div>
+
+<div id="navbar"></div>
+
 <slot />
 
 <style>

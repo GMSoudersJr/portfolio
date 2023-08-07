@@ -31,22 +31,22 @@
 
   @media screen and (max-width: 80em) {
     #profile-pic {
-      max-width: 12em;
+      max-width: 13em;
     }
   }
   @media screen and (max-width: 64em) {
     #profile-pic {
-      max-width: 9em;
+      max-width: 12em;
     }
   }
   @media screen and (max-width: 48em) {
     #profile-pic {
-      max-width: 7em;
+      max-width: 11em;
     }
   }
   @media screen and (max-width: 40em) {
     #profile-pic {
-      max-width: 6em;
+      max-width: 10em;
     }
   }
 
