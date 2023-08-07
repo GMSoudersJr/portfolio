@@ -1,6 +1,7 @@
 <script>
   import HappyDay from './components/HappyDay.svelte';
   import Navbar from './components/Navbar.svelte';
+  import Footer from './components/Footer.svelte';
   import { onMount } from 'svelte';
   onMount(async() => {
     const delayedNavbar = new Navbar({
@@ -19,6 +20,8 @@
 <div id="navbar"></div>
 
 <slot />
+
+<Footer />
 
 <style>
   :root {
@@ -50,6 +53,8 @@
     /* Typography */
     --contentText: var(--darkestGallery);
     --sectionTitleFontSize: 48px;
+    --sectionTitleLineHeight: 52.8px;
+    --sectionTitleLetterSpacing: -0.03em;
     --sectionTitleFontFamily: "IBM Plex Sans Condensed", sans-serif;
     --navbarFontFamily: "IBM Plex Sans Condensed", sans-serif;
     --contentTextFontFamily: "IBM Plex Sans", sans-serif;

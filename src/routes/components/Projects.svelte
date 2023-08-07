@@ -1,5 +1,7 @@
 <script>
   import ProjectCard from './ProjectCard.svelte';
+  import { projects } from '$lib/projects.js';
+  /*
   const projects = [
     {
       name: "Tribute Page for Dr. Mae Carol Jemison",
@@ -16,10 +18,13 @@
       stack: "D3.js | CSS",
     },
   ]
+   */
 </script>
 
 <section class="projects" id="projects">
-  <h2>Projects</h2>
+  <h2 class="section-title">
+    Projects
+  </h2>
   <div class="container">
     {#each projects as project, index }
       <ProjectCard {project} {index}/>
@@ -35,10 +40,12 @@
     row-gap: 3rem;
   }
 
-  h2 {
+  .section-title {
     color: var(--contentText);
     font-size: var(--sectionTitleFontSize);
     font-family: var(--sectionTitleFontFamily);
+    line-height: var(--sectionTitleLineHeight);
+    letter-spacing: var(--sectionTitleLetterSpacing);
   }
 
   section {
@@ -48,7 +55,7 @@
   }
 
   @media screen and (max-width: 80em) {
-    h2 {
+    .section-title {
       text-align: center
     }
   }

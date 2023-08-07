@@ -14,37 +14,35 @@
 
 </script>
 
-<div
-  class="intro-container"
-  transition:fade|global={{ delay: 0, duration: 300 }}
->
-  <h1 transition:typewriter|global>
+<div class="intro-container">
+  <h1 transition:typewriter|global={{ delay: 400 }}>
    I'm Gerald M. Souders Jr.
   </h1>
   <h2 transition:typewriter|global={{ delay: 3000 }}>
     A Svelte Developer
   </h2>
-  <h3 transition:typewriter|global={{ delay: 5000 }}>
+  <h2 transition:typewriter|global={{ delay: 5000 }}>
     Making Things Work
-  </h3>
+  </h2>
 </div>
 
 <style>
   .intro-container {
     text-align: center;
-    width: 90%;
+    max-width: 600px;
   }
-  h1, h2, h3 {
+  h1, h2 {
     color: var(--backgroundWhite);
     font-family: var(--sectionTitleFontFamily);
   }
   h1 {
-    font-size: 3em;
+    font-size: 48px;
+    line-height: 52.8px;
+    letter-spacing: -0.03em;
   }
   h2 {
-    font-size: 2.5em;
-  }
-  h3 {
-    font-size: 2em;
+    font-size: 40px;
+    line-height: 45.2px;
+    letter-spacing: -0.025em;
   }
 </style>

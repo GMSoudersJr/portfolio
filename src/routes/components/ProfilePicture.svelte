@@ -22,10 +22,8 @@
     max-width: 14em;
     height: auto;
     aspect-ratio: 1/1;
-    border: 2px solid var(--darkestGreen);
-    border-radius: 30%;
+    border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 8px 0 var(--darkestBlue), 0 6px 20px 0 var(--lightestBlue);
     box-sizing: border-box;
   }
 

@@ -42,10 +42,12 @@
 
 <style>
   p {
+    max-width: 600px;
     color: var(--contentText);
-    font-size: 1.2em;
-    line-height: 1.5em;
+    font-size: 18px;
+    line-height: 27px;
     font-family: var(--contentTextFontFamily);
+    text-wrap: balance;
   }
 
   #about-me-text {
@@ -58,7 +60,7 @@
     margin-top: 0;
   }
 
-  @media screen and (max-width: 64em) {
+  @media screen and (max-width: 80em) {
     p:first-child {
       margin-top: revert;
     }

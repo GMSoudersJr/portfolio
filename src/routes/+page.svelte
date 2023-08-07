@@ -3,6 +3,7 @@
   import Splash from './components/Splash.svelte';
   import AboutMe from './components/AboutMe.svelte';
   import Projects from './components/Projects.svelte';
+  import Footer from './components/Footer.svelte';
 
 </script>
 

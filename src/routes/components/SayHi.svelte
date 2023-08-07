@@ -21,7 +21,9 @@
   }
 
   h1 {
-    font-size: 10em;
+    font-size: 160px;
+    line-height: 76px;
+    letter-spacing: -3.2px;
     color: var(--backgroundWhite);
     font-family: var(--emojiFontFamily);
     text-align: center;
@@ -32,7 +34,8 @@
       display: block;
     }
     h1 {
-      font-size: 6em;
+      font-size: 96px;
+      letter-spacing: -0.96px;
     }
   }
 </style>

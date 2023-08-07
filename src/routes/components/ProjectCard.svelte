@@ -11,7 +11,7 @@
 <div class={projectCardClassName}>
   <img
     class="project-image"
-    src={project.imgUrl}
+    src={project.imageUrl}
     alt={project.alt}
   />
   <div class="details-area">
@@ -45,6 +45,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     padding: 0 1em;
   }
 

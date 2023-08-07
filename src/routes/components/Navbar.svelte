@@ -70,7 +70,9 @@
   })
 </script>
 
-<nav transition:fade|global={{ delay: 5000, duration: 250 }}>
+<nav
+  transition:fade|global={{ delay: 4500, duration: 4500 }}
+>
   <ul class="navbarUl" id="navbarUl">
      {#each navItems as navItem (navItem.id)}
      <li
