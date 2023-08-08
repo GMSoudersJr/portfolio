@@ -86,7 +86,6 @@
       border-radius: 0;
       object-fit: contain;
       margin: 0.3em;
-      box-sizing: border-box;
     }
     .details-area {
       width: 90%;
