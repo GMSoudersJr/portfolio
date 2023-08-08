@@ -54,7 +54,7 @@
   }
   @media screen and (max-width: 40em) {
     .about {
-      width: 95%;
+      min-width: 95%;
     }
   }
 </style>
