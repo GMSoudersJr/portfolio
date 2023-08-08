@@ -15,9 +15,9 @@
     alt={project.alt}
   />
   <div class="details-area">
-    <h1 class="project-name">{project.name}</h1>
-    <p class="project-description">{project.description}</p>
-    <h3 class="project-stack">{project.stack}</h3>
+    <h1 id="project-name">{project.name}</h1>
+    <p>{project.description}</p>
+    <h3>{project.stack}</h3>
   </div>
 </div>
 
@@ -47,7 +47,6 @@
     align-items: center;
     justify-content: space-around;
     padding: 0 1em;
-    text-align: center;
   }
 
   .project-image {
@@ -60,21 +59,9 @@
     margin: 2%;
   }
 
-  .project-name, .project-stack {
-    font-family: var(--projectNameAndStackFontFamily);
-    letter-spacing: var(--projectNameAndStackLetterSpacing);
-  }
-
-  .project-description {
-    font-family: var(--projectDescriptionFontFamily);
-    line-height: 20px;
-    max-width: 600px;
-  }
-
   @media screen and (max-width: 64em) {
     .project-card-container {
       width: 100%;
-      height: 100%;
       flex-direction: column;
       justify-content: space-between;
       background: var(--baseGallery);
@@ -89,10 +76,11 @@
       box-sizing: border-box;
     }
     .details-area {
-      width: 90%;
-      align-items: center;
+      width: 100%;
+      align-items: start;
+      text-indent: 1em;
     }
-
   }
 
 </style>
+

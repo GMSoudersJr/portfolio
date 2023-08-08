@@ -34,9 +34,10 @@
 
 <style>
   .container {
-    display: grid;
-    grid: auto-flow;
-    gap: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
   }
 
   .section-title {
@@ -59,20 +60,9 @@
     }
   }
   @media screen and (max-width: 64em) {
-    .container {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2em;
-    }
-    section {
-      width:90%;
-    }
-  }
-  @media screen and (max-width: 40em) {
-    .container {
-      grid-template-columns: 1fr;
-    }
     section {
       width:90%;
     }
   }
 </style>
+
