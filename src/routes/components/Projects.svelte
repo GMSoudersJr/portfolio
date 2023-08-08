@@ -33,9 +33,17 @@
 </section>
 
 <style>
+  section {
+    /* Needs to be the same height as the nav ul element */
+    width: 60%;
+    scroll-margin-top: 56px;
+    min-height: 100vh;
+  }
+
   .container {
+    width: 100%;
     display: grid;
-    grid: auto-flow;
+    grid: auto-flow / 1fr;
     gap: 4em;
   }
 
@@ -45,12 +53,6 @@
     font-family: var(--sectionTitleFontFamily);
     line-height: var(--sectionTitleLineHeight);
     letter-spacing: var(--sectionTitleLetterSpacing);
-  }
-
-  section {
-    /* Needs to be the same height as the nav ul element */
-    scroll-margin-top: 56px;
-    min-height: 100vh;
   }
 
   @media screen and (max-width: 80em) {

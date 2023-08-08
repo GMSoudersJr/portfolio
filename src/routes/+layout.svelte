@@ -56,13 +56,15 @@
     --sectionTitleLineHeight: 52.8px;
     --sectionTitleLetterSpacing: -0.03em;
     --sectionTitleFontFamily: "IBM Plex Sans Condensed", sans-serif;
-    --projectNameAndStackLetterSpacing: -0.03em;
+    --projectNameAndStackLetterSpacing: -0.015em;
     --projectNameAndStackFontFamily: "IBM Plex Sans Condensed", sans-serif;
     --navbarFontFamily: "IBM Plex Sans Condensed", sans-serif;
     --projectDescriptionFontFamily: "IBM Plex Sans", sans-serif;
     --contentTextFontFamily: "IBM Plex Sans", sans-serif;
     --emojiFontFamily: "Noto Color Emoji", "IBM Plex Sans Condensed", sans-serif;
 
+    --projectImageBackground: #FFF6E0;
+    --projectDetailsBackground: #272829;
     /* turquoise-ish colors */
     --baseTurquoise: #36DFFF;
     --lightestTurquoise: #90EDFE;

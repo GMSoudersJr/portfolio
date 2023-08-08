@@ -15,7 +15,7 @@
 
 <style>
   .about {
-    max-width: calc(600px + 14em + 3em);
+    max-width: 60%;
     min-height: 100vh;
     font-size: 1.2em;
   }

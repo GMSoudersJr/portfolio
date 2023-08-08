@@ -25,7 +25,7 @@ export const projects = [
     imageUrl: "https://lh3.googleusercontent.com/pw/AIL4fc_hDUW7rUqeeT5xwladIT_qSgKLQij7ZOIU3ldzrg28iTqD7s92M3l0vFnZsvgWu5KgCqUqW7HopzGJ2V6nQ4t8T3pKRXkkb5paPhIbXXAsR07KTuobYZYzypAoTr-DJpKfQSDv0RCwR7T72DoVP3G4ZQ=w1793-h944-s-no?authuser=0",
     projectUrl: "",
     stack: "HTML | CSS",
-    description: "A survey form for your trip to Busan.",
+    description: "Documentation.  Love me some documentation.",
   },
   {
     name: "Global Surface Temperatures",
