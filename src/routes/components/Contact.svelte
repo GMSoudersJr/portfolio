@@ -7,34 +7,56 @@
 
 <svelte:window bind:innerWidth />
 <section class="contact" id="contact">
+  <h1 class="section-title">
+    Contact
+  </h1>
+  <div class="contact-container">
   {#each socialDetails as social (social.id)}
-  <a
-    href={social.href}
-    target="_blank"
-    referrerpolicy="no-referrer"
-    id={social.id}
-    class={social.class}
-    title={social.title}
-  >
-    {#if social.id === "email"}
-      {displayIconLong ? social.textLong : social.text}
-    {:else}
-      <img
-        id={`${social.id}-icon`}
-        class="icon"
-        src={displayIconLong ? social.iconLong: social.icon}
-        alt={social.alt}
-      />
-    {/if}
-  </a>
+    <a
+      href={social.href}
+      target="_blank"
+      referrerpolicy="no-referrer"
+      id={social.id}
+      class={social.class}
+      title={social.title}
+    >
+      {#if social.id === "email"}
+        {displayIconLong ? social.textLong : social.text}
+      {:else}
+        <img
+          id={`${social.id}-icon`}
+          class="icon"
+          src={displayIconLong ? social.iconLong: social.icon}
+          alt={social.alt}
+        />
+      {/if}
+    </a>
   {/each}
+  </div>
 </section>
 
 
 <style>
-  .contact {
+  section {
+    display: grid;
     height: 100vh;
-    width: 40%;
+    grid: repeat(2, 1fr) / 1fr;
+    width: 60%;
+    scroll-margin-top: 56px;
+  }
+
+  .section-title {
+    color: var(--contentText);
+    font-size: var(--sectionTitleFontSize);
+    font-family: var(--sectionTitleFontFamily);
+    line-height: var(--sectionTitleLineHeight);
+    letter-spacing: var(--sectionTitleLetterSpacing);
+    align-self: start;
+  }
+
+  .contact-container {
+    width: 100%;
+    align-self: start;
     display: grid;
     grid-template-row: repeat(6, 1fr);
     grid-auto-flow: column;
@@ -72,7 +94,7 @@
 
 
   @media screen and (max-width: 80em) {
-    .contact {
+    .contact-container {
       width: 70%;
     }
     .icon,
@@ -82,11 +104,14 @@
     }
   }
   @media screen and (max-width: 64em) {
-    .contact {
-      width: 90%;
+    section {
+      text-align: center;
+    }
+    .contact-container {
+      width: 100%;
+      grid: auto repeat(6, 1fr) / 1fr;
       grid-auto-flow: row;
-      justify-content: center;
-      align-items: center;
+      gap: 2em;
     }
 
     a {
@@ -123,7 +148,7 @@
   @media screen and (max-width: 48em) {
   }
   @media screen and (max-width: 40em) {
-    .contact {
+    .contact-container {
       width: 100%;
     }
   }
