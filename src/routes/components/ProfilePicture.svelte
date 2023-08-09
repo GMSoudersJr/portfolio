@@ -21,7 +21,7 @@
   #profile-pic {
     max-width: 14em;
     height: auto;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
     box-sizing: border-box;

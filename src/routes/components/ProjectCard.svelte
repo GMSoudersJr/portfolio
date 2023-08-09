@@ -38,7 +38,7 @@
 
   .project-image {
     width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
     box-sizing: border-box;
