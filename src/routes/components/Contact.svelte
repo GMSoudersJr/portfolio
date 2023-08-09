@@ -10,7 +10,6 @@
   <h1 class="section-title">
     Contact
   </h1>
-  <div class="contact-container">
   {#each socialDetails as social (social.id)}
     <a
       href={social.href}
@@ -32,20 +31,44 @@
       {/if}
     </a>
   {/each}
-  </div>
 </section>
 
 
 <style>
   section {
-    display: grid;
-    height: 100vh;
-    grid: repeat(2, 1fr) / 1fr;
-    width: 60%;
     scroll-margin-top: 56px;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 60%;
+    display: grid;
+    grid:
+      "title title title title title title"
+      "linkedIn github codepen email glitch freeCodeCamp"
+      ". . . . . .";
+    justify-content: space-between;
+    overflow: hidden;
+  }
+   #linkedIn {
+    grid-area: linkedIn;
+  }
+   #github {
+    grid-area: github;
+  }
+   #codepen {
+    grid-area: codepen;
+  }
+   #email {
+    grid-area: email;
+  }
+   #glitch {
+    grid-area: glitch;
+  }
+  #freeCodeCamp {
+    grid-area: freeCodeCamp;
   }
 
   .section-title {
+    grid-area: title;
     color: var(--contentText);
     font-size: var(--sectionTitleFontSize);
     font-family: var(--sectionTitleFontFamily);
@@ -54,15 +77,15 @@
     align-self: start;
   }
 
+  /*
   .contact-container {
     width: 100%;
-    align-self: start;
     display: grid;
     grid-template-row: repeat(6, 1fr);
     grid-auto-flow: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
   }
+   */
 
   a {
     text-decoration: none;
@@ -105,14 +128,27 @@
   }
   @media screen and (max-width: 64em) {
     section {
+      width: 100%;
+      align-self: center;
+      justify-content: center;
       text-align: center;
+      grid:
+        "title"
+        "linkedIn"
+        "github"
+        "codepen"
+        "email"
+        "glitch"
+        "freeCodeCamp";
     }
+    /*
     .contact-container {
       width: 100%;
       grid: auto repeat(6, 1fr) / 1fr;
       grid-auto-flow: row;
       gap: 2em;
     }
+     */
 
     a {
       width: 100%;
