@@ -44,6 +44,8 @@
     box-sizing: border-box;
     /* git rid of padding to have them overlap */
     padding: 12px;
+    align-self: center;
+    justify-self: center;
   }
 
   .details-area {
@@ -84,7 +86,6 @@
   @media screen and (max-width: 64em) {
     .project-card-container {
       width: 100%;
-      height: 100%;
       grid: repeat(2, 1fr) / auto;
       background: var(--baseGallery);
     }
@@ -104,9 +105,7 @@
       box-sizing: border-box;
     }
     .details-area {
-      width: 90%;
     }
-
   }
 
 </style>
