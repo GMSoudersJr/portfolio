@@ -7,6 +7,7 @@
 
 <style>
   footer {
+    box-sizing: border-box;
     width: 100%;
     text-align: center;
     border-top: 0.5px dotted var(--backgroundSplash);

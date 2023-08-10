@@ -19,7 +19,7 @@
     /* Needs to be the same height as the nav ul element */
     scroll-margin-top: 56px;
     width: 60%;
-    height: 250vh;
+    height: 100vh;
   }
 
   .section-title {
@@ -32,7 +32,7 @@
 
   .container {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 112px);
     display: grid;
     grid: repeat(5, 1fr) / 1fr;
     gap: 4em;
