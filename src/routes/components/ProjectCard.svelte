@@ -56,6 +56,7 @@
     text-align: center;
     justify-self: center;
     align-self: stretch;
+    justify-content: center;
   }
 
   .reverse {

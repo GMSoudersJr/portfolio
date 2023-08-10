@@ -19,16 +19,7 @@
     /* Needs to be the same height as the nav ul element */
     scroll-margin-top: 56px;
     width: 60%;
-    height: 100vh;
-    overflow: hidden;
-  }
-
-  .container {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid: auto-flow / 1fr;
-    gap: 4em;
+    height: 500vh;
   }
 
   .section-title {
@@ -37,6 +28,14 @@
     font-family: var(--sectionTitleFontFamily);
     line-height: var(--sectionTitleLineHeight);
     letter-spacing: var(--sectionTitleLetterSpacing);
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid: repeat(5, 1fr) / 1fr;
+    gap: 4em;
   }
 
   @media screen and (max-width: 80em) {
