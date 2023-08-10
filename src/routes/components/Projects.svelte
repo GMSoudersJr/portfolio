@@ -19,7 +19,7 @@
     /* Needs to be the same height as the nav ul element */
     scroll-margin-top: 56px;
     width: 60%;
-    height: 100vh;
+    height: 250vh;
   }
 
   .section-title {
@@ -36,6 +36,7 @@
     display: grid;
     grid: repeat(5, 1fr) / 1fr;
     gap: 4em;
+    box-sizing: border-box;
     overflow: hidden;
   }
 
@@ -56,12 +57,16 @@
       gap: 2em;
     }
   }
+
   @media screen and (max-width: 40em) {
-    .container {
-      grid-template-columns: 1fr;
-    }
     section {
       width:90%;
+      height: 300vh;
+      overflow: hidden;
+    }
+
+    .container {
+      grid-template-columns: 1fr;
     }
   }
 </style>
