@@ -62,7 +62,7 @@
   @media screen and (max-width: 40em) {
     section {
       width:90%;
-      height: calc(300vh - 112px);
+      height: 300vh;
     }
 
     .container {
