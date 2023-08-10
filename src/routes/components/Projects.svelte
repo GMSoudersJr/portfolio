@@ -61,7 +61,7 @@
   @media screen and (max-width: 40em) {
     section {
       width:90%;
-      height: 300vh;
+      height: calc(300vh - 112px);
       overflow: hidden;
     }
 
