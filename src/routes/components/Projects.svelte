@@ -63,11 +63,11 @@
     section {
       width:90%;
       height: calc(300vh - 112px);
-      overflow: hidden;
     }
 
     .container {
       grid-template-columns: 1fr;
+      overflow: hidden;
     }
   }
 </style>
