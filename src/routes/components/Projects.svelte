@@ -19,8 +19,7 @@
     /* Needs to be the same height as the nav ul element */
     scroll-margin-top: 56px;
     width: 60%;
-    height: 250vh;
-    border: 5px solid red;
+    height: 150vh;
     overflow: hidden;
   }
 
