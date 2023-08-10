@@ -87,16 +87,14 @@
   @media screen and (max-width: 64em) {
     .project-card-container {
       width: 100%;
-      grid: repeat(2, 1fr) / auto;
+      grid: repeat(2, 1fr) / 1fr;
       background: var(--baseGallery);
-    }
-    .reverse {
-      grid: repeat(2, 1fr) / auto;
     }
     .reverse .project-image {
       grid-row: 1;
       grid-column: 1;
     }
+
     .project-image {
       width: 100%;
       padding: 5px;
@@ -104,8 +102,6 @@
       border-radius: 0;
       object-fit: cover;
       box-sizing: border-box;
-    }
-    .details-area {
     }
   }
 
