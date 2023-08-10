@@ -46,7 +46,6 @@
       "linkedIn github codepen email glitch freeCodeCamp"
       ". . . . . .";
     justify-content: space-between;
-    overflow: hidden;
   }
    #linkedIn {
     grid-area: linkedIn;
