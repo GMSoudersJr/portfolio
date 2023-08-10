@@ -14,6 +14,11 @@
 </section>
 
 <style>
+  section {
+    /* Needs to be the same height as the nav ul element */
+    scroll-margin-top: 56px;
+    min-height: 100vh;
+  }
   .about {
     max-width: 60%;
     min-height: 100vh;
@@ -32,11 +37,6 @@
     font-family: var(--sectionTitleFontFamily);
     line-height: var(--sectionTitleLineHeight);
     letter-spacing: var(--sectionTitleLetterSpacing);
-  }
-  section {
-    /* Needs to be the same height as the nav ul element */
-    scroll-margin-top: 56px;
-    min-height: 100vh;
   }
   @media screen and (max-width: 80em) {
     .section-title {
