@@ -20,6 +20,7 @@
     scroll-margin-top: 56px;
     width: 60%;
     height: 100vh;
+    box-sizing: border-box;
   }
 
   .section-title {
