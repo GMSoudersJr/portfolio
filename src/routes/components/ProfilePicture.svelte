@@ -19,9 +19,8 @@
   }
 
   #profile-pic {
-    max-width: 14em;
-    height: auto;
-    aspect-ratio: 1 / 1;
+    width: 14em;
+    height: 14em;
     border-radius: 50%;
     object-fit: cover;
     box-sizing: border-box;
@@ -29,22 +28,26 @@
 
   @media screen and (max-width: 80em) {
     #profile-pic {
-      max-width: 13em;
+      width: 13em;
+      height: 13em;
     }
   }
   @media screen and (max-width: 64em) {
     #profile-pic {
-      max-width: 12em;
+      width: 12em;
+      height: 12em;
     }
   }
   @media screen and (max-width: 48em) {
     #profile-pic {
-      max-width: 11em;
+      width: 11em;
+      height: 11em;
     }
   }
   @media screen and (max-width: 40em) {
     #profile-pic {
-      max-width: 10em;
+      width: 10em;
+      height: 10em;
     }
   }
 
