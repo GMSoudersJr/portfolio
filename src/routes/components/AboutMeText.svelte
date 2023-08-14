@@ -4,11 +4,12 @@
 
 <div id="about-me-text">
   <p>
-    I’ve been teaching and inspiring people in South Korea for more than a
-    decade and a half. But I never stopped being a student myself. I always
-    wanted to know more about the magic behind the web. So I decided to dive
-    into the world of tech and code. And boy, was it deep! The more I explored,
-    the more I realized how much there is to learn. And I love it! 😍
+    For over 15 years, I have been teaching and inspiring people in South
+    Korea. But I have also been an avid learner myself. I have always been
+    interested in the web and its opportunities. So I decided to plunge into
+    the world of tech and code. And it has been a wonderful experience! The
+    more I experimented, the more I realized how much there is to create. And I
+    relish every aspect of it!
   </p>
   <p>
     My coding journey began on freeCodeCamp.org, where I acquired the essential
@@ -18,12 +19,12 @@
     encountered Python, and used it to develop a report card comment generator,
     using my previous comments as data. I also experimented with Django and
     React Native, and developed a prototype of a delivery-sharing app. However,
-    the app did not receive the funding we expected. Then I explored linux,
-    bash, vim, tmux, config files, and terminal commands. I purchased a
-    raspberry pi, and learned how to work on a remote system. Then I got an
-    opportunity to work for a start-up that had funding. I inherited a code
-    base and had to re-learn React.js, but I successfully implemented all the
-    features they requested and eliminated a multitude of the bugs.
+    the app did not receive the funding we expected. Then I purchased a
+    raspberry pi, and learned how to work on a remote system. From there, I
+    explored linux, bash, vim, tmux, config files, and terminal commands. Then
+    I got an opportunity to work for a start-up that had funding. I inherited
+    a code base and had to re-learn React.js, but I successfully implemented
+    all the features they requested and eliminated a multitude of the bugs.
   </p>
   <p>
     I code to automate tasks and save time for myself and others. I look for
@@ -34,9 +35,11 @@
     workflows. 🤝
   </p>
   <p>
-    Besides sitting in front of a computer, you can find me running around my
-    neighborhood or grinding at my local driving range.  I have recently fallen back in
-    love with running and found a new passion in golf.
+    My computer is my primary tool for coding, but I also have other interests
+    that keep me in shape and entertained. I have fun running around my
+    neighborhood and playing golf at the closest driving range. Running is a
+    hobby that I have rediscovered, and golf is a passion that I have newly
+    developed.
   </p>
 </div>
 
