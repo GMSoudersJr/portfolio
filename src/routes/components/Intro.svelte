@@ -31,7 +31,7 @@
     text-align: center;
     max-width: 600px;
     box-sizing: border-box;
-    padding: 0 3px;
+    padding: 0 12px;
   }
   h1, h2 {
     color: var(--backgroundWhite);
