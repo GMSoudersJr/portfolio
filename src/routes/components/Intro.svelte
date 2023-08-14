@@ -31,7 +31,6 @@
     text-align: center;
     max-width: 600px;
     box-sizing: border-box;
-    padding: 0 12px;
   }
   h1, h2 {
     color: var(--backgroundWhite);
@@ -46,5 +45,11 @@
     font-size: 40px;
     line-height: 45.2px;
     letter-spacing: -0.025em;
+  }
+
+  @media screen and (max-width: 40em) {
+    .intro-container {
+      padding: 0 12px;
+    }
   }
 </style>
