@@ -1,8 +1,11 @@
 <script>
+  import { thisYear } from '$lib/utils.js';
+
+  const copyrightString = `©${thisYear()} by Gerald M. Souders Jr.`
 </script>
 
 <footer>
-  <p>Written by: Gerald M. Souders Jr.</p>
+  <p>{copyrightString}</p>
 </footer>
 
 <style>

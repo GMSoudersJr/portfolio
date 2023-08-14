@@ -15,6 +15,12 @@ export const dayOfTheWeek = () => {
 	return dayNames[dayAsANumber];
 }
 
+export const thisYear = () => {
+	const date = new Date(Date.now());
+
+	return date.getFullYear();
+}
+
 export const localeDateString = () => {
 	const date = new Date(Date.now());
 
