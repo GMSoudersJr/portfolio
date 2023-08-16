@@ -44,7 +44,7 @@
 </div>
 
 <style>
-  p, ul li {
+  p {
     max-width: 600px;
     color: var(--contentText);
     font-size: 18px;
@@ -53,9 +53,6 @@
     text-wrap: balance;
   }
 
-  ul {
-    margin-top: 0;
-  }
 
   #about-me-text {
     display: flex;
