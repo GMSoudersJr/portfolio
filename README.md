@@ -1,7 +1,8 @@
 # Gerald's Portfolio Page 👋
 
-A web page built using HTML | CSS | Javascript | Svelte 
+A web page built using Svelte | HTML | Javascript | CSS 
 
-### [Look at it live](https://www.geraldsouders.com)
+### Check it out live
+[geraldsouders.com](http://geraldsouders.com)
 
 Any comments / criticisms would be gladly appreciated
