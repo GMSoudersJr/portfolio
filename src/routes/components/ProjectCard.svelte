@@ -59,7 +59,6 @@
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-
   }
 
   .details-area {
@@ -82,7 +81,7 @@
     var(--projectDetailsBackground) 30.1%);
   }
 
-  .reverse .project-image {
+  .reverse .project-link {
     grid-row: 1;
     grid-column: 2;
   }
