@@ -9,11 +9,18 @@
 </script>
 
 <div class={projectCardClassName}>
-  <img
-    class="project-image"
-    src={project.imageUrl}
-    alt={project.alt}
-  />
+  <a
+    class="project-link"
+    href={project.projectUrl}
+    target="_blank"
+    referrerpolicy="no-referrer"
+  >
+    <img
+      class="project-image"
+      src={project.imageUrl}
+      alt={project.alt}
+    />
+  </a> 
   <div class="details-area">
     <h1 class="project-name">{project.name}</h1>
     <p class="project-description">{project.description}</p>
@@ -46,6 +53,13 @@
     padding: 12px;
     align-self: center;
     justify-self: center;
+  }
+
+  .project-link {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+
   }
 
   .details-area {

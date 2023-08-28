@@ -5,8 +5,8 @@
 <div id="about-me-text">
   <p>
     For over 15 years, I have been teaching and inspiring people in South
-    Korea. But I have also been an avid learner myself. I have always been
-    interested in the web and its opportunities. So I decided to plunge into
+    Korea, but I have also been an avid learner myself. I have always been
+    interested in the web and its opportunities, so I decided to plunge into
     the world of tech and code. And it has been a wonderful experience! The
     more I experimented, the more I realized how much there is to create. And I
     relish every aspect of it!
