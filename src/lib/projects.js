@@ -32,13 +32,40 @@ export const projects = [
     description: "Documentation.  Love me some documentation.",
   },
   {
+    name: "Random Name Picker",
+    imageUrl: "https://lh3.googleusercontent.com/pw/AIL4fc8i-LKtpWgRTVpE5BXoYqhLRxhSZQBwTfIK9pb0Z0cdKN1y9Ga7WBiB3au_wm2h4qxuSqmXt9gW6oYRXtC7ftbRSfgC3f3p4bt_ZCRjex_rAUWr4UPB4VBLqNwiLKZ2H2_aBBBNu45sZPXb0JdnIeHHgQ=w941-h975-s-no?authuser=0",
+    alt: "Random Name Picker",
+    projectUrl: "https://random-name-picker-alpha.vercel.app",
+    description: "A random name picker used in class to choose students for various tasks.",
+    stack: "Svelte",
+    githubUrl: "https://www.github.com/GMSoudersJr/random-name-picker",
+  },
+  {
     name: "Global Surface Temperatures",
     imageUrl: "https://lh3.googleusercontent.com/pw/AIL4fc8Ge_Mr_pl6GAXzeIb9SF03KNF9FM_T6uXo7bda6FLBxVQghyOrNNVbbqAjvwNbnY500gFUKlD3NFkeFRbHgQP2GHnbkohLUMijdHoQdTw5q1yMEBFF3yJ-B4fKAU8daj5nHC-hatVClT4pYOKV4LAteA=w1900-h777-s-no?authuser=0",
     alt: "Data visualization image",
     projectUrl: "",
-    alt: "Global Surface Temperatures",
     description: "Data visualization of global surface temperatures for freeCodeCamp data visualization certification",
     stack: "D3.js | CSS",
   },
+];
 
+export const realProjects = [
+  {
+    name: "Random Name Picker",
+    imageUrl: "https://lh3.googleusercontent.com/pw/AIL4fc8i-LKtpWgRTVpE5BXoYqhLRxhSZQBwTfIK9pb0Z0cdKN1y9Ga7WBiB3au_wm2h4qxuSqmXt9gW6oYRXtC7ftbRSfgC3f3p4bt_ZCRjex_rAUWr4UPB4VBLqNwiLKZ2H2_aBBBNu45sZPXb0JdnIeHHgQ=w941-h975-s-no?authuser=0",
+    alt: "Random Name Picker",
+    projectUrl: "https://random-name-picker-alpha.vercel.app",
+    description: "A random name picker used in class to choose students for various tasks.",
+    stack: "SVELTE",
+    githubUrl: "https://www.github.com/GMSoudersJr/random-name-picker",
+  },
+  {
+    name: "Dr. Mae Carol Jemison",
+    imageUrl:"https://lh3.googleusercontent.com/pw/AIL4fc81BhVad9-RedoeUSUpnel3r0KnZ-SReHUFCXK8jSQmFN7VkNBXEryQz2vUpO4eZ69cOSZ7EMqqhCmXfotsw4l17pcEFdL-0DJavyWccMRVtDqaMZYkbUYk05wfejC6QZe9sxoLaUQgZa-zbI4UEDv-EA=w1798-h944-s-no?authuser=0",
+    alt: "Tribute page image",
+    projectUrl: "https://codepen.io/GMSoudersJr/full/YvrrRR",
+    stack: "HTML | CSS",
+    description: "A responsive page that was built for freeCodeCamp certification.",
+  },
 ];

@@ -1,6 +1,6 @@
 <script>
   import ProjectCard from './ProjectCard.svelte';
-  import { projects } from '$lib/projects.js';
+  import { realProjects } from '$lib/projects.js';
 </script>
 
 <section class="projects" id="projects">
@@ -8,7 +8,7 @@
     Projects
   </h2>
   <div class="container">
-    {#each projects as project, index }
+    {#each realProjects as project, index }
       <ProjectCard {project} {index}/>
     {/each}
   </div>
