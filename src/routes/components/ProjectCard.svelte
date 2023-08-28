@@ -103,7 +103,7 @@
       grid: repeat(2, 1fr) / 1fr;
       background: var(--baseGallery);
     }
-    .reverse .project-image {
+    .reverse .project-link {
       grid-row: 1;
       grid-column: 1;
     }
