@@ -61,11 +61,12 @@ export const realProjects = [
     githubUrl: "https://www.github.com/GMSoudersJr/random-name-picker",
   },
   {
-    name: "Dr. Mae Carol Jemison",
-    imageUrl:"https://lh3.googleusercontent.com/pw/AIL4fc81BhVad9-RedoeUSUpnel3r0KnZ-SReHUFCXK8jSQmFN7VkNBXEryQz2vUpO4eZ69cOSZ7EMqqhCmXfotsw4l17pcEFdL-0DJavyWccMRVtDqaMZYkbUYk05wfejC6QZe9sxoLaUQgZa-zbI4UEDv-EA=w1798-h944-s-no?authuser=0",
-    alt: "Tribute page image",
-    projectUrl: "https://codepen.io/GMSoudersJr/full/YvrrRR",
-    stack: "HTML | CSS",
-    description: "A responsive page that was built for freeCodeCamp certification.",
+    name: "Timer",
+    imageUrl: "https://lh3.googleusercontent.com/pw/AIL4fc9eqEPAo6tCDkTcWkViRFHSWj_SeXJIVcYMWSxmgfdwzTjw54E2UwQnRcS46_SIuerAJabuIrau_XNGezK2Bm_DOMNVn5r8OUth7khTdw3UccIU2SuC_2nq8_idQ2sO4yb0I7wAPP_jbqWbj0deqocVjA=w1080-h1080-s-no?authuser=0",
+    alt: "Timer",
+    projectUrl: "https://timer-pink-phi.vercel.app",
+    description: "A countdown timer based on the Pomodoro Timer.",
+    stack: "SVELTE",
+    githubUrl: "https://www.github.com/GMSoudersJr/timer",
   },
 ];
