@@ -6,6 +6,7 @@ declare global {
 		interface Locals {
 			totalVisits?: number | undefined;
 			numberOfVisitors?: number | undefined;
+			clientAddress?: string | undefined;
 		}
 		// interface PageData {}
 		// interface Platform {}

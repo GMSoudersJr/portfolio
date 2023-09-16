@@ -75,3 +75,17 @@ export function typewriter(node, params, { speed = 1 }) {
 		}
 	}
 }
+
+/**
+ * @param {string} countryCode - converts a two character string representing a country
+ * code into the character codes for producing emoji flags.
+ */
+export function convertStringToFlagEmojiCode(countryCode) {
+	const charCodeOffset = 127397;
+	const codePoints = countryCode
+		.toUpperCase()
+		.split('')
+		.map(char => charCodeOffset + char.charCodeAt(0));
+	return String.fromCodePoint(...codePoints);
+
+}

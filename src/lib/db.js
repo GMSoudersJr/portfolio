@@ -14,13 +14,18 @@ const collection = db.collection('visitors');
 
 /**
  * @param {string} clientAddress - client's ip address
+ * @param {string} country - country name
+ * @param {string} countryCode - two-letter country code
  */
-async function addClientAddressToCollection(clientAddress) {
+async function addClientAddressAndCountryDataToCollection(clientAddress, country, countryCode) {
   try {
     await collection
       .findOneAndUpdate(
         { "clientAddress": clientAddress },
-        { $inc: {"visits": 1} },
+        {
+          $set: { "country": country, "countryCode": countryCode },
+          $inc: { "visits": 1 }
+        },
         { upsert: true, }
       );
   } catch(error) {
@@ -56,10 +61,31 @@ async function getNumberOfVisitors() {
   }
 }
 
+async function getIpAddresses() {
+  const projection = { _id: 0 };
+  const loopbackAddress = "127.0.0.1";
+  try {
+    const cursor = collection
+      .find(
+        {},
+        {projection: projection}
+      );
+    const arrayOfClientAddressesAndVisits = await cursor.toArray();
+    const meaningfulClientAddresses = arrayOfClientAddressesAndVisits
+      .filter(document => document.clientAddress != loopbackAddress)
+    console.log("meaningful client addresses", meaningfulClientAddresses);
+  } catch(error) {
+    console.log("Error getting the client addresses:", error);
+
+  }
+}
+
 /**
  * @param {string} clientAddress - client's ip address
+ * @param {string} country - country name
+ * @param {string} countryCode - two-letter country code
  */
-export async function connectToDatabase(clientAddress) {
+export async function connectToDatabase(clientAddress, country, countryCode) {
   /**
     * The number of total visits to the site
     * @type {number | undefined}
@@ -75,11 +101,13 @@ export async function connectToDatabase(clientAddress) {
     console.log("Successfully connected to the database.")
     // Run the necessary functions.
     // TODO add the client's address to the database
-    await addClientAddressToCollection(clientAddress);
+    await addClientAddressAndCountryDataToCollection(clientAddress, country, countryCode);
     // TODO get the total number of visits
     totalVisits = await getTotalVisits();
     // TODO get the total number of visitors
     numberOfVisitors = await getNumberOfVisitors();
+    // TODO get the client addresses for the flags
+    await getIpAddresses();
   } catch(error) {
     console.log("Database connection error", error);
   } finally {
