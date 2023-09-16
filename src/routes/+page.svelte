@@ -5,6 +5,9 @@
   import Projects from './components/Projects.svelte';
   import Footer from './components/Footer.svelte';
 
+  /** @type {import('./$types').PageData} */
+  export let data;
+  console.log(data);
 </script>
 
 <div class="container">
@@ -12,6 +15,7 @@
   <AboutMe />
   <Projects />
   <Contact />
+  <h1>{data.count}</h1>
 </div>
 
 <style>
@@ -25,6 +29,9 @@
     justify-content: center;
     align-items: center;
     row-gap: 2em;
+  }
+  h1 {
+    color: black;
   }
 
 </style>
