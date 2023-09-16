@@ -3,10 +3,11 @@
   import Splash from './components/Splash.svelte';
   import AboutMe from './components/AboutMe.svelte';
   import Projects from './components/Projects.svelte';
-  import Footer from './components/Footer.svelte';
+  import CounterWidget from './components/CounterWidget.svelte';
 
   /** @type {import('./$types').PageData} */
   export let data;
+  $: ({totalVisits, numberOfVisitors} = data);
   console.log(data);
 </script>
 
@@ -15,7 +16,7 @@
   <AboutMe />
   <Projects />
   <Contact />
-  <h1>{data.count}</h1>
+  <CounterWidget {totalVisits} />
 </div>
 
 <style>
@@ -30,8 +31,4 @@
     align-items: center;
     row-gap: 2em;
   }
-  h1 {
-    color: black;
-  }
-
 </style>

@@ -60,7 +60,15 @@ async function getNumberOfVisitors() {
  * @param {string} clientAddress - client's ip address
  */
 export async function connectToDatabase(clientAddress) {
+  /**
+    * The number of total visits to the site
+    * @type {number | undefined}
+    */
   let totalVisits;
+  /**
+    * The number of total visitors to the site
+    * @type {number | undefined}
+    */
   let numberOfVisitors;
   try {
     await client.connect();

@@ -3,7 +3,10 @@
 declare global {
 	namespace App {
 		// interface Error {}
-		// interface Locals {}
+		interface Locals {
+			totalVisits?: number | undefined;
+			numberOfVisitors?: number | undefined;
+		}
 		// interface PageData {}
 		// interface Platform {}
 	}

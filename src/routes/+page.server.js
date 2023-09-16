@@ -2,7 +2,7 @@
 export async function load({ locals }) {
 
 	return {
-		count: locals.totalVisits,
+		totalVisits: locals.totalVisits,
 		numberOfVisitors: locals.numberOfVisitors
 	}
 }
