@@ -1,9 +1,8 @@
 import { connectToDatabase } from '$lib/db';
 
 /** @type {import('./$types').PageServerLoad} */
-export async function load({ getClientAddress, locals, fetch }) {
+export async function load({ getClientAddress, fetch }) {
 	const baseUrl = "http://ip-api.com/json/";
-	//const clientAddress = locals.clientAddress;
 	const clientAddress = getClientAddress();
 	const fields = "?fields=status,message,country,countryCode";
 	const url = baseUrl + clientAddress + fields;
@@ -17,7 +16,7 @@ export async function load({ getClientAddress, locals, fetch }) {
 	let country;
 	let countryCode;
 	if ( data.status === 'fail' ) {
-		country = null;
+		country = "Origin Unknown";
 		countryCode = null;
 	} else {
 		country = data.country;
@@ -26,17 +25,11 @@ export async function load({ getClientAddress, locals, fetch }) {
 
 	const {
 		totalVisits,
-		numberOfVisitors
-	} = await connectToDatabase(clientAddress, country, countryCode);
+		visitsByCountryWithCountryCode
+	} = await connectToDatabase(country, countryCode);
 
-	/*
-	return {
-		totalVisits: locals.totalVisits,
-		numberOfVisitors: locals.numberOfVisitors
-	}
-	*/
 	return {
 		totalVisits,
-		numberOfVisitors
+		visitsByCountryWithCountryCode
 	}
 }

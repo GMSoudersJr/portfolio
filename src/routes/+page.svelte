@@ -7,7 +7,7 @@
 
   /** @type {import('./$types').PageData} */
   export let data;
-  $: ({totalVisits, numberOfVisitors} = data);
+  $: ({totalVisits, visitsByCountryWithCountryCode} = data);
   console.log(data);
 </script>
 
@@ -16,7 +16,10 @@
   <AboutMe />
   <Projects />
   <Contact />
-  <CounterWidget {totalVisits} />
+  <CounterWidget
+    {totalVisits}
+    {visitsByCountryWithCountryCode}
+  />
 </div>
 
 <style>

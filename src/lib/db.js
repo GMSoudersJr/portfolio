@@ -13,23 +13,21 @@ const db = client.db('portfolio');
 const collection = db.collection('visitors');
 
 /**
- * @param {string} clientAddress - client's ip address
  * @param {string} country - country name
  * @param {string} countryCode - two-letter country code
  */
-async function addClientAddressAndCountryDataToCollection(clientAddress, country, countryCode) {
+async function addCountryandCodeToTheDatabase(country, countryCode) {
   try {
     await collection
       .findOneAndUpdate(
-        { "clientAddress": clientAddress },
+        { "country": country, "countryCode": countryCode },
         {
-          $set: { "country": country, "countryCode": countryCode },
           $inc: { "visits": 1 }
         },
         { upsert: true, }
       );
   } catch(error) {
-    console.log("Error adding client address to the database:", error);
+    console.log("Error adding country to the database:", error);
   }
 }
 
@@ -37,7 +35,7 @@ async function getTotalVisits() {
   const aggregate = [
     {
       '$group': {
-        '_id': 'clientAddress',
+        '_id': 'country',
         'totalVisits': {
           '$sum': '$visits'
         }
@@ -53,61 +51,36 @@ async function getTotalVisits() {
   }
 }
 
-async function getNumberOfVisitors() {
+async function getVisityByCountry() {
+  const projection = { _id: 0 }
   try {
-    return await collection.estimatedDocumentCount();
-  } catch(error) {
-    console.log("Error getting the number of visitors:", error);
-  }
-}
-
-async function getIpAddresses() {
-  const projection = { _id: 0 };
-  const loopbackAddress = "127.0.0.1";
-  try {
-    const cursor = collection
+    return await collection
       .find(
         {},
-        {projection: projection}
-      );
-    const arrayOfClientAddressesAndVisits = await cursor.toArray();
-    const meaningfulClientAddresses = arrayOfClientAddressesAndVisits
-      .filter(document => document.clientAddress != loopbackAddress)
-    console.log("meaningful client addresses", meaningfulClientAddresses);
+        { projection: projection }
+      )
+      .toArray();
   } catch(error) {
-    console.log("Error getting the client addresses:", error);
-
+    console.log("Error getting visits by country.")
   }
 }
 
 /**
- * @param {string} clientAddress - client's ip address
  * @param {string} country - country name
  * @param {string} countryCode - two-letter country code
  */
-export async function connectToDatabase(clientAddress, country, countryCode) {
-  /**
-    * The number of total visits to the site
-    * @type {number | undefined}
-    */
+export async function connectToDatabase( country, countryCode) {
   let totalVisits;
-  /**
-    * The number of total visitors to the site
-    * @type {number | undefined}
-    */
-  let numberOfVisitors;
+  let visitsByCountryWithCountryCode;
   try {
     await client.connect();
     console.log("Successfully connected to the database.")
     // Run the necessary functions.
-    // TODO add the client's address to the database
-    await addClientAddressAndCountryDataToCollection(clientAddress, country, countryCode);
+    // TODO add the client's country and country code to the database
+    await addCountryandCodeToTheDatabase(country, countryCode);
     // TODO get the total number of visits
     totalVisits = await getTotalVisits();
-    // TODO get the total number of visitors
-    numberOfVisitors = await getNumberOfVisitors();
-    // TODO get the client addresses for the flags
-    await getIpAddresses();
+    visitsByCountryWithCountryCode = await getVisityByCountry();
   } catch(error) {
     console.log("Database connection error", error);
   } finally {
@@ -116,6 +89,6 @@ export async function connectToDatabase(clientAddress, country, countryCode) {
   }
   return {
     totalVisits,
-    numberOfVisitors
+    visitsByCountryWithCountryCode
   }
 }
