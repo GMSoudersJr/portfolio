@@ -11,6 +11,7 @@
    * @type {CountryData[]}
    */
   export let visitsByCountryWithCountryCode;
+
 </script>
 
 <div class="flag-emoji-container">
@@ -18,7 +19,7 @@
     <div
       class="individual-flags"
       id={country.country}
-      title={`${country.country} - ${country.visits} views`}
+      title={`${country.country} - ${country.visits} ${country.visits == 1 ? "visit" : "visits"}`}
     >
       {#if !country.countryCode}
         🤔
