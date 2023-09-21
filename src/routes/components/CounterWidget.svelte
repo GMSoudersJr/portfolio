@@ -40,13 +40,12 @@
   .widget {
     box-sizing: border-box;
     display: flex;
-    width: 100%;
+    width: 76%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
-    border: 3px solid #4169e1;
-    padding: 0px 0px 1em 0px;
+    border-radius: 10px;
+    border: 3px solid var(--backgroundWhite);
     margin-bottom: 1em;
   }
 
@@ -71,5 +70,22 @@
     font-family: var(--emojiFontFamily);
     font-size: 3em;
     cursor: help;
+  }
+  @media screen and (min-width: 80em) {
+  }
+  @media screen and (min-width: 64em) {
+    .widget {
+      width: 70%;
+    }
+  }
+  @media screen and (min-width: 48em) {
+    .widget {
+      width: 50%;
+    }
+  }
+  @media screen and (min-width: 40em) {
+    .widget {
+      width: 50%;
+    }
   }
 </style>

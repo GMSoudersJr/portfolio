@@ -157,9 +157,6 @@
       box-sizing: border-box;
     }
 
-    .icon {
-    }
-
     a:hover {
       background-image: linear-gradient(var(--backgroundWhite),var(--backgroundWhite));
     }

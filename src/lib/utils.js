@@ -37,8 +37,12 @@ export const localeDateString = () => {
 	return new Intl.DateTimeFormat(undefined, options).format(date);
 }
 
+
 export function clickOutside(node) {
 
+	/**
+	 * @param {MouseEvent} event
+	 */
 	const handleClick = event => {
 		if (node && !node.contains(event.target) && !event.defaultPrevented) {
 			node.dispatchEvent(
@@ -87,5 +91,19 @@ export function convertStringToFlagEmojiCode(countryCode) {
 		.split('')
 		.map(char => charCodeOffset + char.charCodeAt(0));
 	return String.fromCodePoint(...codePoints);
+}
 
+/**
+ * @typedef {Object} CountryData
+ * @property {number} visits
+ * @property {string} country
+ * @property {string} countryCode
+ */
+/**
+ * @param {CountryData} someCountry - a country to compare in the function.
+ * @param {CountryData} anotherCountry - another country to compare in the
+ * function.
+ */
+export function sorter(someCountry, anotherCountry) {
+	return anotherCountry.visits - someCountry.visits;
 }

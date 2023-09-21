@@ -1,5 +1,5 @@
 <script>
-  import { convertStringToFlagEmojiCode } from "$lib/utils";
+  import { convertStringToFlagEmojiCode, sorter } from "$lib/utils";
   /**
    * @typedef {Object} CountryData
    * @property {number} visits
@@ -11,6 +11,7 @@
    * @type {CountryData[]}
    */
   export let visitsByCountryWithCountryCode;
+  visitsByCountryWithCountryCode.sort(sorter);
 
 </script>
 
@@ -33,15 +34,18 @@
 
 <style>
   .flag-emoji-container {
+    box-sizing: border-box;
     display: flex;
+    height: 100%;
+    width: 100%;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: space-around;
     gap: 0.5em;
     padding: 1em;
     background: var(--backgroundOffWhite);
-    border-radius: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
   .individual-flags {
     font-family: var(--emojiFontFamily);
