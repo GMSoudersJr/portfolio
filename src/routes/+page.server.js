@@ -1,7 +1,7 @@
 import { connectToDatabase } from '$lib/db';
 
 /** @type {import('./$types').PageServerLoad} */
-export async function load({ getClientAddress, fetch }) {
+export async function load({ getClientAddress, fetch, locals }) {
 	const baseUrl = "http://ip-api.com/json/";
 	const clientAddress = getClientAddress();
 	const fields = "?fields=status,message,country,countryCode";
@@ -11,8 +11,8 @@ export async function load({ getClientAddress, fetch }) {
 	const data = await response.json();
 	const headers = response.headers;
 	console.log("JSON data:",data);
-	const requestsLeftForThisRateWindow = headers.get('X-Rl');
-	const secondsUntilWindowReset = headers.get('X-Ttl');
+	locals.requestsLeftForThisRateWindow = headers.get('X-Rl');
+	locals.secondsUntilWindowReset = headers.get('X-Ttl');
 	let country;
 	let countryCode;
 	if ( data.status === 'fail' ) {

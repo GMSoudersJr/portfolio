@@ -13,6 +13,5 @@ export async function handle({ event, resolve }) {
 	event.locals.totalVisits = totalVisits;
 	event.locals.numberOfVisitors = numberOfVisitors;
 	*/
-
 	return resolve(event);
 }
