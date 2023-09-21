@@ -3,7 +3,10 @@
 declare global {
 	namespace App {
 		// interface Error {}
-		// interface Locals {}
+		interface Locals {
+			requestsLeftForThisRateWindow: string|null;
+			secondsUntilWindowReset: string|null;
+		}
 		// interface PageData {}
 		// interface Platform {}
 	}
