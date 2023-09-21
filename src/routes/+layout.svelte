@@ -4,7 +4,7 @@
   import Footer from './components/Footer.svelte';
   import { onMount } from 'svelte';
   onMount(async() => {
-    const delayedNavbar = new Navbar({
+    new Navbar({
       target: document.getElementById("navbar"),
       intro: true,
     });

@@ -31,18 +31,21 @@
     },
   ];
 
-
+  /**
+   * @param {MouseEvent & {target: Element}} event
+   */
   function handleClick(event) {
-    let clicked = event.target.id
-    let navItem = document.getElementById(clicked).parentElement;
+    //let clicked = event?.target?.id;
+    console.log(event.target);
+    let clicked = event?.target?.id;
+    let navItem = document.getElementById(clicked)?.parentElement;
     let allNavItemsNew = document.querySelectorAll(".navItem")
-    let allNavItems = navItem.parentElement.childNodes;
     allNavItemsNew.forEach(( item ) => {
-      if ( item.classList.contains("active") && item.id != navItem.id ) {
+      if ( item.classList.contains("active") && item.id != navItem?.id ) {
         item.classList.remove("active");
       }
     })
-    navItem.classList.add("active");
+    navItem?.classList.add("active");
   }
 
   onMount(async() => {
@@ -50,12 +53,15 @@
     const navItems = document.querySelectorAll("nav ul li");
 
     window.onscroll = () => {
-      let current = "";
+      /**
+       * @type {?string}
+       */
+      let current;
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        const navBarHeight = navItems[0].offsetHeight;
+        const navBarHeight = navItems[0].scrollHeight;
         const clientHeight = section.clientHeight
-        if ( pageYOffset >= ((sectionTop - navBarHeight) - ( clientHeight / 2.5 ))) {
+        if ( scrollY >= ((sectionTop - navBarHeight) - ( clientHeight / 2.5 ))) {
           current = section.getAttribute("id");
         }
       });

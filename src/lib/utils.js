@@ -24,6 +24,9 @@ export const thisYear = () => {
 export const localeDateString = () => {
 	const date = new Date(Date.now());
 
+	/**
+	 * @type {Intl.DateTimeFormatOptions}
+	 */
 	let options = {
 		weekday : "long",
 		year: "numeric",
@@ -38,6 +41,9 @@ export const localeDateString = () => {
 }
 
 
+/**
+ * @param {HTMLElement} node
+ */
 export function clickOutside(node) {
 
 	/**
@@ -60,6 +66,14 @@ export function clickOutside(node) {
 	}
 }
 
+/**
+ * @typedef {object} Params
+ * @property {number} delay seconds to wait to begin
+ */
+/**
+ * @param {HTMLElement} node
+ * @param {Params} params
+ */
 export function typewriter(node, params, { speed = 1 }) {
 	const valid = node.childNodes.length === 1 && node.childNodes[0].nodeType === Node.TEXT_NODE;
 
@@ -67,12 +81,18 @@ export function typewriter(node, params, { speed = 1 }) {
 		throw new Error(`This transition only works on elements with a single text node child`);
 	}
 
-	const text = node.textContent;
+	/**
+	 * @type {?string}
+	 */
+	const text = node.textContent || "";
 	const duration = text.length / (speed * 0.01);
 
 	return {
 		delay: params.delay,
 		duration,
+		/**
+		 * @param {number} t
+		 */
 		tick: (t) => {
 			const i = ~~(text.length * t);
 			node.textContent = text.slice(0, i);
