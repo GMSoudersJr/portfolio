@@ -4,8 +4,8 @@ declare global {
 	namespace App {
 		// interface Error {}
 		interface Locals {
-			requestsLeftForThisRateWindow: number;
-			secondsUntilWindowReset: number;
+			requestsLeftForThisRateWindow: ?string;
+			secondsUntilWindowReset: ?string;
 		}
 		// interface PageData {}
 		// interface Platform {}

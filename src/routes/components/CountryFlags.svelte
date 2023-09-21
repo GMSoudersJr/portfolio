@@ -34,10 +34,18 @@
 <style>
   .flag-emoji-container {
     display: flex;
-    gap: 0.3em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    gap: 0.5em;
+    padding: 1em;
+    background: var(--backgroundOffWhite);
+    border-radius: 5px;
   }
   .individual-flags {
     font-family: var(--emojiFontFamily);
     cursor: help;
+    font-size: 2rem;
   }
 </style>
