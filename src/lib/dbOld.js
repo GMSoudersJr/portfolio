@@ -16,10 +16,8 @@ const collection = db.collection('visitors');
  * @param {string} country - country name
  * @param {string} countryCode - two-letter country code
  */
-export async function addCountryandCodeToTheDatabase(country, countryCode) {
+async function addCountryandCodeToTheDatabase(country, countryCode) {
   try {
-    await client.connect();
-    console.log("Successfully connected to the database.")
     await collection
       .findOneAndUpdate(
         { "country": country, "countryCode": countryCode },
@@ -30,13 +28,10 @@ export async function addCountryandCodeToTheDatabase(country, countryCode) {
       );
   } catch(error) {
     console.log("Error adding country to the database:", error);
-  } finally {
-    await client.close();
-    console.log("Closed database connection.")
   }
 }
 
-export async function getTotalVisits() {
+async function getTotalVisits() {
   const aggregate = [
     {
       '$group': {
@@ -48,24 +43,17 @@ export async function getTotalVisits() {
     }
   ];
   try {
-    await client.connect();
-    console.log("Successfully connected to the database to get total visits.")
     const cursor = collection.aggregate(aggregate);
     const result = await cursor.toArray();
     return await result[0].totalVisits;
   } catch(error) {
     console.log("Error getting total visits from the database:", error);
-  } finally {
-    await client.close();
-    console.log("Closed database connection after getting total visits.")
   }
 }
 
-export async function getVisitsByCountry() {
+async function getVisityByCountry() {
   const projection = { _id: 0 }
   try {
-    await client.connect();
-    console.log("Successfully connected to the database to get visits by country.")
     return await collection
       .find(
         {},
@@ -74,9 +62,6 @@ export async function getVisitsByCountry() {
       .toArray();
   } catch(error) {
     console.log("Error getting visits by country.")
-  } finally {
-    await client.close();
-    console.log("Closed database connection after getting visits by country.")
   }
 }
 
@@ -84,7 +69,6 @@ export async function getVisitsByCountry() {
  * @param {string} country - country name
  * @param {string} countryCode - two-letter country code
  */
-/*
 export async function connectToDatabase( country, countryCode) {
   let totalVisits;
   let visitsByCountryWithCountryCode;
@@ -96,7 +80,7 @@ export async function connectToDatabase( country, countryCode) {
     await addCountryandCodeToTheDatabase(country, countryCode);
     // TODO get the total number of visits
     totalVisits = await getTotalVisits();
-    visitsByCountryWithCountryCode = await getVisitsByCountry();
+    visitsByCountryWithCountryCode = await getVisityByCountry();
   } catch(error) {
     console.log("Database connection error", error);
   } finally {
@@ -108,4 +92,3 @@ export async function connectToDatabase( country, countryCode) {
     visitsByCountryWithCountryCode
   }
 }
-*/

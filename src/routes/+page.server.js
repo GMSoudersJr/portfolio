@@ -1,35 +1,36 @@
-import { connectToDatabase } from '$lib/db';
-
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ getClientAddress, fetch, locals }) {
-	const baseUrl = "http://ip-api.com/json/";
-	const clientAddress = getClientAddress();
-	const fields = "?fields=status,message,country,countryCode";
-	const url = baseUrl + clientAddress + fields;
+	try {
+		const ipAddressResponse = await fetch('/api/countryByIp');
+		const { country, countryCode } = await ipAddressResponse.json();
 
-	const response = await fetch(url);
-	const data = await response.json();
-	const headers = response.headers;
-	console.log("JSON data:",data);
-	locals.requestsLeftForThisRateWindow = headers.get('X-Rl');
-	locals.secondsUntilWindowReset = headers.get('X-Ttl');
-	let country;
-	let countryCode;
-	if ( data.status === 'fail' ) {
-		country = "Origin Unknown";
-		countryCode = null;
-	} else {
-		country = data.country;
-		countryCode = data.countryCode;
-	}
+		const postToDatabaseResponse = await fetch('/api/database', {
+			method: "POST",
+			body: JSON.stringify({country, countryCode}),
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		});
+		
+		const databaseResponse = await postToDatabaseResponse.json();
+		console.log("add to database response", databaseResponse);
 
-	const {
-		totalVisits,
-		visitsByCountryWithCountryCode
-	} = await connectToDatabase(country, countryCode);
+		const getFromDatabaseResponse = await fetch('/api/database', {
+			method: "GET",
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		})
+		const {
+			totalVisits,
+			visitsByCountryWithCountryCode
+		} = await getFromDatabaseResponse.json();
 
-	return {
-		totalVisits,
-		visitsByCountryWithCountryCode
+		return {
+			totalVisits,
+			visitsByCountryWithCountryCode
+		}
+	} catch(error) {
+		console.log(error)
 	}
 }
