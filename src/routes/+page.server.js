@@ -4,7 +4,7 @@ export async function load({ getClientAddress, fetch, locals }) {
 		const ipAddressResponse = await fetch('/api/countryByIp');
 		const { country, countryCode } = await ipAddressResponse.json();
 
-		const postToDatabaseResponse = await fetch('/api/database', {
+		const postToDatabaseResponse = await fetch('/api/visitors', {
 			method: "POST",
 			body: JSON.stringify({country, countryCode}),
 			headers: {
@@ -15,7 +15,7 @@ export async function load({ getClientAddress, fetch, locals }) {
 		const databaseResponse = await postToDatabaseResponse.json();
 		console.log("add to database response", databaseResponse);
 
-		const getFromDatabaseResponse = await fetch('/api/database', {
+		const getFromDatabaseResponse = await fetch('/api/visitors', {
 			method: "GET",
 			headers: {
 				'Content-Type': 'application/json'
