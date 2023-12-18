@@ -19,7 +19,6 @@
     /* Needs to be the same height as the nav ul element */
     scroll-margin-top: 56px;
     width: 60%;
-    height: 100vh;
     box-sizing: border-box;
   }
 
@@ -35,7 +34,7 @@
     width: 100%;
     height: calc(100% - 112px);
     display: grid;
-    grid: repeat(5, 1fr) / 1fr;
+    grid-template-rows: repeat(auto-fill, min-content);
     gap: 4em;
     box-sizing: border-box;
     overflow: hidden;
@@ -52,8 +51,8 @@
       text-align: center
     }
     .container {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-template-rows: repeat(auto-fill, 1fr);
       justify-content: stretch;
       gap: 2em;
     }
@@ -62,12 +61,7 @@
   @media screen and (max-width: 40em) {
     section {
       width:90%;
-      height: 300vh;
     }
 
-    .container {
-      grid-template-columns: 1fr;
-      overflow: hidden;
-    }
   }
 </style>

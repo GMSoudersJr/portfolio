@@ -23,7 +23,9 @@
   </a> 
   <div class="details-area">
     <h1 class="project-name">{project.name}</h1>
-    <p class="project-description">{project.description}</p>
+    {#each project.description as description}
+    <p class="project-description">{description}</p>
+    {/each}
     <h3 class="project-stack">{project.stack}</h3>
   </div>
 </div>
@@ -64,11 +66,11 @@
   .details-area {
     width: 100%;
     display: grid;
-    grid: repeat(3, 1fr) / auto;
+    grid-template-rows: repeat(3, min-content);
     align-items: center;
     text-align: center;
     justify-self: center;
-    align-self: stretch;
+    align-self: center;
     justify-content: center;
   }
 

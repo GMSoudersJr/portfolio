@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
   import { goto } from '$app/navigation';
   import LocaleWelcome from './LocaleWelcome.svelte';
@@ -7,8 +7,9 @@
   import SayHi from './SayHi.svelte';
 
   onMount(async() => {
+    const target = document.getElementById("/");
     const sayHi = new SayHi({
-      target: document.getElementById("/"),
+      target: target,
       intro: true,
     });
 
