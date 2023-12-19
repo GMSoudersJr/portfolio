@@ -66,7 +66,7 @@
     grid: 1fr / 2fr 5fr;
     background: linear-gradient(80deg, var(--projectImageBackground) 30%,
     var(--projectDetailsBackground) 30.1%);
-    border-radius: 5px;
+    border-radius: 12px;
     box-sizing: border-box;
   }
 
