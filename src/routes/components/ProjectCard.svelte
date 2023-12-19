@@ -26,11 +26,36 @@
     {#each project.description as description}
     <p class="project-description">{description}</p>
     {/each}
-    <h3 class="project-stack">{project.stack}</h3>
+    <div class="stack-git">
+      <h3 class="project-stack">{project.stack}</h3>
+      <a
+        href={project.githubUrl}
+        id={`${project.id}-GitHub`}
+        referrerpolicy="no-referrer"
+        target="_blank"
+      >
+        <img
+          class="github-icon"
+          src="https://lh3.googleusercontent.com/pw/AIL4fc8YKL8pEKc5WSoPX9onJhSk5j-4-68MBln6PsoDcrr2lGBSxaiidZLp0T-ufKICz9hQP9ZE3bssftK3J30AWFZtBEaEhLMC0NafOMeeOdpgD8A_qrw9NicNsqLZieXz4K_XYs7MN8p29LLB-_0Z92s4eg=w230-h225-s-no?authuser=0"
+          alt="GitHub Icon">
+      </a>
+    </div>
   </div>
 </div>
 
 <style>
+  .stack-git {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: min-content;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1em;
+  }
+  .github-icon {
+    height: 20px;
+    widows: 20px;
+  }
   .project-card-container {
     width: 100%;
     aspect-ratio: 16 / 4;
