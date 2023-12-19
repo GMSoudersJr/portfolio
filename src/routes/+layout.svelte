@@ -63,7 +63,7 @@
     --contentTextFontFamily: "IBM Plex Sans", sans-serif;
     --emojiFontFamily: "Noto Color Emoji", "IBM Plex Sans Condensed", sans-serif;
 
-    --projectImageBackground: #FFF6E0;
+    --projectImageBackground: #4CBB17;
     --projectDetailsBackground: #272829;
     /* turquoise-ish colors */
     --baseTurquoise: #36DFFF;
