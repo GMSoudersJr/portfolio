@@ -82,7 +82,19 @@ export const realProjects = [
       `A Purchase Order Generator that encrypts Payee data. Not mobile friendly.`,
       `username and password: guest`,
     ],
-    stack: "SVELTEKIT",
+    stack: "SVELTEKIT | MongoDB",
     githubUrl: "https://github.com/GMSoudersJr/portfolio-po-generator",
+  },
+  {
+    name: "Running on Xero (Blog)",
+    imageUrl: "https://lh3.googleusercontent.com/pw/ABLVV86iE9xXYy5PdrAIsBv0rerZJ0cG1DnWT0zuTt-wRfD-8GXpK0ydDn-RNRFWayzJehonPnuyXeuarRyBk50tFaQg1K8K1dOpxwm3FjksoBlQH4-EAmp9g-HDg7ZBmpu0IM3FbZ_RzWlrk8paDf_TOdiefg=w399-h426-s-no-gm?authuser=0",
+    alt: "Running on Xero (Blog)",
+    projectUrl: "https://running-on-xero.vercel.app/",
+    description: [
+      `A blog made to celebrate minimalist running in Xero Shoes`,
+      `Affiliate links included`,
+    ],
+    stack: "SVELTEKIT | MongoDB",
+    githubUrl: "https://github.com/GMSoudersJr/running-on-xero",
   },
 ];

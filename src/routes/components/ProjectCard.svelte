@@ -46,7 +46,7 @@
 <style>
   .stack-git {
     display: grid;
-    grid-template-columns: repeat(2, min-content);
+    grid-template-columns: auto min-content;
     grid-template-rows: min-content;
     justify-content: center;
     align-items: center;
@@ -139,7 +139,7 @@
       width: 100%;
       padding: 5px;
       border: none;
-      border-radius: 0;
+      border-radius: 13px;
       object-fit: cover;
       box-sizing: border-box;
     }
