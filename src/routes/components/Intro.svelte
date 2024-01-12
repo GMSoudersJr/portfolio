@@ -1,27 +1,15 @@
 <script>
-  import {
-    fade,
-    blur,
-    fly,
-    slide,
-    scale,
-  } from 'svelte/transition';
-  import {
-    bounceInOut,
-    quintInOut
-  } from 'svelte/easing';
   import { typewriter } from '$lib/utils.js';
-
 </script>
 
 <div class="intro-container">
-  <h1 transition:typewriter|global={{ delay: 400 }}>
+  <h1 transition:typewriter|global={{ delay: 1500 }}>
    I'm Gerald M. Souders Jr.
   </h1>
-  <h2 transition:typewriter|global={{ delay: 3000 }}>
+  <h2 transition:typewriter|global={{ delay: 4000 }}>
     A Svelte Developer
   </h2>
-  <h2 transition:typewriter|global={{ delay: 5000 }}>
+  <h2 transition:typewriter|global={{ delay: 6000 }}>
     Making Things Work
   </h2>
 </div>

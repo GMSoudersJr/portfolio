@@ -1,34 +1,24 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { goto } from '$app/navigation';
-  import LocaleWelcome from './LocaleWelcome.svelte';
   import Intro from './Intro.svelte';
-  import AboutMeButton from './AboutMeButton.svelte';
   import SayHi from './SayHi.svelte';
 
+  let display;
   onMount(async() => {
-    const target = document.getElementById("/");
-    const sayHi = new SayHi({
-      target: target,
-      intro: true,
-    });
-
-    let intro;
-
-    // destroy HI! and insert the Intro
+    display = SayHi;
+      // destroy HI! and insert the Intro
     setTimeout(() => {
-      sayHi.$destroy();
-      intro = new Intro({
-        target: document.getElementById("/"),
-        intro: true,
-      });
-    }, 3500);
-
+      display.$destroy;
+    }, 500);
+    setTimeout(() => {
+      display = Intro;
+    }, 1950);
   })
+  $: show = display;
 </script>
 
 <section id="/" class="section-container">
-
+  <svelte:component this={show}/>
 </section>
 
 <style>
