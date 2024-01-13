@@ -26,7 +26,6 @@
   * {
     color: #E5E5CB
   }
-
   .container {
     display: flex;
     flex-direction: column;

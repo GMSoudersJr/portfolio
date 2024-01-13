@@ -156,21 +156,10 @@
   }
 
   @media screen and (max-width: 80em) {
-    ul {
-      background-color: var(--monitorNavColor);
-    }
   }
   @media screen and (max-width: 64em) {
-    ul {
-      background-color: var(--laptopNavColor);
-    }
   }
   @media screen and (max-width: 48em) {
-    ul {
-      width: 100vw;
-      background-color: var(--tabletNavColor);
-    }
-
     .nav-right {
       display: none;
     }
@@ -195,7 +184,6 @@
   }
   @media screen and (max-width: 40em) {
     ul {
-      width: 100vw;
       background-color: var(--mobileNavColor);
     }
   }

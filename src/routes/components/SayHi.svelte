@@ -11,7 +11,7 @@
 
 <div
   id="sayHi"
-  transition:fade|global={{ delay: 150, duration: 850 }}
+  transition:fade|global={{ delay: 350, duration: 650 }}
 >
   <h1>Hello!</h1>
   <h1>

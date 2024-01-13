@@ -1,14 +1,13 @@
 <script>
-  import HappyDay from './components/HappyDay.svelte';
   import Navbar from './components/Navbar.svelte';
   import Footer from './components/Footer.svelte';
   import { onMount } from 'svelte';
+
+  let display;
   onMount(async() => {
-    new Navbar({
-      target: document.getElementById("navbar"),
-      intro: true,
-    });
+    display = Navbar;
   })
+  $: navbar = display;
 </script>
 
 <svelte:head>
@@ -17,7 +16,9 @@
   </title>
 </svelte:head>
 
-<div id="navbar"></div>
+<div id="navbar">
+  <svelte:component this={navbar} />
+</div>
 
 <slot />
 
