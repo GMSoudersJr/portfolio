@@ -7,8 +7,7 @@
 
   /** @type {import('./$types').PageData} */
   export let data;
-  $: ({totalVisits, visitsByCountryWithCountryCode} = data);
-  console.log(data);
+  //$: ({totalVisits, visitsByCountryWithCountryCode} = data);
 </script>
 
 <div class="container">
@@ -16,10 +15,12 @@
   <AboutMe />
   <Projects />
   <Contact />
+  {#await data then value}
   <CounterWidget
-    {totalVisits}
-    {visitsByCountryWithCountryCode}
+    totalVisits={value.totalVisits}
+    visitsByCountryWithCountryCode={data.visitsByCountryWithCountryCode}
   />
+  {/await}
 </div>
 
 <style>

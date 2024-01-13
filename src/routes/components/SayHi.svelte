@@ -1,12 +1,5 @@
 <script>
-	import {onDestroy, onMount} from 'svelte';
-
   import { fade } from 'svelte/transition';
-  onMount(async() => {
-  })
-  onDestroy(() => {
-    console.log("SayHi is being destroyed")
-  })
 </script>
 
 <div
