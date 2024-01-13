@@ -8,11 +8,11 @@
     display = SayHi;
       // destroy HI! and insert the Intro
     setTimeout(() => {
-      display.$destroy;
-    }, 500);
+      display = "";
+    }, 1450);
     setTimeout(() => {
-      display = Intro;
-    }, 1950);
+      display = Intro
+    }, 2450);
   })
   $: show = display;
 </script>

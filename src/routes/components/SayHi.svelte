@@ -1,10 +1,17 @@
 <script>
+	import {onDestroy, onMount} from 'svelte';
+
   import { fade } from 'svelte/transition';
+  onMount(async() => {
+  })
+  onDestroy(() => {
+    console.log("SayHi is being destroyed")
+  })
 </script>
 
 <div
   id="sayHi"
-  transition:fade|global={{  duration: 1000 }}
+  transition:fade|global={{ delay: 150, duration: 850 }}
 >
   <h1>Hello!</h1>
   <h1>
