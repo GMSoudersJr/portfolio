@@ -1,5 +1,5 @@
 /** @type {import('./$types').PageServerLoad} */
-export async function load({ getClientAddress, fetch, locals }) {
+export async function load({ fetch }) {
 	try {
 		const ipAddressResponse = await fetch('/api/countryByIp');
 		const { country, countryCode } = await ipAddressResponse.json();
