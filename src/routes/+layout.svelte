@@ -10,7 +10,7 @@
   </title>
 </svelte:head>
 
-<main class="main-layout">
+<main class="main-layout bg-flow">
   <slot />
 </main>
 
@@ -19,6 +19,5 @@
 <style>
   .main-layout {
     width: 100%;
-    background-color: #060C1D;
   }
 </style>
