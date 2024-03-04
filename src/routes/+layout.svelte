@@ -10,9 +10,9 @@
   </title>
 </svelte:head>
 
-<main class="main-layout bg-flow">
+<div class="main-layout bg-flow">
   <slot />
-</main>
+</div>
 
 <Footer />
 

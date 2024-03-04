@@ -3,7 +3,7 @@
 
 </script>
 
-<section id="/" class="section-container bg-gradient">
+<main id="/" class="section-container bg-gradient">
   <div class="bg-image" >
   </div>
   <div class="splash-box">
@@ -44,7 +44,7 @@
     </div>
     <TechStack />
   </div>
-</section>
+</main>
 
 <style>
   .bg-image {
@@ -67,6 +67,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+  }
+  h1 {
+    font-size: var(--sectionTitleFontSize);
   }
   .section-container {
     height: 100vh;
@@ -98,6 +101,9 @@
   @media screen and (max-width: 40em) {
     .splash-box {
       row-gap: 3rem;
+    }
+    h1 {
+      font-size: 2rem;
     }
 
   }

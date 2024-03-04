@@ -10,7 +10,7 @@
   //$: ({totalVisits, visitsByCountryWithCountryCode} = data);
 </script>
 
-<div class="container">
+<main class="container">
   <Splash />
   <AboutMe />
   <Projects />
@@ -21,7 +21,7 @@
     visitsByCountryWithCountryCode={data.visitsByCountryWithCountryCode}
   />
   {/await}
-</div>
+</main>
 
 <style>
   * {
