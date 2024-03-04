@@ -22,7 +22,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, min-content) ;
     justify-content: center;
-    row-gap: 2rem;
+    row-gap: 1rem;
     padding-left: 6vw;
     padding-right: 6vw;
   }

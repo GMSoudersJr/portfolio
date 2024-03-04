@@ -98,6 +98,7 @@
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 1rem;
+    row-gap: 0.5rem;
   }
   .project-card:nth-child(even) {
     flex-direction: row-reverse;
@@ -112,22 +113,26 @@
 
   @media screen and (max-width: 64em) {
     .project-card {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
       height: 70vh;
       width: 100%;
-      flex-direction: column;
       justify-items: center;
     }
     .image-container {
       width: 100%;
-      height: 50%;
+      height: 100%;
       border-radius: 0;
       clip-path: none;
     }
     .info {
       width: 90%;
-      height: 50%;
+      height: 100%;
       justify-items: center;
       text-align: center;
+      align-content: center;
+      row-gap: 1rem;
     }
     .project-card:nth-child(even) {
       flex-direction: column;

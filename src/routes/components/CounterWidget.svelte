@@ -22,7 +22,7 @@
 <section class="widget visitor-container" id="visitor-widget">
   <h1 class="section-title poppins-extrabold">
     <span class="gradient-text">
-      Visitors 🗺
+      Visitors
     </span>
   </h1>
   <CountryFlags
