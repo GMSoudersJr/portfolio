@@ -62,7 +62,7 @@
     rgba(0, 0, 0, 0.1) 80%,
     rgba(15, 21, 37, 1) 100%
     ),
-    url('https://lh3.googleusercontent.com/pw/AP1GczO2Jrj_3FB4oSnkpvmyDGk8J7_jWhJHxdDNv3WMVC4R_VRBajpu-U6XqcyIlA-cWuRjfbZ0xfbBMcxBuKCdt-Ze3OpYjdRmYtQRelfQ6IwFLfsff62Oihl2RPX7qu9eAbt7kajFJ4LqOM_Wa3NoE0r2Jg=w983-h1305-s-no-gm?authuser=0');
+    url('https://lh3.googleusercontent.com/pw/AP1GczNYy5HxnQYTFcBW8pMaFF-4yCJDVMmtbX_Oxl75tSbOei9atBQJihAKtqN_CRbzNIkCcG0mLot7CjV1D0pjHeLQ7LtbXBgmx2kGG2VAAFInf8hH--Va70wFyJWEaIC0pdywSr_YSCM8j2Is7Mym7d-G7A=w730-h973-s-no-gm?authuser=0');
     filter: blur(18px);
     -webkit-filter: blur(18px);
     height: 100%;
@@ -95,13 +95,13 @@
       row-gap: 3rem;
     }
     h3 {
-      font-size: large;
+      font-size: 1rem;
     }
     h1 {
-      font-size: x-large;
+      font-size: 1.25rem;
     }
     p {
-      font-size: large;
+      font-size: 0.75rem;
     }
 
   }
