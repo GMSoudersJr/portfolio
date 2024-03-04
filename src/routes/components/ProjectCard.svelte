@@ -64,7 +64,7 @@
   }
   .project-card {
     width: 100%;
-    height: 150px;
+    height: 200px;
     background-color: #259;
     display: flex;
     flex-direction: row;
@@ -81,7 +81,8 @@
   }
   .image {
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     object-position: center;
   }
   .info {
@@ -121,7 +122,7 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, 1fr);
-      height: 70vh;
+      height: 550px;
       width: 100%;
       justify-items: center;
     }
@@ -131,13 +132,20 @@
       border-radius: 0;
       clip-path: none;
     }
+    .image {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
     .info {
       width: 90%;
       height: 100%;
+      grid-template-rows: repeat(3, 1fr);
+      align-items: center;
       justify-items: center;
       text-align: center;
       align-content: center;
-      row-gap: 1rem;
+      row-gap: 0.5rem;
     }
     .project-card:nth-child(even) {
       flex-direction: column;
