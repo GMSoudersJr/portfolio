@@ -22,7 +22,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, min-content);
     justify-content: center;
-    row-gap: 0.25rem;
+    row-gap: 1rem;
     padding-left: 6vw;
     padding-right: 6vw;
   }
@@ -36,6 +36,7 @@
   .section-title {
     font-size: var(--sectionTitleFontSize);
     letter-spacing: var(--sectionTitleLetterSpacing);
+    line-height: var(--sectionTitleLineHeight);
   }
 
   @media screen and (max-width: 80em) {

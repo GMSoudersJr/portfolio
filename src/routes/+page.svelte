@@ -3,7 +3,7 @@
   import Splash from './components/Splash.svelte';
   import AboutMe from './components/AboutMe.svelte';
   import Projects from './components/Projects.svelte';
-  import CounterWidget from './components/CounterWidget.svelte';
+  import Visitors from './components/Visitors.svelte';
 
   /** @type {import('./$types').PageData} */
   export let data;
@@ -16,7 +16,7 @@
   <Projects />
   <Contact />
   {#await data then value}
-  <CounterWidget
+  <Visitors
     totalVisits={value.totalVisits}
     visitsByCountryWithCountryCode={data.visitsByCountryWithCountryCode}
   />

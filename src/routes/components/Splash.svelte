@@ -90,4 +90,19 @@
     justify-self: center;
     text-align: center;
   }
+  @media screen and (max-width: 40em) {
+    .splash-box {
+      row-gap: 3rem;
+    }
+    h3 {
+      font-size: large;
+    }
+    h1 {
+      font-size: x-large;
+    }
+    p {
+      font-size: large;
+    }
+
+  }
 </style>

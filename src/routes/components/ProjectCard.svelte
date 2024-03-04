@@ -44,6 +44,7 @@
           src=
           {`https://img.shields.io/badge/-GitHub Repo-FFFFFF?logo=GitHub&logoColor=181717&style=for-the-badge`}
           alt="github repo"
+          class="github-badge"
         >
       </a>
     </div>
@@ -51,6 +52,10 @@
 </div>
 
 <style>
+  .github-badge {
+    border-radius: 4px;
+    opacity: 0.8;
+  }
   p, h1 {
     text-wrap: pretty;
   }
