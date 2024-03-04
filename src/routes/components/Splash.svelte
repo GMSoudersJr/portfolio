@@ -4,16 +4,22 @@
 </script>
 
 <section id="/" class="section-container bg-gradient">
+  <div class="bg-image" >
+  </div>
   <div class="splash-box">
     <div id="headings">
       <h3 class="poppins-light">
         HI, MY NAME IS
       </h3>
-      <h1 class="gradient-text poppins-extrabold">
-        Gerald Souders
+      <h1 class="poppins-extrabold">
+        <span class="gradient-text">
+          Gerald Souders
+        </span>
       </h1>
       <h1 class="gradient-text poppins-extrabold">
-        I am a Software Engineer
+        <span class="gradient-text">
+          I am a Software Engineer
+        </span>
       </h1>
     </div>
     <div id="paragraph-block">
@@ -35,46 +41,50 @@
       <p class="poppins-medium">
         Ready to elevate your projects!
       </p>
-      </div>
+    </div>
     <TechStack />
   </div>
 </section>
 
 <style>
   h3 {
-    font-size: 4vw;
+    font-size: calc(4vw + 5px);
   }
   h1 {
-    font-size: 6vw;
+    font-size: calc(6vw + 2px);
   }
   p {
-    font-size: 2vw;
+    font-size: calc(2vw + 3px);
   }
-  button {
-    padding: 10px 48px;
-    margin-top: 42px;
-    border-radius: 5px;
-    font-size: minmax(1.5vw, 2vw);
-  }
-  .section-container {
+  .bg-image {
     background-image:
     linear-gradient(to bottom,
-    rgba(0, 0, 0, 0) 80%,
+    rgba(0, 0, 0, 0.1) 80%,
     rgba(15, 21, 37, 1) 100%
     ),
-    url('../../lib/images/portfolioSplashBackground.png');
+    url('https://lh3.googleusercontent.com/pw/AP1GczO2Jrj_3FB4oSnkpvmyDGk8J7_jWhJHxdDNv3WMVC4R_VRBajpu-U6XqcyIlA-cWuRjfbZ0xfbBMcxBuKCdt-Ze3OpYjdRmYtQRelfQ6IwFLfsff62Oihl2RPX7qu9eAbt7kajFJ4LqOM_Wa3NoE0r2Jg=w983-h1305-s-no-gm?authuser=0');
+    filter: blur(18px);
+    -webkit-filter: blur(18px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+  }
+  .section-container {
     height: 100vh;
     width: 100%;
-    display: grid;
-    padding-top: 82px;
-    padding-bottom: 20px;
+    padding-bottom: 8%;
   }
   .splash-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
     width: 80%;
-    height: 100%;
     display: grid;
-    grid-template-rows: repeat(auto-fill, min-content);
+    row-gap: 3.5vw;
+    grid-template-rows: repeat(3, max-content);
     justify-content: center;
     justify-items: center;
     justify-self: center;

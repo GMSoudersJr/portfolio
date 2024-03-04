@@ -28,10 +28,8 @@
     color: #E5E5CB
   }
   .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    row-gap: 2em;
+    display: grid;
+    row-gap: 5rem;
   }
 </style>

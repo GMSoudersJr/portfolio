@@ -2,28 +2,18 @@
   const profilePicUrl = "https://lh3.googleusercontent.com/pw/AIL4fc_H8MUGLSQtrH9KnBIH0EURoS7J0LSiPjE2i0BMfTG_gsaYFp0ZjmOavjxBe9Uvt04RAn7HiR6ecmyKjOEOBb21nJDo6OmLyjz6yd3qs1qII_ei8KNwAJW6lmvHGPRNYcZ7eeIMlORPHSHAxQqqPk6uGA=w944-h944-s-no?authuser=0";
 </script>
 
-<div class="profile-pic-container">
   <img
     id="profile-pic"
     src={profilePicUrl}
     alt="Profile Pic"
   />
-</div>
 
 <style>
-  .profile-pic-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
   #profile-pic {
     width: 14em;
     height: 14em;
-    border-radius: 50%;
+    border-radius: 8px;
     object-fit: cover;
-    box-sizing: border-box;
   }
 
   @media screen and (max-width: 80em) {

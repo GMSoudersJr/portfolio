@@ -27,12 +27,17 @@
       {:else}
         {convertStringToFlagEmojiCode(country.countryCode)}
       {/if}
+      <p class="visit-digit lora-text">{country.visits}</p>
     </div>
   {/each}
 </div>
 
 
 <style>
+  .visit-digit {
+    font-size: small;
+    text-align: center;
+  }
   .flag-emoji-container {
     box-sizing: border-box;
     display: flex;
@@ -42,10 +47,6 @@
     align-items: center;
     justify-content: space-around;
     gap: 0.5em;
-    padding: 1em;
-    background: var(--backgroundOffWhite);
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
   }
   .individual-flags {
     font-family: var(--emojiFontFamily);

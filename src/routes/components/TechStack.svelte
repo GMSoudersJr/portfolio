@@ -9,6 +9,14 @@
       style: 'plastic',
     },
     {
+      name: 'playwright',
+      badgeLabel: 'playwright',
+      hexColor: '2EAD33',
+      iconName: 'playwright',
+      logoColor: 'FFFFFF',
+      style: 'plastic',
+    },
+    {
       name: 'javascript',
       badgeLabel: 'javascript',
       hexColor: 'F7DF1E',
@@ -124,8 +132,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    row-gap: 3vw;
+    justify-content: space-evenly;
   }
 </style>
 

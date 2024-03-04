@@ -19,73 +19,47 @@
   export let visitsByCountryWithCountryCode;
 </script>
 
-<div class="widget" id="visitor-widget">
-  <div class="header-section">
-    <div
-      class=" emoji"
-      title={`Globally - ${totalVisits} views`}
-    >
-      🗺
-    </div>
-    <h2>Visitors</h2>
-    <p>(according to ip addresses)</p>
-  </div>
+<section class="widget visitor-container" id="visitor-widget">
+  <h1 class="section-title poppins-extrabold">
+    <span class="gradient-text">
+      Visitors 🗺
+    </span>
+  </h1>
   <CountryFlags
     {visitsByCountryWithCountryCode}
   />
-</div>
+</section>
 
 
 <style>
-  .widget {
-    box-sizing: border-box;
-    display: flex;
-    width: 76%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    border: 3px solid var(--backgroundWhite);
+  .visitor-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content);
+    row-gap: 1rem;
     margin-bottom: 1em;
+    padding-left: 6vw;
+    padding-right: 6vw;
   }
 
-  .header-section {
-    width: 100%;
-    background-color: var(--backgroundWhite);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    gap: 0em;
-    padding-bottom: 0.5em;
+  .section-title {
+    font-size: var(--sectionTitleFontSize);
+    line-height: var(--sectionTitleLineHeight);
+    letter-spacing: var(--sectionTitleLetterSpacing);
   }
 
-  .header-section h2, p{
-    color: var(--charcoalBlack);
-    margin: 0px auto;
+  @media screen and (max-width: 80em) {
   }
-  .emoji {
-    font-family: var(--emojiFontFamily);
-    font-size: 3em;
-    cursor: help;
+  @media screen and (max-width: 64em) {
   }
-  @media screen and (min-width: 80em) {
+  @media screen and (max-width: 48em) {
   }
-  @media screen and (min-width: 64em) {
-    .widget {
-      width: 70%;
+  @media screen and (max-width: 40em) {
+    .social-icons-container {
+      justify-content: center;
     }
-  }
-  @media screen and (min-width: 48em) {
-    .widget {
-      width: 50%;
-    }
-  }
-  @media screen and (min-width: 40em) {
-    .widget {
-      width: 50%;
+    .section-title {
+      text-align: center;
     }
   }
 </style>

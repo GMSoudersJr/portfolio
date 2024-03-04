@@ -1,147 +1,140 @@
-<script>
+<script lang="ts">
   export let project;
   export let index;
-  let projectCardClassName = "project-card-container"
 
-  if ((Number.parseInt(index) + 1) % 2 === 0) {
-    projectCardClassName += " reverse"
-  }
 </script>
 
-<div class={projectCardClassName}>
-  <a
-    class="project-link"
-    href={project.projectUrl}
-    target="_blank"
-    referrerpolicy="no-referrer"
-  >
-    <img
-      class="project-image"
-      src={project.imageUrl}
-      alt={project.alt}
-    />
-  </a> 
-  <div class="details-area">
-    <h1 class="project-name">{project.name}</h1>
-    {#each project.description as description}
-    <p class="project-description">{description}</p>
-    {/each}
-    <div class="stack-git">
-      <h3 class="project-stack">{project.stack}</h3>
+<div class="project-card">
+  <div class="image-container">
+    <a
+      href={`${project.projectUrl}`}
+      referrerpolicy="no-referrer"
+      target="_blank"
+    >
+      <img src={`${project.imageUrl}`} alt={`${project.name}`} class="image">
+    </a>
+  </div>
+  <div class="info">
+    <div class="project-info" id="project-name">
+      <a
+        href={`${project.projectUrl}`}
+        referrerpolicy="no-referrer"
+        target="_blank"
+      >
+        <h1 class="poppins-black">
+          {project.name}
+        </h1>
+      </a>
+    </div>
+    <div class="project-info" id="project-description">
+      {#each project.description as description}
+        <p class="project-description-item lora-text">{@html description}</p>
+      {/each}
+    </div>
+    <div class="project-info lora-text" id="project-stack">
+      <h3 class="poppins-medium">
+        {project.stack}
+      </h3>
       <a
         href={project.githubUrl}
-        id={`${project.id}-GitHub`}
         referrerpolicy="no-referrer"
         target="_blank"
       >
         <img
-          class="github-icon"
-          src="https://lh3.googleusercontent.com/pw/AIL4fc8YKL8pEKc5WSoPX9onJhSk5j-4-68MBln6PsoDcrr2lGBSxaiidZLp0T-ufKICz9hQP9ZE3bssftK3J30AWFZtBEaEhLMC0NafOMeeOdpgD8A_qrw9NicNsqLZieXz4K_XYs7MN8p29LLB-_0Z92s4eg=w230-h225-s-no?authuser=0"
-          alt="GitHub Icon">
+          src=
+          {`https://img.shields.io/badge/-GitHub Repo-FFFFFF?logo=GitHub&logoColor=181717&style=for-the-badge`}
+          alt="github repo"
+        >
       </a>
     </div>
   </div>
 </div>
 
 <style>
-  .stack-git {
-    display: grid;
-    grid-template-columns: auto min-content;
-    grid-template-rows: min-content;
-    justify-content: center;
-    align-items: center;
-    column-gap: 1em;
+  p, h1 {
+    text-wrap: pretty;
   }
-  .github-icon {
-    height: 20px;
-    widows: 20px;
+  a {
+    text-decoration: none;
   }
-  .project-card-container {
+  .project-card {
     width: 100%;
-    aspect-ratio: 16 / 4;
-    display: grid;
-    /* this is good for overlapping look
-    grid: 1fr / 2fr 4fr;
-     */
-    grid: 1fr / 2fr 5fr;
-    background: linear-gradient(80deg, var(--projectImageBackground) 30%,
-    var(--projectDetailsBackground) 30.1%);
-    border-radius: 12px;
-    box-sizing: border-box;
+    height: 150px;
+    background-color: #259;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    overflow: hidden;
   }
-
-  .project-image {
+  .image-container {
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+  }
+  .image {
     width: 100%;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    object-fit: cover;
-    box-sizing: border-box;
-    /* git rid of padding to have them overlap */
-    padding: 12px;
-    align-self: center;
+    object-fit: contain;
+    object-position: center;
+  }
+  .info {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-self: center;
     justify-self: center;
+    justify-items: center;
+    row-gap: 0.5rem;
   }
-
-  .project-link {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-  }
-
-  .details-area {
-    width: 100%;
+  #project-description {
     display: grid;
-    grid-template-rows: repeat(3, min-content);
-    align-items: center;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
+    justify-items: center;
+  }
+  #project-stack {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1rem;
   }
-
-  .reverse {
-    /* uncomment to have overlap
-    grid: auto / 4fr 2fr;
-     */
-    grid: auto / 5fr 2fr;
-    background: linear-gradient(-80deg, var(--projectImageBackground) 30%,
-    var(--projectDetailsBackground) 30.1%);
-  }
-
-  .reverse .project-link {
-    grid-row: 1;
-    grid-column: 2;
-  }
-
-  .project-name, .project-stack {
-    font-family: var(--projectNameAndStackFontFamily);
-    letter-spacing: var(--projectNameAndStackLetterSpacing);
-  }
-
-  .project-description {
-    font-family: var(--projectDescriptionFontFamily);
-    line-height: 20px;
-    max-width: 600px;
+  .project-card:nth-child(even) {
+    flex-direction: row-reverse;
+    & .image-container {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+    }
   }
 
   @media screen and (max-width: 64em) {
-    .project-card-container {
+    .project-card {
+      height: 70vh;
       width: 100%;
-      grid: repeat(2, 1fr) / 1fr;
-      background: var(--baseGallery);
+      flex-direction: column;
+      justify-items: center;
     }
-    .reverse .project-link {
-      grid-row: 1;
-      grid-column: 1;
-    }
-
-    .project-image {
+    .image-container {
       width: 100%;
-      padding: 5px;
-      border: none;
-      border-radius: 13px;
-      object-fit: cover;
-      box-sizing: border-box;
+      height: 50%;
+      border-radius: 0;
+      clip-path: none;
+    }
+    .info {
+      width: 90%;
+      height: 50%;
+      justify-items: center;
+      text-align: center;
+    }
+    .project-card:nth-child(even) {
+      flex-direction: column;
+    }
+    .project-card:nth-child(even) > .image-container {
+      border-radius: 0;
+      clip-path: none;
     }
   }
 
