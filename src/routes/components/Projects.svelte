@@ -4,11 +4,11 @@
 </script>
 
 <section class="projects-container" id="projects">
-  <h2 class="section-title poppins-extrabold">
+  <h1 class="section-title poppins-extrabold">
     <span class="gradient-text">
       Projects
     </span>
-  </h2>
+  </h1>
   <div class="project-cards-container">
     {#each realProjects as project, index }
       <ProjectCard {project} {index}/>
