@@ -47,15 +47,6 @@
 </section>
 
 <style>
-  h3 {
-    font-size: calc(4vw + 5px);
-  }
-  h1 {
-    font-size: calc(6vw + 2px);
-  }
-  p {
-    font-size: calc(2vw + 3px);
-  }
   .bg-image {
     background-image:
     linear-gradient(to bottom,
@@ -65,43 +56,48 @@
     url('https://lh3.googleusercontent.com/pw/AP1GczNYy5HxnQYTFcBW8pMaFF-4yCJDVMmtbX_Oxl75tSbOei9atBQJihAKtqN_CRbzNIkCcG0mLot7CjV1D0pjHeLQ7LtbXBgmx2kGG2VAAFInf8hH--Va70wFyJWEaIC0pdywSr_YSCM8j2Is7Mym7d-G7A=w730-h973-s-no-gm?authuser=0');
     filter: blur(18px);
     -webkit-filter: blur(18px);
-    height: 100%;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  #headings {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
   }
   .section-container {
     height: 100vh;
     width: 100%;
     padding-bottom: 8%;
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .splash-box {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
     z-index: 2;
-    width: 80%;
+    width: 100%;
+    height: 100%;
     display: grid;
-    row-gap: 3.5vw;
-    grid-template-rows: repeat(3, max-content);
+    grid-template-rows: repeat(3, 1fr);
+    padding-left: 6vw;
+    padding-right: 6vw;
+    align-content: center;
+    align-items: center;
     justify-content: center;
     justify-items: center;
     justify-self: center;
     text-align: center;
+    text-wrap: pretty;
   }
   @media screen and (max-width: 40em) {
     .splash-box {
       row-gap: 3rem;
-    }
-    h3 {
-      font-size: 1rem;
-    }
-    h1 {
-      font-size: 1.25rem;
-    }
-    p {
-      font-size: 0.75rem;
     }
 
   }

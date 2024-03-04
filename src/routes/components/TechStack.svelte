@@ -122,13 +122,11 @@
 
 <style>
   img {
-    min-height: calc(2vw - 5%);
     opacity: 70%;
     border-radius: 8px;
   }
   .tech-stack {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
