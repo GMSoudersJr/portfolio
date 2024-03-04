@@ -52,26 +52,16 @@ export const projects = [
 
 export const realProjects = [
   {
-    name: "Random Name Picker",
-    imageUrl: "https://lh3.googleusercontent.com/pw/AIL4fc8i-LKtpWgRTVpE5BXoYqhLRxhSZQBwTfIK9pb0Z0cdKN1y9Ga7WBiB3au_wm2h4qxuSqmXt9gW6oYRXtC7ftbRSfgC3f3p4bt_ZCRjex_rAUWr4UPB4VBLqNwiLKZ2H2_aBBBNu45sZPXb0JdnIeHHgQ=w941-h975-s-no?authuser=0",
-    alt: "Random Name Picker",
-    projectUrl: "https://random-name-picker-alpha.vercel.app",
+    name: "Running on Xero (Blog)",
+    imageUrl: "https://lh3.googleusercontent.com/pw/ABLVV86iE9xXYy5PdrAIsBv0rerZJ0cG1DnWT0zuTt-wRfD-8GXpK0ydDn-RNRFWayzJehonPnuyXeuarRyBk50tFaQg1K8K1dOpxwm3FjksoBlQH4-EAmp9g-HDg7ZBmpu0IM3FbZ_RzWlrk8paDf_TOdiefg=w399-h426-s-no-gm?authuser=0",
+    alt: "Running on Xero (Blog)",
+    projectUrl: "https://running-on-xero.vercel.app/",
     description: [
-      "Need to choose random names from a list? Here you go!",
+      `A blog made to celebrate minimalist running in Xero Shoes`,
+      `Affiliate links included`,
     ],
-    stack: "SVELTE",
-    githubUrl: "https://www.github.com/GMSoudersJr/random-name-picker",
-  },
-  {
-    name: "Timer",
-    imageUrl: "https://lh3.googleusercontent.com/pw/AIL4fc9eqEPAo6tCDkTcWkViRFHSWj_SeXJIVcYMWSxmgfdwzTjw54E2UwQnRcS46_SIuerAJabuIrau_XNGezK2Bm_DOMNVn5r8OUth7khTdw3UccIU2SuC_2nq8_idQ2sO4yb0I7wAPP_jbqWbj0deqocVjA=w1080-h1080-s-no?authuser=0",
-    alt: "Timer",
-    projectUrl: "https://timer-pink-phi.vercel.app",
-    description: [
-      "A timer that also gives you a break. Let's get to work!",
-    ],
-    stack: "SVELTE",
-    githubUrl: "https://www.github.com/GMSoudersJr/timer",
+    stack: "SVELTEKIT | MongoDB",
+    githubUrl: "https://github.com/GMSoudersJr/running-on-xero",
   },
   {
     name: "Encrypted Purchase Order PDF Generator",
@@ -86,15 +76,27 @@ export const realProjects = [
     githubUrl: "https://github.com/GMSoudersJr/portfolio-po-generator",
   },
   {
-    name: "Running on Xero (Blog)",
-    imageUrl: "https://lh3.googleusercontent.com/pw/ABLVV86iE9xXYy5PdrAIsBv0rerZJ0cG1DnWT0zuTt-wRfD-8GXpK0ydDn-RNRFWayzJehonPnuyXeuarRyBk50tFaQg1K8K1dOpxwm3FjksoBlQH4-EAmp9g-HDg7ZBmpu0IM3FbZ_RzWlrk8paDf_TOdiefg=w399-h426-s-no-gm?authuser=0",
-    alt: "Running on Xero (Blog)",
-    projectUrl: "https://running-on-xero.vercel.app/",
+    name: "Timer",
+    imageUrl: "https://lh3.googleusercontent.com/pw/AIL4fc9eqEPAo6tCDkTcWkViRFHSWj_SeXJIVcYMWSxmgfdwzTjw54E2UwQnRcS46_SIuerAJabuIrau_XNGezK2Bm_DOMNVn5r8OUth7khTdw3UccIU2SuC_2nq8_idQ2sO4yb0I7wAPP_jbqWbj0deqocVjA=w1080-h1080-s-no?authuser=0",
+    alt: "Timer",
+    projectUrl: "https://timer-pink-phi.vercel.app",
     description: [
-      `A blog made to celebrate minimalist running in Xero Shoes`,
-      `Affiliate links included`,
+      "A timer that also gives you a break.",
+      " Let's get to work!"
     ],
-    stack: "SVELTEKIT | MongoDB",
-    githubUrl: "https://github.com/GMSoudersJr/running-on-xero",
+    stack: "SVELTE",
+    githubUrl: "https://www.github.com/GMSoudersJr/timer",
+  },
+  {
+    name: "Random Name Picker",
+    imageUrl: "https://lh3.googleusercontent.com/pw/AIL4fc8i-LKtpWgRTVpE5BXoYqhLRxhSZQBwTfIK9pb0Z0cdKN1y9Ga7WBiB3au_wm2h4qxuSqmXt9gW6oYRXtC7ftbRSfgC3f3p4bt_ZCRjex_rAUWr4UPB4VBLqNwiLKZ2H2_aBBBNu45sZPXb0JdnIeHHgQ=w941-h975-s-no?authuser=0",
+    alt: "Random Name Picker",
+    projectUrl: "https://random-name-picker-alpha.vercel.app",
+    description: [
+      "Need to choose random names from a list?",
+      "Here you go!"
+    ],
+    stack: "SVELTE",
+    githubUrl: "https://www.github.com/GMSoudersJr/random-name-picker",
   },
 ];
