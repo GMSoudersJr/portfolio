@@ -28,6 +28,7 @@
     color: #E5E5CB
   }
   .container {
+    margin: 0px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
