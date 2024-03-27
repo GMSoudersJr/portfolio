@@ -8,7 +8,7 @@
     Projects
   </h2>
   <div class="container">
-    {#each realProjects as project, index }
+    {#each realProjects.reverse() as project, index }
       <ProjectCard {project} {index}/>
     {/each}
   </div>

@@ -97,4 +97,16 @@ export const realProjects = [
     stack: "SVELTEKIT | MongoDB",
     githubUrl: "https://github.com/GMSoudersJr/running-on-xero",
   },
+  {
+    name: "Suit Yourself",
+    imageUrl: "https://lh3.googleusercontent.com/pw/AP1GczPJLi_LAySA7VYWs3mfz2BfkBXzcCIp5fLYaC-rGk67iHR_cmPKgeFR-jgNwdKZSLy63xBt-vN8eCfXAeffgcLGTSuiBsVJfw1Z1zGSdR2KOGgHUI7maAe9nrnmVxE7sxLMuPSDfZzMts4XQlD4iRP9lQ=w694-h1302-s-no-gm?authuser=0",
+    alt: "Suit Yourself",
+    projectUrl: "https://card-workout-tau.vercel.app",
+    description: [
+      "A web-app workout based on playing cards",
+      "Mobile first, works best on Mobile Chrome",
+    ],
+    stack: "SVELTE | PLAYWRIGHT",
+    githubUrl: "https://www.github.com/GMSoudersJr/card-workout",
+  },
 ];
