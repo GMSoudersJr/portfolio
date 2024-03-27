@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   export let project;
   export let index;
   let projectCardClassName = "project-card-container"
@@ -126,13 +126,19 @@
 
   @media screen and (max-width: 64em) {
     .project-card-container {
-      width: 100%;
       grid: repeat(2, 1fr) / 1fr;
+      aspect-ratio: revert;
       background: var(--baseGallery);
     }
     .reverse .project-link {
       grid-row: 1;
       grid-column: 1;
+    }
+    .details-area {
+      height: 100%;
+      width: 95%;
+      align-items: center;
+      grid-template-rows: auto;
     }
 
     .project-image {
