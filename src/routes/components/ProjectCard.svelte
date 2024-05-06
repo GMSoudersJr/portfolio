@@ -57,8 +57,6 @@
     widows: 20px;
   }
   .project-card-container {
-    width: 100%;
-    aspect-ratio: 16 / 4;
     display: grid;
     /* this is good for overlapping look
     grid: 1fr / 2fr 4fr;
@@ -91,7 +89,7 @@
   .details-area {
     width: 100%;
     display: grid;
-    grid-template-rows: repeat(3, min-content);
+    grid-template-rows: repeat(auto-fill, min-content);
     align-items: center;
     text-align: center;
     justify-self: center;
@@ -127,7 +125,7 @@
   @media screen and (max-width: 64em) {
     .project-card-container {
       grid: repeat(2, 1fr) / 1fr;
-      aspect-ratio: revert;
+      justify-content: center;
       background: var(--baseGallery);
     }
     .reverse .project-link {
@@ -138,12 +136,15 @@
       height: 100%;
       width: 95%;
       align-items: center;
-      grid-template-rows: auto;
+      grid-template-columns: 90%;
+      grid-template-rows: repeat(auto-fill, min-content);
+      border: 1px solid green;
     }
 
     .project-image {
+      align-self: center;
       width: 100%;
-      padding: 5px;
+      aspect-ratio: 1 / 1;
       border: none;
       border-radius: 13px;
       object-fit: cover;

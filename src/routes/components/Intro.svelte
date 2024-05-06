@@ -1,16 +1,16 @@
-<script>
+<script lang="ts">
   import { typewriter } from '$lib/utils.js';
 </script>
 
 <div class="intro-container">
-  <h1 transition:typewriter|global={{ delay: 1500 }}>
-   I'm Gerald M. Souders Jr.
+  <h1 transition:typewriter|global={{ delay: 200 }}>
+   I'm Gerald Souders
   </h1>
-  <h2 transition:typewriter|global={{ delay: 4000 }}>
-    A Svelte Developer
+  <h2 transition:typewriter|global={{ delay: 1500 }}>
+    A Full-Stack Software Developer
   </h2>
-  <h2 transition:typewriter|global={{ delay: 6000 }}>
-    Making Things Work
+  <h2 transition:typewriter|global={{ delay: 3800 }}>
+    Solving Problems with Code
   </h2>
 </div>
 

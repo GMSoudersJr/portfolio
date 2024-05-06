@@ -85,7 +85,7 @@ export function typewriter(node, params, { speed = 1 }) {
 	 * @type {?string}
 	 */
 	const text = node.textContent || "";
-	const duration = text.length / (speed * 0.01);
+	const duration = text.length / (speed * 0.015);
 
 	return {
 		delay: params.delay,
