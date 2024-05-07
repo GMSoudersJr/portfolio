@@ -19,12 +19,12 @@
   export let visitsByCountryWithCountryCode;
 </script>
 
-<section class="visitors" id="visitor-widget">
+<div class="visitors" id="visitor-widget">
   <h2 class="section-title">Visitors</h2>
   <CountryFlags
     {visitsByCountryWithCountryCode}
   />
-</section>
+</div>
 
 
 <style>
