@@ -92,7 +92,7 @@ export const realProjects = [
     projectUrl: "https://running-on-xero.vercel.app/",
     description: [
       `A blog made to celebrate minimalist running in Xero Shoes`,
-      `Affiliate links included`,
+      `Using Splide for carousel`,
     ],
     stack: "SVELTEKIT | MongoDB",
     githubUrl: "https://github.com/GMSoudersJr/running-on-xero",
@@ -103,8 +103,8 @@ export const realProjects = [
     alt: "Suit Yourself",
     projectUrl: "https://card-workout-tau.vercel.app",
     description: [
-      "A web-app workout based on playing cards",
-      "Mobile first, works best on Mobile Chrome",
+      "A PWA made for friends to change up their workouts",
+      "Installable on Android devices using mobile Chrome",
     ],
     stack: "SVELTE | PLAYWRIGHT",
     githubUrl: "https://www.github.com/GMSoudersJr/card-workout",
