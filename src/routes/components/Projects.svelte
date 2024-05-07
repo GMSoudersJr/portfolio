@@ -37,7 +37,6 @@
     grid-template-rows: repeat(auto-fill, min-content);
     gap: 4em;
     box-sizing: border-box;
-    overflow: hidden;
   }
 
   @media screen and (max-width: 80em) {

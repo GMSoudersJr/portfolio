@@ -59,7 +59,7 @@ export const realProjects = [
     description: [
       "Need to choose random names from a list? Here you go!",
     ],
-    stack: "SVELTE",
+    stack: ["SVELTE", "VERCEL"],
     githubUrl: "https://www.github.com/GMSoudersJr/random-name-picker",
   },
   {
@@ -70,7 +70,7 @@ export const realProjects = [
     description: [
       "A timer that also gives you a break. Let's get to work!",
     ],
-    stack: "SVELTE",
+    stack: ["SVELTE", "VERCEL"],
     githubUrl: "https://www.github.com/GMSoudersJr/timer",
   },
   {
@@ -82,7 +82,7 @@ export const realProjects = [
       `A Purchase Order Generator that encrypts Payee data. Not mobile friendly.`,
       `username and password: guest`,
     ],
-    stack: "SVELTEKIT | MongoDB",
+    stack: ["SVELTEKIT", "MongoDB", "VERCEL"],
     githubUrl: "https://github.com/GMSoudersJr/portfolio-po-generator",
   },
   {
@@ -94,7 +94,7 @@ export const realProjects = [
       `A blog made to celebrate minimalist running in Xero Shoes`,
       `Using Splide for carousel`,
     ],
-    stack: "SVELTEKIT | MongoDB",
+    stack: ["SVELTEKIT", "MongoDB", "VERCEL"],
     githubUrl: "https://github.com/GMSoudersJr/running-on-xero",
   },
   {
@@ -106,7 +106,7 @@ export const realProjects = [
       "A PWA made for friends to change up their workouts",
       "Installable on Android devices using mobile Chrome",
     ],
-    stack: "SVELTE | PLAYWRIGHT",
+    stack: ["SVELTE", "TYPESCRIPT", "PLAYWRIGHT", "VERCEL"],
     githubUrl: "https://www.github.com/GMSoudersJr/card-workout",
   },
 ];

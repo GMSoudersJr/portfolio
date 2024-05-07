@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   export let project;
   export let index;
   let projectCardClassName = "project-card-container"
@@ -20,14 +20,28 @@
       src={project.imageUrl}
       alt={project.alt}
     />
-  </a> 
+  </a>
   <div class="details-area">
-    <h1 class="project-name">{project.name}</h1>
+    <h1 class="project-name">
+      <a
+        href={project.projectUrl}
+        target="_blank"
+        referrerpolicy="no-referrer"
+      >
+      {project.name}
+      </a>
+    </h1>
     {#each project.description as description}
     <p class="project-description">{description}</p>
     {/each}
     <div class="stack-git">
-      <h3 class="project-stack">{project.stack}</h3>
+      <ul class="stack-list">
+      {#each project.stack as stack}
+        <li class="stack-listitem">
+          {stack}
+        </li>
+      {/each}
+      </ul>
       <a
         href={project.githubUrl}
         id={`${project.id}-GitHub`}
@@ -44,28 +58,43 @@
 </div>
 
 <style>
-  .stack-git {
-    display: grid;
-    grid-template-columns: auto min-content;
-    grid-template-rows: min-content;
-    justify-content: center;
-    align-items: center;
-    column-gap: 1em;
-  }
-  .github-icon {
-    height: 20px;
-    widows: 20px;
-  }
   .project-card-container {
     display: grid;
-    /* this is good for overlapping look
-    grid: 1fr / 2fr 4fr;
-     */
     grid: 1fr / 2fr 5fr;
     background: linear-gradient(80deg, var(--projectImageBackground) 30%,
     var(--projectDetailsBackground) 30.1%);
     border-radius: 12px;
     box-sizing: border-box;
+  }
+
+  .stack-git {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: min-content;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+  }
+
+  .github-icon {
+    height: 20px;
+    widows: 20px;
+  }
+
+  .stack-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 0.5rem;
+    padding-left: 0;
+  }
+
+  .stack-listitem {
+    list-style: none;
+    font-family: var(--projectNameAndStackFontFamily);
+    letter-spacing: var(--projectNameAndStackLetterSpacing);
+    font-weight: 700;
+    max-width: 600px;
   }
 
   .project-image {
@@ -74,7 +103,6 @@
     border-radius: 50%;
     object-fit: cover;
     box-sizing: border-box;
-    /* git rid of padding to have them overlap */
     padding: 12px;
     align-self: center;
     justify-self: center;
@@ -89,6 +117,7 @@
   .details-area {
     width: 100%;
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fill, min-content);
     align-items: center;
     text-align: center;
@@ -98,9 +127,6 @@
   }
 
   .reverse {
-    /* uncomment to have overlap
-    grid: auto / 4fr 2fr;
-     */
     grid: auto / 5fr 2fr;
     background: linear-gradient(-80deg, var(--projectImageBackground) 30%,
     var(--projectDetailsBackground) 30.1%);
@@ -115,6 +141,10 @@
     font-family: var(--projectNameAndStackFontFamily);
     letter-spacing: var(--projectNameAndStackLetterSpacing);
   }
+  .project-name a {
+    text-decoration: none;
+    color: inherit;
+  }
 
   .project-description {
     font-family: var(--projectDescriptionFontFamily);
@@ -124,7 +154,8 @@
 
   @media screen and (max-width: 64em) {
     .project-card-container {
-      grid: repeat(2, 1fr) / 1fr;
+      height: fit-content;
+      grid:  1fr max-content / 1fr;
       justify-content: center;
       background: var(--baseGallery);
     }
@@ -138,6 +169,25 @@
       align-items: center;
       grid-template-columns: 90%;
       grid-template-rows: repeat(auto-fill, min-content);
+    }
+
+    .stack-git {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, min-content);
+      justify-content: center;
+      align-items: center;
+      column-gap: 0.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .stack-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 1rem;
+      padding-left: 0;
     }
 
     .project-image {
