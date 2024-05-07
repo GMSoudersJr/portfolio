@@ -47,7 +47,6 @@
     })
     navItem?.classList.add("active");
   }
-
   onMount(async() => {
     const sections = document.querySelectorAll("section");
     const navItems = document.querySelectorAll("nav ul li");
@@ -61,7 +60,7 @@
         const sectionTop = section.offsetTop;
         const navBarHeight = navItems[0].scrollHeight;
         const clientHeight = section.clientHeight
-        if ( scrollY >= ((sectionTop - navBarHeight) - ( clientHeight / 2.5 ))) {
+        if ( scrollY >= (sectionTop - navBarHeight) && scrollY <= (sectionTop - navBarHeight) + ( clientHeight )) {
           current = section.getAttribute("id");
         }
       });
@@ -71,7 +70,7 @@
         if ( item.id == `li-nav-${current}` ) {
           item.classList.add("active");
         }
-      })
+      });
     }
   })
 </script>
