@@ -20,12 +20,12 @@
       title={social.title}
     >
       {#if social.id === "email"}
-        {displayIconLong ? social.textLong : social.text}
+        {social.textLong}
       {:else}
         <img
           id={`${social.id}-icon`}
           class="icon"
-          src={displayIconLong ? social.iconLong: social.icon}
+          src={social.iconLong}
           alt={social.alt}
         />
       {/if}
@@ -38,14 +38,15 @@
   section {
     scroll-margin-top: 56px;
     box-sizing: border-box;
-    height: 100vh;
+    height: fit-content;
     width: 60%;
     display: grid;
     grid:
-      "title title title title title title"
-      "linkedIn github codepen email glitch freeCodeCamp"
-      ". . . . . .";
-    justify-content: space-between;
+      "title title title"
+      "linkedIn github codepen"
+      "email glitch freeCodeCamp";
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
   }
    #linkedIn {
     grid-area: linkedIn;
@@ -88,15 +89,9 @@
 
   a {
     text-decoration: none;
-    color: white;
     padding: 15px;
-    border: 3px solid var(--backgroundWhite);
-    border-radius: 50%;
-    background-image: linear-gradient(120deg, var(--darkerBlue), var(--darkerTurquoise));
-  }
-
-  a:hover {
-    background-image: linear-gradient(300deg, var(--darkerBlue), var(--darkerTurquoise));
+    background: var(--projectImageBackground);
+    border-radius: 10px;
   }
 
   .icon,
@@ -112,6 +107,7 @@
 
   .email {
     font-family: var(--contentTextFontFamily);
+    font-family: var(--emojiFontFamily);
   }
 
 
@@ -153,7 +149,6 @@
       width: 100%;
       background-image: linear-gradient(var(--backgroundWhite),var(--backgroundWhite));
       padding: 40px 10px;
-      border-radius: 10px;
       box-sizing: border-box;
     }
 
