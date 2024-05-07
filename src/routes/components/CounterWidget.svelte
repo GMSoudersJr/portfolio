@@ -31,6 +31,7 @@
   .visitors {
     box-sizing: border-box;
     width: 60%;
+    margin-bottom: 3rem;
   }
 
   .section-title {
