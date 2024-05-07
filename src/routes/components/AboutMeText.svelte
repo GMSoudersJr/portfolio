@@ -1,5 +1,4 @@
 <script>
-   
 </script>
 
 <div id="about-me-text">

@@ -138,7 +138,6 @@
       align-items: center;
       grid-template-columns: 90%;
       grid-template-rows: repeat(auto-fill, min-content);
-      border: 1px solid green;
     }
 
     .project-image {

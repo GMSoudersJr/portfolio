@@ -26,6 +26,7 @@
 
 <style>
   :root {
+    scroll-behavior: smooth;
     --darkest: #1A120B;
     --dark: #3C2A21;
     --light: #D5CEA3;
