@@ -1,5 +1,14 @@
 <script>
-  export let project;
+  export let project = {
+    name: '',
+    imageUrl: '',
+    alt: '',
+    projectUrl: '',
+    description: [''],
+    stack: [''],
+    githubUrl: '',
+  };
+
   export let index;
   let projectCardClassName = "project-card-container"
 
@@ -44,7 +53,6 @@
       </ul>
       <a
         href={project.githubUrl}
-        id={`${project.id}-GitHub`}
         referrerpolicy="no-referrer"
         target="_blank"
       >
@@ -142,7 +150,6 @@
     letter-spacing: var(--projectNameAndStackLetterSpacing);
   }
   .project-name a {
-    text-decoration: none;
     color: inherit;
   }
 
@@ -159,10 +166,12 @@
       justify-content: center;
       background: var(--baseGallery);
     }
+
     .reverse .project-link {
       grid-row: 1;
       grid-column: 1;
     }
+
     .details-area {
       height: 100%;
       width: 95%;
@@ -200,5 +209,4 @@
       box-sizing: border-box;
     }
   }
-
 </style>

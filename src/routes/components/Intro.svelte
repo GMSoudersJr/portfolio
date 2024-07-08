@@ -7,7 +7,7 @@
    I'm Gerald Souders
   </h1>
   <h2 transition:typewriter|global={{ delay: 1500 }}>
-    A Full-Stack Software Developer
+    A Full-Stack Web Developer
   </h2>
   <h2 transition:typewriter|global={{ delay: 3800 }}>
     Solving Problems with Code
