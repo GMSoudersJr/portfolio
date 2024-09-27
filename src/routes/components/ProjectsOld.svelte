@@ -1,7 +1,7 @@
 <script>
-  import ProjectCard from './ProjectCard.svelte';
-  import { projects } from '$lib/projects.js';
-  /*
+	import ProjectCard from './ProjectCard.svelte';
+	import { projects } from '$lib/projects.js';
+	/*
   const projects = [
     {
       name: "Tribute Page for Dr. Mae Carol Jemison",
@@ -22,47 +22,44 @@
 </script>
 
 <section class="projects" id="projects">
-  <h2 class="section-title">
-    Projects
-  </h2>
-  <div class="container">
-    {#each projects as project, index }
-      <ProjectCard {project} {index}/>
-    {/each}
-  </div>
+	<h2 class="section-title">Projects</h2>
+	<div class="container">
+		{#each projects as project, index}
+			<ProjectCard {project} {index} />
+		{/each}
+	</div>
 </section>
 
 <style>
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 3rem;
-  }
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 3rem;
+	}
 
-  .section-title {
-    color: var(--contentText);
-    font-size: var(--sectionTitleFontSize);
-    font-family: var(--sectionTitleFontFamily);
-    line-height: var(--sectionTitleLineHeight);
-    letter-spacing: var(--sectionTitleLetterSpacing);
-  }
+	.section-title {
+		color: var(--contentText);
+		font-size: var(--sectionTitleFontSize);
+		font-family: var(--sectionTitleFontFamily);
+		line-height: var(--sectionTitleLineHeight);
+		letter-spacing: var(--sectionTitleLetterSpacing);
+	}
 
-  section {
-    /* Needs to be the same height as the nav ul element */
-    scroll-margin-top: 56px;
-    min-height: 100vh;
-  }
+	section {
+		/* Needs to be the same height as the nav ul element */
+		scroll-margin-top: 56px;
+		min-height: 100vh;
+	}
 
-  @media screen and (max-width: 80em) {
-    .section-title {
-      text-align: center
-    }
-  }
-  @media screen and (max-width: 64em) {
-    section {
-      width:90%;
-    }
-  }
+	@media screen and (max-width: 80em) {
+		.section-title {
+			text-align: center;
+		}
+	}
+	@media screen and (max-width: 64em) {
+		section {
+			width: 90%;
+		}
+	}
 </style>
-
