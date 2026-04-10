@@ -4,14 +4,14 @@
 
 <section class="hero" aria-labelledby="hero-heading">
 	<div class="hero-content">
-		<p class="hero-label" aria-hidden="true">Web app developer · East &amp; Southeast Asia</p>
+		<p class="hero-label" aria-hidden="true">Full-stack web developer · Open to new projects</p>
 		<h1 class="hero-name" id="hero-heading">
 			Building things<br />that <span>actually work.</span>
 		</h1>
-		<p class="hero-role">React · Svelte · TypeScript · Python</p>
+		<p class="hero-role">React · Svelte · TypeScript · Python · MongoDB</p>
 		<p class="hero-desc">
-			I came to code through 15 years of teaching, and I bring that same clarity to software. I
-			build fast, purposeful web apps and automate the tedious so people can focus on what matters.
+			I build web apps across the full stack — React, SvelteKit, TypeScript, Python, and MongoDB.
+			Clean code, clear communication, and I finish what I start.
 		</p>
 		<div class="hero-cta">
 			<button type="button" class="btn-fill" onclick={() => scrollTo('work')}>See my work</button>
@@ -23,8 +23,8 @@
 		<div class="hero-avatar" aria-hidden="true">GS</div>
 		<dl class="hero-stats">
 			<div class="hero-stat">
-				<dt class="hero-stat-label">Years in Seoul</dt>
-				<dd class="hero-stat-num">15+</dd>
+				<dt class="hero-stat-label">Years shipping code</dt>
+				<dd class="hero-stat-num">3+</dd>
 			</div>
 			<div class="hero-stat">
 				<dt class="hero-stat-label">Live projects</dt>
