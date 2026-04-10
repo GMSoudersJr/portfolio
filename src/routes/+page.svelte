@@ -1,38 +1,30 @@
-<script>
-	import Contact from './components/Contact.svelte';
-	import Splash from './components/Splash.svelte';
-	import AboutMe from './components/AboutMe.svelte';
-	import Projects from './components/Projects.svelte';
-	import CounterWidget from './components/CounterWidget.svelte';
+<script lang="ts">
+	import Navbar from '$lib/components/Navbar.svelte';
+	import Hero from '$lib/components/Hero.svelte';
+	import Work from '$lib/components/Work.svelte';
+	import About from '$lib/components/About.svelte';
+	import Skills from '$lib/components/Skills.svelte';
+	import Visitors from '$lib/components/Visitors.svelte';
+	import Contact from '$lib/components/Contact.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
-	/** @type {import('./$types').PageData} */
-	export let data;
-	//$: ({totalVisits, visitsByCountryWithCountryCode} = data);
+	let { data } = $props();
 </script>
 
-<div class="container">
-	<Splash />
-	<AboutMe />
-	<Projects />
-	<Contact />
-	{#await data then value}
-		<CounterWidget
-			totalVisits={value.totalVisits}
-			visitsByCountryWithCountryCode={data.visitsByCountryWithCountryCode}
-		/>
-	{/await}
-</div>
+<svelte:head>
+	<title>Gerald Souders — Web App Developer</title>
+</svelte:head>
 
-<style>
-	* {
-		color: #e5e5cb;
-	}
-	.container {
-		margin: 0px auto;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		row-gap: 2em;
-	}
-</style>
+<Navbar />
+<main id="main-content">
+	<Hero />
+	<Work />
+	<About />
+	<Skills />
+	<Visitors
+		visitsByCountryWithCountryCode={data.visitsByCountryWithCountryCode ?? []}
+		totalVisits={data.totalVisits ?? 0}
+	/>
+	<Contact />
+</main>
+<Footer />

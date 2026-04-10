@@ -1,5 +1,5 @@
 import { json } from '@sveltejs/kit';
-import { addCountryandCodeToTheDatabase, getTotalVisits, getVisitsByCountry } from '$lib/db';
+import { addCountryandCodeToTheDatabase, getTotalVisits, getVisitsByCountry } from '$lib/server/db'; // Updated import path for db.js
 
 /** @type {import('./$types').RequestHandler} */
 export async function POST({ request }) {
