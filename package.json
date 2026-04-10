@@ -36,5 +36,8 @@
 	},
 	"dependencies": {
 		"mongodb": "^6.21.0"
+	},
+	"engines": {
+		"node": ">=24"
 	}
 }
