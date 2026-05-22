@@ -10,7 +10,7 @@
 
 <section class="hero" aria-labelledby="hero-heading">
 	<div class="hero-content">
-		<p class="hero-label" aria-hidden="true">Technical Product Manager · Singapore · Open to remote</p>
+		<p class="hero-label" aria-hidden="true">Technical Product Manager · Singapore · Remote or on-site</p>
 		<h1 class="hero-name" id="hero-heading">
 			TPM Who Can<br />Ship <span>Code.</span>
 		</h1>
