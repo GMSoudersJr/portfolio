@@ -1,17 +1,23 @@
 <script lang="ts">
 	import { scrollTo } from '$lib/utils.js';
+
+	interface Props {
+		visitorCountries: number;
+	}
+
+	let { visitorCountries }: Props = $props();
 </script>
 
 <section class="hero" aria-labelledby="hero-heading">
 	<div class="hero-content">
-		<p class="hero-label" aria-hidden="true">Full-stack web developer · Open to new projects</p>
+		<p class="hero-label" aria-hidden="true">Technical Product Manager · Singapore · Open to remote</p>
 		<h1 class="hero-name" id="hero-heading">
-			Building things<br />that <span>actually work.</span>
+			TPM Who Can<br />Ship <span>Code.</span>
 		</h1>
-		<p class="hero-role">React · Svelte · TypeScript · Python · MongoDB</p>
+		<p class="hero-role">Four years in product. Full-stack background. Bias toward shipping.</p>
 		<p class="hero-desc">
-			I build web apps across the full stack — React, SvelteKit, TypeScript, Python, and MongoDB.
-			Clean code, clear communication, and I finish what I start.
+			Spent four years at startups doing TPM work without a PM title. Requirements, roadmaps,
+			stakeholder loops, shipping. Can open the code editor too when the team needs it.
 		</p>
 		<div class="hero-cta">
 			<button type="button" class="btn-fill" onclick={() => scrollTo('work')}>See my work</button>
@@ -23,16 +29,16 @@
 		<div class="hero-avatar" aria-hidden="true">GS</div>
 		<dl class="hero-stats">
 			<div class="hero-stat">
-				<dt class="hero-stat-label">Years shipping code</dt>
-				<dd class="hero-stat-num">3+</dd>
+				<dt class="hero-stat-label">Years in product</dt>
+				<dd class="hero-stat-num">4+</dd>
 			</div>
 			<div class="hero-stat">
-				<dt class="hero-stat-label">Live projects</dt>
+				<dt class="hero-stat-label">Products shipped</dt>
 				<dd class="hero-stat-num">6</dd>
 			</div>
 			<div class="hero-stat" style="margin-bottom:0">
-				<dt class="hero-stat-label">Main stacks</dt>
-				<dd class="hero-stat-num">2</dd>
+				<dt class="hero-stat-label">Visitor countries</dt>
+				<dd class="hero-stat-num">{visitorCountries}</dd>
 			</div>
 		</dl>
 	</aside>

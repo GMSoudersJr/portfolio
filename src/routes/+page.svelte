@@ -17,7 +17,7 @@
 
 <Navbar />
 <main id="main-content">
-	<Hero />
+	<Hero visitorCountries={data.visitsByCountryWithCountryCode.filter((c) => c.countryCode !== null).length} />
 	<Work />
 	<About />
 	<Skills />
