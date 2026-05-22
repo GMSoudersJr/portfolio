@@ -5,6 +5,12 @@
 	<div class="about-grid">
 		<div class="about-main">
 			<p>
+				Cornell B.S., then 18 years across Korea teaching. That time built a habit of explaining
+				complicated things to people who need to act on them fast. Also built tools that other
+				teachers used. The first time I understood what it meant to ship something and watch people
+				rely on it.
+			</p>
+			<p>
 				At Globalli, I owned internal tools from 0 to 1. Spotted where automation could help, talked
 				to the person doing the work, gathered requirements, built prototypes, and iterated based on
 				stakeholder feedback until the backlog was clear and the product shipped. One of those tools
@@ -16,12 +22,6 @@
 				endpoints with the correct auth headers, then worked through the backlog of requirements the
 				previous contractor had left undone. Shipped a backoffice they could actually use to
 				moderate their app.
-			</p>
-			<p>
-				Cornell B.S., then 18 years across Korea teaching. That time built a habit of explaining
-				complicated things to people who need to act on them fast. Also built tools that other
-				teachers used. The first time I understood what it meant to ship something and watch people
-				rely on it.
 			</p>
 			<p>
 				Looking for TPM or PM roles in SaaS, dev tools, EdTech, or consumer apps. Based in
