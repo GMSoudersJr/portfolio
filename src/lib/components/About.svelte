@@ -10,17 +10,17 @@
 				teachers used. The first time something I made was for someone else.
 			</p>
 			<p>
+				At Tickr, the backoffice wasn't working. Fixed the frontend's calls to protected API
+				endpoints with the correct auth headers, then worked through the backlog of requirements the
+				previous contractor had left undone. Shipped a backoffice they could actually use to
+				moderate their app.
+			</p>
+			<p>
 				At Globalli, I owned internal tools from 0 to 1. Spotted where automation could help, talked
 				to the person doing the work, gathered requirements, built prototypes, and iterated based on
 				stakeholder feedback until the backlog was clear and the product shipped. One of those tools
 				was a purchase order system that cut processing time by 75% and handled 300+ transactions a
 				month.
-			</p>
-			<p>
-				At Tickr, the backoffice wasn't working. Fixed the frontend's calls to protected API
-				endpoints with the correct auth headers, then worked through the backlog of requirements the
-				previous contractor had left undone. Shipped a backoffice they could actually use to
-				moderate their app.
 			</p>
 			<p>
 				Looking for TPM or PM roles in SaaS, dev tools, EdTech, or consumer apps. Based in
