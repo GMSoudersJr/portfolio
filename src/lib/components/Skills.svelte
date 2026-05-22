@@ -24,7 +24,7 @@
 	</div>
 	<div class="skills-columns">
 		<div class="skills-group">
-			<p class="group-label">Product</p>
+			<h3 class="group-label">Product</h3>
 			<ul class="skills-list" role="list">
 				{#each productSkills as skill (skill.name)}
 					<li class="skill-block">
@@ -36,7 +36,7 @@
 			</ul>
 		</div>
 		<div class="skills-group">
-			<p class="group-label">Technical</p>
+			<h3 class="group-label">Technical</h3>
 			<ul class="skills-list" role="list">
 				{#each technicalSkills as skill (skill.name)}
 					<li class="skill-block">
