@@ -6,7 +6,7 @@
 		<div class="about-main">
 			<p>
 				Cornell B.S., then 18 years across Korea teaching. That time built a habit of explaining
-				complicated things to people who need to act on them fast. Picked up coding on my free time and built tools that other
+				complicated things to people who need to act on them fast. Picked up coding in my free time and built tools that other
 				teachers used. The first time something I made was for someone else.
 			</p>
 			<p>
