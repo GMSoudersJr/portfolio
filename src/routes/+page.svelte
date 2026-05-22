@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-	<title>Gerald Souders — Web App Developer</title>
+	<title>Gerald Souders — Technical Product Manager</title>
 </svelte:head>
 
 <Navbar />
