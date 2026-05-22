@@ -68,14 +68,10 @@
 	}
 	.skills-columns {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 2fr;
 		border: 1.5px solid var(--color-text-primary);
 		border-radius: 16px;
 		overflow: hidden;
-	}
-	.skills-group {
-		display: flex;
-		flex-direction: column;
 	}
 	.skills-group:first-child {
 		border-right: 1.5px solid var(--color-text-primary);
@@ -90,9 +86,6 @@
 		color: var(--color-text-secondary);
 	}
 	.skills-list {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
 		list-style: none;
 	}
 	.skill-block {
@@ -103,7 +96,22 @@
 	}
 	.skill-block:last-child {
 		border-bottom: none;
-		flex: 1;
+	}
+
+	/* Technical group: 2-column sub-grid */
+	.skills-group:last-child .skills-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/* Divider between the two Technical columns */
+	.skills-group:last-child .skill-block:nth-child(odd) {
+		border-right: 1.5px solid var(--color-text-primary);
+	}
+
+	/* Remove bottom border from last row of Technical (items 7 and 8) */
+	.skills-group:last-child .skill-block:nth-last-child(-n+2) {
+		border-bottom: none;
 	}
 	.skill-dot {
 		width: 10px;
@@ -130,6 +138,20 @@
 		.skills-group:first-child {
 			border-right: none;
 			border-bottom: 1.5px solid var(--color-text-primary);
+		}
+		/* Reset Technical to 1 column on mobile */
+		.skills-group:last-child .skills-list {
+			display: block;
+		}
+		.skills-group:last-child .skill-block:nth-child(odd) {
+			border-right: none;
+		}
+		/* Restore bottom borders on Technical items except the last */
+		.skills-group:last-child .skill-block:nth-last-child(-n+2) {
+			border-bottom: 1.5px solid var(--color-text-primary);
+		}
+		.skills-group:last-child .skill-block:last-child {
+			border-bottom: none;
 		}
 	}
 </style>
