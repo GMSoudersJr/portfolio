@@ -23,6 +23,10 @@
 				month.
 			</p>
 			<p>
+				On the side, shipped personal apps that people actually found and used, including one that
+				ranked #1 on Google with zero marketing.
+			</p>
+			<p>
 				Looking for TPM or PM roles in SaaS, dev tools, EdTech, or consumer apps. Based in
 				Singapore. Available now.
 			</p>
