@@ -35,7 +35,7 @@
 					<dt class="about-stat-desc">B.S. Nutritional Sciences. Analytical foundation, practical mindset.</dt>
 				</div>
 				<div class="about-stat-item">
-					<dd class="about-stat-big" style="color:var(--purple)">~20 yrs</dd>
+					<dd class="about-stat-big" style="color:var(--purple)">18+ yrs</dd>
 					<dt class="about-stat-desc">Living and working in Busan &amp; Seoul.</dt>
 				</div>
 				<div class="about-stat-item">

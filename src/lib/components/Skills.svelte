@@ -73,6 +73,10 @@
 		border-radius: 16px;
 		overflow: hidden;
 	}
+	.skills-group {
+		display: flex;
+		flex-direction: column;
+	}
 	.skills-group:first-child {
 		border-right: 1.5px solid var(--color-text-primary);
 	}
@@ -86,6 +90,9 @@
 		color: var(--color-text-secondary);
 	}
 	.skills-list {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
 		list-style: none;
 	}
 	.skill-block {
@@ -96,6 +103,7 @@
 	}
 	.skill-block:last-child {
 		border-bottom: none;
+		flex: 1;
 	}
 	.skill-dot {
 		width: 10px;
