@@ -5,7 +5,7 @@
 			<span class="status-dot" aria-hidden="true"></span>
 			Open to work
 		</span>
-		<span class="footer-copy" aria-label="Location: East &amp; Southeast Asia">East &amp; Southeast Asia</span>
+		<span class="footer-copy" aria-label="Location: Singapore">Singapore</span>
 	</div>
 </footer>
 
