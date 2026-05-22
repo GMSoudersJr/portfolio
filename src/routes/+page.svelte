@@ -12,12 +12,12 @@
 </script>
 
 <svelte:head>
-	<title>Gerald Souders — Web App Developer</title>
+	<title>Gerald Souders — Technical Product Manager</title>
 </svelte:head>
 
 <Navbar />
 <main id="main-content">
-	<Hero />
+	<Hero visitorCountries={data.visitsByCountryWithCountryCode.filter((c) => c.countryCode !== null).length} />
 	<Work />
 	<About />
 	<Skills />

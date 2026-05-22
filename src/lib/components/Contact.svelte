@@ -6,8 +6,8 @@
 		<div class="contact-left">
 			<p class="contact-tagline">Open to opportunities</p>
 			<p>
-				Available for freelance projects, full-time roles, and interesting collaborations. I'm
-				especially interested in building tools that save real time.
+				Looking for TPM and PM roles in SaaS, dev tools, EdTech, or consumer apps. Based in
+				Singapore and available now.
 			</p>
 		</div>
 		<nav class="contact-right" aria-label="Social and contact links">

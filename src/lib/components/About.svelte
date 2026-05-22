@@ -5,21 +5,32 @@
 	<div class="about-grid">
 		<div class="about-main">
 			<p>
-				I'm a web app developer who spent nearly 20 years teaching in Busan and Seoul. That career
-				built habits that transfer directly to software: explaining things clearly, keeping the end
-				user in focus, and never stopping learning. The moment I realized I could make a webpage do
-				something useful, I was hooked. I've been building ever since.
+				Cornell B.S., then 18 years across Korea teaching. That time built a habit of explaining
+				complicated things to people who need to act on them fast. Picked up coding in my free time
+				and built tools for my own workflow. Shared them with other teachers, iterated through their
+				pain points, and watched them get used. The first time I built something, got feedback, and
+				made it better for someone else.
 			</p>
 			<p>
-				I work across the stack: React, Next.js, Svelte, JavaScript, TypeScript, Python, and MongoDB. I've
-				built and shipped production apps used by real people, contributed to a React codebase
-				overhaul at a startup, and built tools I rely on myself every day. I finish what I start,
-				iterate based on feedback, and take pride in work that actually holds up.
+				At Tickr, the backoffice wasn't working. Fixed the frontend's calls to protected API
+				endpoints with the correct auth headers, then worked through the backlog of requirements the
+				previous contractor had left undone. Shipped a backoffice they could actually use to
+				moderate their app.
 			</p>
 			<p>
-				I'm a constant learner who picks up new things fast and takes direction well. I enjoy being
-				part of a team that holds the bar high, and I bring that same standard to everything I
-				ship.
+				At Globalli, I owned internal tools from 0 to 1. Spotted where automation could help, talked
+				to the person doing the work, gathered requirements, built prototypes, and iterated based on
+				stakeholder feedback until the backlog was clear and the product shipped. One of those tools
+				was a purchase order system that cut processing time by 75% and handled 300+ transactions a
+				month.
+			</p>
+			<p>
+				On the side, shipped personal apps that people actually found and used, including one that
+				ranked #1 on Google with zero marketing.
+			</p>
+			<p>
+				Looking for TPM or PM roles in SaaS, dev tools, EdTech, or consumer apps. Based in
+				Singapore. Available now.
 			</p>
 		</div>
 		<aside class="about-side" aria-label="Background highlights">
@@ -29,7 +40,7 @@
 					<dt class="about-stat-desc">B.S. Nutritional Sciences. Analytical foundation, practical mindset.</dt>
 				</div>
 				<div class="about-stat-item">
-					<dd class="about-stat-big" style="color:var(--purple)">~20 yrs</dd>
+					<dd class="about-stat-big" style="color:var(--purple)">18+ yrs</dd>
 					<dt class="about-stat-desc">Living and working in Busan &amp; Seoul.</dt>
 				</div>
 				<div class="about-stat-item">

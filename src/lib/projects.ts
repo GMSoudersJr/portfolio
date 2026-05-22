@@ -20,7 +20,7 @@ export const projects: Project[] = [
 		num: '01',
 		title: 'Rep Yourself',
 		type: 'PWA',
-		desc: 'Rep Yourself is a tracker for the Armstrong Pull-up Program, a structured 5-day military training protocol. After nearly 10 rounds of running to the park and trying to remember my numbers on the way home, I finally built something to do it properly. Guides you through each session, charts your progress, and keeps everything on-device. No accounts, no bloat.',
+		desc: 'Built for the Armstrong Pull-up Program, a structured 5-day military training routine. Guides you through each session and tracks progress over time. Nothing existing did both the way it needed to be done. After user feedback, replaced the default data displays with custom D3.js charts. Ranked #1 on Google for "Armstrong Pullup Program App" with 1,200+ visitors.',
 		tags: [
 			{ label: 'React', cls: 'tag-react' },
 			{ label: 'TypeScript', cls: 'tag-ts' },
@@ -33,9 +33,23 @@ export const projects: Project[] = [
 	},
 	{
 		num: '02',
+		title: 'Suit Yourself',
+		type: 'PWA',
+		desc: 'A mobile-first PWA for card-based calisthenics workouts. Built for people doing this with a physical deck. Cards got wet, wore out, nobody remembered which suit meant which exercise. Shipped several iterations: automatic update alerts, swipe gestures and keyboard input, and a stopwatch feature that went out without touching saved workout history.',
+		tags: [
+			{ label: 'Svelte', cls: 'tag-svelte' },
+			{ label: 'TypeScript', cls: 'tag-ts' }
+		],
+		url: 'https://www.suityourself.app',
+		accent: 'var(--coral)',
+		accentLight: 'var(--coral-light)',
+		image: 'screenshots/suit-yourself.webp'
+	},
+	{
+		num: '03',
 		title: 'freeCodeCamp Seoul',
 		type: 'Open Source',
-		desc: 'The freeCodeCamp Seoul community site was still on the Pages Router when App Router had already landed. I joined when the organizer put out a call for help, migrated the codebase, cleaned up the styling, and laid the groundwork for Korean translations. Reviewed 30+ pull requests as part of the team.',
+		desc: "Joined the Seoul chapter's open source site when the maintainer put out a call for help. Migrated the codebase from Pages Router to App Router, laid the groundwork for Korean translations with next-intl, and reviewed 31 pull requests from other contributors.",
 		tags: [
 			{ label: 'React', cls: 'tag-react' },
 			{ label: 'TypeScript', cls: 'tag-ts' },
@@ -47,52 +61,10 @@ export const projects: Project[] = [
 		image: 'screenshots/freeCodeCamp-Seoul.webp'
 	},
 	{
-		num: '03',
-		title: 'Suit Yourself',
-		type: 'PWA',
-		desc: 'I used to take a physical deck of cards to the park for calisthenics workouts. Cards blew away, got damaged, and remembering which exercise went with which suit was a pain. Suit Yourself fixes all of that. Shuffle the deck, assign an exercise to each suit, and work through the draw — the card value is your rep count. 52 exercises to choose from, Playwright-tested because 52 cards is a lot to verify by hand.',
-		tags: [
-			{ label: 'Svelte', cls: 'tag-svelte' },
-			{ label: 'TypeScript', cls: 'tag-ts' }
-		],
-		url: 'https://www.suityourself.app',
-		accent: 'var(--coral)',
-		accentLight: 'var(--coral-light)',
-		image: 'screenshots/suit-yourself.webp'
-	},
-	{
 		num: '04',
-		title: 'Running on Xero',
-		type: 'Blog',
-		desc: "My personal blog about 15 years of running and moving in Xero Shoes. Minimalist footwear isn't a trend for me — it's just how I move. The blog covers the journey through photos and entries from wherever I happen to be running. Built with SvelteKit and MongoDB because I wanted full control over the content and the stack.",
-		tags: [
-			{ label: 'SvelteKit', cls: 'tag-sk' },
-			{ label: 'MongoDB', cls: 'tag-mongo' }
-		],
-		url: 'https://running-on-xero.vercel.app/',
-		accent: 'var(--amber)',
-		accentLight: 'var(--amber-light)',
-		image: 'screenshots/running-on-xero.webp'
-	},
-	{
-		num: '05',
-		title: 'Encrypted PO Generator',
-		type: 'Business Tool',
-		desc: 'Built for a real client who needed a bespoke system to generate purchase orders and track data for reports. The user fills in payee details, builds the order, selects from their saved payees, previews the PO, and downloads the PDF. Payee data is encrypted before it ever touches the database. This is the sanitized version — client details removed.',
-		tags: [
-			{ label: 'SvelteKit', cls: 'tag-sk' },
-			{ label: 'MongoDB', cls: 'tag-mongo' }
-		],
-		url: 'https://portfolio-po-generator.vercel.app/',
-		accent: 'var(--purple)',
-		accentLight: 'var(--purple-light)',
-		image: 'screenshots/po-generator.webp'
-	},
-	{
-		num: '06',
 		title: 'Work Smarter Randomizer',
 		type: 'Productivity Tool',
-		desc: 'Between classes, I was handed a book of vocabulary words to randomize for student tests and a very manual process to do it. I still had to type the words in, but the app handled the randomizing so I could stop thinking about it. Paste the words in order, shuffle them, and see how far each one landed from where it started. Copy them one by one or grab the whole list. The "Work Smarter" name was meant to be a suite. This is the first tool.',
+		desc: 'Built between classes when the manual process for randomizing student vocabulary words was taking too long. Words shuffle automatically as you type them in. See how far each one lands from where it started. Part of a planned suite of tools for teachers, this is the first.',
 		tags: [
 			{ label: 'Svelte', cls: 'tag-svelte' },
 			{ label: 'TypeScript', cls: 'tag-ts' }
