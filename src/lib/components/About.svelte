@@ -5,21 +5,27 @@
 	<div class="about-grid">
 		<div class="about-main">
 			<p>
-				I'm a web app developer who spent nearly 20 years teaching in Busan and Seoul. That career
-				built habits that transfer directly to software: explaining things clearly, keeping the end
-				user in focus, and never stopping learning. The moment I realized I could make a webpage do
-				something useful, I was hooked. I've been building ever since.
+				At Globalli, I owned internal tools from 0 to 1. Spotted where automation could help, talked
+				to the person doing the work, gathered requirements, built prototypes, and iterated based on
+				stakeholder feedback until the backlog was clear and the product shipped. One of those tools
+				was a purchase order system that cut processing time by 75% and handled 300+ transactions a
+				month.
 			</p>
 			<p>
-				I work across the stack: React, Next.js, Svelte, JavaScript, TypeScript, Python, and MongoDB. I've
-				built and shipped production apps used by real people, contributed to a React codebase
-				overhaul at a startup, and built tools I rely on myself every day. I finish what I start,
-				iterate based on feedback, and take pride in work that actually holds up.
+				At Tickr, the backoffice wasn't working. Fixed the frontend's calls to protected API
+				endpoints with the correct auth headers, then worked through the backlog of requirements the
+				previous contractor had left undone. Shipped a backoffice they could actually use to
+				moderate their app.
 			</p>
 			<p>
-				I'm a constant learner who picks up new things fast and takes direction well. I enjoy being
-				part of a team that holds the bar high, and I bring that same standard to everything I
-				ship.
+				Cornell B.S., then 18 years across Korea teaching. That time built a habit of explaining
+				complicated things to people who need to act on them fast. Also built tools that other
+				teachers used. The first time I understood what it meant to ship something and watch people
+				rely on it.
+			</p>
+			<p>
+				Looking for TPM or PM roles in SaaS, dev tools, EdTech, or consumer apps. Based in
+				Singapore. Available now.
 			</p>
 		</div>
 		<aside class="about-side" aria-label="Background highlights">
