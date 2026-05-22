@@ -6,8 +6,10 @@
 		<div class="about-main">
 			<p>
 				Cornell B.S., then 18 years across Korea teaching. That time built a habit of explaining
-				complicated things to people who need to act on them fast. Picked up coding in my free time and built tools that other
-				teachers used. The first time something I made was for someone else.
+				complicated things to people who need to act on them fast. Picked up coding in my free time
+				and built tools for my own workflow. Shared them with other teachers, iterated through their
+				pain points, and watched them get used. The first time I built something, got feedback, and
+				made it better for someone else.
 			</p>
 			<p>
 				At Tickr, the backoffice wasn't working. Fixed the frontend's calls to protected API
