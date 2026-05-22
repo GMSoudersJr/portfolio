@@ -7,8 +7,7 @@
 			<p>
 				Cornell B.S., then 18 years across Korea teaching. That time built a habit of explaining
 				complicated things to people who need to act on them fast. Also built tools that other
-				teachers used. The first time I understood what it meant to ship something and watch people
-				rely on it.
+				teachers used. The first time something I made was for someone else.
 			</p>
 			<p>
 				At Globalli, I owned internal tools from 0 to 1. Spotted where automation could help, talked
