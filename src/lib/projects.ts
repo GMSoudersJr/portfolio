@@ -20,13 +20,13 @@ export const projects: Project[] = [
 		num: '01',
 		title: 'Rep Yourself',
 		type: 'PWA',
-		desc: 'Built for the Armstrong Pull-up Program, a structured 5-day military training routine. Guides you through each session and tracks progress over time. Nothing existing did both the way it needed to be done. After user feedback, replaced the default data displays with custom D3.js charts. Ranked #1 on Google for "Armstrong Pullup Program App" with 1,200+ visitors.',
+		desc: 'Built for the Armstrong Pull-up Program, a structured 5-day military training routine. Guides you through each session and tracks progress over time. Nothing existing did both the way it needed to be done. After user feedback, replaced the default data displays with custom D3.js charts. Previously ranked #1 on Google for "Armstrong Pullup Program App" with 1,200+ organic visitors. Lost the ranking after a domain rebrand and working to get it back.',
 		tags: [
 			{ label: 'React', cls: 'tag-react' },
 			{ label: 'TypeScript', cls: 'tag-ts' },
 			{ label: 'Next.js', cls: 'tag-next' }
 		],
-		url: 'https://www.repyourself.app',
+		url: 'https://repyourself.app',
 		accent: 'var(--purple)',
 		accentLight: 'var(--purple-light)',
 		image: 'screenshots/rep-yourself.webp'
@@ -40,7 +40,7 @@ export const projects: Project[] = [
 			{ label: 'Svelte', cls: 'tag-svelte' },
 			{ label: 'TypeScript', cls: 'tag-ts' }
 		],
-		url: 'https://www.suityourself.app',
+		url: 'https://suityourself.app',
 		accent: 'var(--coral)',
 		accentLight: 'var(--coral-light)',
 		image: 'screenshots/suit-yourself.webp'
