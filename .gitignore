@@ -26,3 +26,6 @@ test-results
 
 # Claude Code
 .claude
+
+# Private reference docs
+portfolio-narrative.md

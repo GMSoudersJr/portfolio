@@ -26,7 +26,7 @@
 			</p>
 			<p>
 				On the side, shipped personal apps that people actually found and used, including one that
-				ranked #1 on Google with zero marketing.
+				ranked #1 on Google with zero marketing, lost that ranking after a domain rebrand, and is currently in SEO recovery.
 			</p>
 			<p>
 				Looking for TPM or PM roles in SaaS, dev tools, EdTech, or consumer apps. Based in
@@ -44,8 +44,8 @@
 					<dt class="about-stat-desc">Living and working in Busan &amp; Seoul.</dt>
 				</div>
 				<div class="about-stat-item">
-					<dd class="about-stat-big" style="color:var(--teal)">#1</dd>
-					<dt class="about-stat-desc">Google Search, Armstrong Pull-up Program App. Zero marketing.</dt>
+					<dd class="about-stat-big" style="color:var(--teal)">Previously #1</dd>
+					<dt class="about-stat-desc">Google Search, Armstrong Pullup Program. Lost after domain rebrand. In recovery.</dt>
 				</div>
 			</dl>
 		</aside>
