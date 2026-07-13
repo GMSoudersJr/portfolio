@@ -21,7 +21,7 @@
 				GitHub
 				<span class="contact-arrow" aria-hidden="true">↗</span>
 			</a>
-	<a class="contact-link" href="mailto:gmsoudersjr@gmail.com">
+	<a class="contact-link" href="mailto:gerald@geraldsouders.com">
 				<span class="contact-dot" style="background:#ea4335" aria-hidden="true"></span>
 				Email me
 				<span class="contact-arrow" aria-hidden="true">↗</span>
