@@ -45,7 +45,7 @@
 				</div>
 				<div class="about-stat-item">
 					<dd class="about-stat-big" style="color:var(--teal)">Previously #1</dd>
-					<dt class="about-stat-desc">Google Search, Armstrong Pullup Program. Lost after domain rebrand. In recovery.</dt>
+					<dt class="about-stat-desc">Google Search, Armstrong Pullup Program App. Lost after domain rebrand. In recovery.</dt>
 				</div>
 			</dl>
 		</aside>
