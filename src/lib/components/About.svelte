@@ -18,11 +18,11 @@
 				moderate their app.
 			</p>
 			<p>
-				At Globalli, I owned internal tools from 0 to 1. Spotted where automation could help, talked
-				to the person doing the work, gathered requirements, built prototypes, and iterated based on
-				stakeholder feedback until the backlog was clear and the product shipped. One of those tools
-				was a purchase order system that cut processing time by 75% and handled 300+ transactions a
-				month.
+				Freelance and self-employed, I owned internal tools from 0 to 1. Spotted where automation
+				could help, talked to the person doing the work, gathered requirements, built prototypes,
+				and iterated based on stakeholder feedback until the backlog was clear and the product
+				shipped. One of those tools was a purchase order system that cut processing time by 75%
+				and handled 300+ transactions a month.
 			</p>
 			<p>
 				On the side, shipped personal apps that people actually found and used, including one that
